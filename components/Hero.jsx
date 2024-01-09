@@ -36,12 +36,7 @@ const Hero = () => {
         <Image alt="chandan-sir" src="/chandan.gif" width={0} height={0} className="w-full mx-auto sm:w-10/12  lg:w-full" />
     </div>
      
-</section><div className="text-center pt-0 mt-0 pb-2 md:hidden ">
-  <p>or</p>
-  </div>
-<div className="flex pt-0 mt-0 items-center justify-center  md:space-y-0 md:mt-0  pb-2 md:pb-0 md:hidden ">
-                      <ModalButton />
-</div>
+</section>
 
 
 </div>
