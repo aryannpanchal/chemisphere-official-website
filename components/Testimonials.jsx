@@ -33,13 +33,13 @@ const Testimonials = () => {
     ]
   return (
     <div>
-   <section className="py-14 bg-slate-900">
+   <section className="py-14 bg-slate-100">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl sm:text-center md:mx-auto">
                     <h3 className="text-gray-100 text-4xl font-semibold sm:text-5xl">
                         Hall of Fame
                     </h3>
-                    <p className="mt-3 text-gray-200">
+                    <p className="mt-3 text-slate-900">
                      Explore our hall of academic achievers, charting the course for success and inspiring the pursuit of knowledge at its finest.
                     </p>
                 </div>
@@ -47,20 +47,20 @@ const Testimonials = () => {
                     <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             testimonials.map((item, idx) => (
-                                <li key={idx} className="bg-gray-100 p-4 rounded-xl">
+                                <li key={idx} className="bg-chemisphere p-4 rounded-xl">
                                     <figure>
                                         <div className="flex items-center gap-x-4">
                                             <Image src={item.avatar} className=" rounded-full" width={64} height={64} alt="logos" />
                                             <div>
-                                                <span className="block text-gray-900 font-semibold">{item.name}</span>
-                                                <span className="block text-gray-900 text-sm mt-0.5">{item.title} <span className="font-bold">{item.subtitle}</span></span>
-                                                <span className="block text-gray-900 text-sm mt-0.5">{item.title2} <span className="font-bold">{item.subtitle2}</span></span>
-                                                <span className="block text-gray-900 text-sm mt-0.5">{item.title3} <span className="font-bold">{item.subtitle3}</span></span>
+                                                <span className="block text-slate-100 font-semibold">{item.name}</span>
+                                                <span className="block text-slate-100 text-sm mt-0.5">{item.title} <span className="font-bold">{item.subtitle}</span></span>
+                                                <span className="block text-slate-100 text-sm mt-0.5">{item.title2} <span className="font-bold">{item.subtitle2}</span></span>
+                                                <span className="block text-slate-100 text-sm mt-0.5">{item.title3} <span className="font-bold">{item.subtitle3}</span></span>
                                                 
                                             </div>
                                         </div>
                                         <blockquote>
-                                            <p className="mt-6 text-gray-900 text-sm">
+                                            <p className="mt-6 text-slate-100 text-sm">
                                                 {item.quote}
                                             </p>
                                         </blockquote>
