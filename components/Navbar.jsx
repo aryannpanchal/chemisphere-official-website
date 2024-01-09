@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect } from "react"
 import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
 import { useRef, useState } from 'react';
-import ModalButton from "./ModalButton";
 
 const Navbar = () => {    
     
@@ -80,7 +79,6 @@ useEffect(() => {
                         }
                     </ul>
                      <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6  md:space-y-0 md:mt-0 pb-5 md:pb-0 hidden md:flex">  
-                    <ModalButton />
                     </div>   
                 </div>
             </div>
