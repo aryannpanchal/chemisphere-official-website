@@ -57,7 +57,7 @@ const OfferSection = () => {
                                     <h4 className="text-lg text-white font-semibold">
                                         {item.title}
                                     </h4>
-                                    <p>
+                                    <p className='text-white'>
                                         {item.desc}
                                     </p>
                                 </li>
