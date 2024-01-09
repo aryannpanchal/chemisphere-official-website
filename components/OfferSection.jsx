@@ -50,11 +50,11 @@ const OfferSection = () => {
                         {
                             features.map((item, idx) => (
                                 <li key={idx} className="space-y-3">
-                                    <div className="w-12 h-12 border bg-white text-slate-100  rounded-full flex items-center justify-center">
+                                    <div className="w-12 h-12 border bg-white text-white  rounded-full flex items-center justify-center">
 
                                        <Image src="/tick.svg" alt="study_material" width={30} height={30} />
                                     </div>
-                                    <h4 className="text-lg text-slate-100 font-semibold">
+                                    <h4 className="text-lg text-white font-semibold">
                                         {item.title}
                                     </h4>
                                     <p>
