@@ -57,7 +57,7 @@ useEffect(() => {
                             }
                         </button>
                        <div>
-                       <a href={`tel:${45}`}>
+                       <a href={`tel:${+918850436230}`}>
                         <Image src="/call.svg" alt="call-now" width={20} height={20} />
                        </a>
                        </div>
