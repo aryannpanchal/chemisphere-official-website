@@ -54,7 +54,7 @@ const OfferSection = () => {
 
                                        <Image src="/tick.svg" alt="study_material" width={30} height={30} />
                                     </div>
-                                    <h4 className="text-lg text-zinc-200 font-semibold">
+                                    <h4 className="text-lg text-slate-100 font-semibold">
                                         {item.title}
                                     </h4>
                                     <p>
