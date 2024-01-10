@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react"
-import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
-import { useRef, useState } from 'react';
+import {useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faYoutube,
@@ -12,6 +11,7 @@ import {
   } from "@fortawesome/free-brands-svg-icons";
 
 import Link from 'next/link'
+
 const Navbar = () => {    
     
     const [state, setState]=useState(false)
@@ -79,12 +79,13 @@ useEffect(() => {
                                     <li key={idx} className="text-gray-900 hover:text-red-500">
                                         <a href={item.path} className="block">
                                             {item.title}
+                                            
                                         </a>
                                     </li>
                                 )
                             })
                         }
-                         <div className='space-y-6 md:hidden'>  
+                   <div className='space-y-6 md:hidden'>  
                         <Link href='https://www.youtube.com/@Chemisphere' target='__blank'>
                          <FontAwesomeIcon icon={faYoutube} size="1.5x" className='mr-4' />
                         </Link>                
@@ -98,7 +99,10 @@ useEffect(() => {
                          <FontAwesomeIcon icon={faFacebook} size="1.5x" className='mr-4' />
                         </Link> 
                     </div> 
-                    </ul>
+                    </ul>    
+                    
+                     
+
                      <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6  md:space-y-0 md:mt-0 pb-5 md:pb-0 hidden md:flex">  
                     </div>   
                 </div>
