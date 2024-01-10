@@ -3,7 +3,15 @@ import Image from "next/image";
 import React, { useEffect } from "react"
 import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
 import { useRef, useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faLinkedin,
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
 
+import Link from 'next/link'
 const Navbar = () => {    
     
     const [state, setState]=useState(false)
@@ -11,7 +19,6 @@ const Navbar = () => {
  const navigation = [
     { title: "About us", path: "/" },
     { title: "Blogs", path: "/blogs" },
-    { title: "Inquiry", path: "/" }
 ]
 useEffect(() => {
     const handleClickOutside = (e) => {
@@ -77,6 +84,20 @@ useEffect(() => {
                                 )
                             })
                         }
+                         <div className='space-y-6 md:hidden'>  
+                        <Link href='https://www.youtube.com/@Chemisphere' target='__blank'>
+                         <FontAwesomeIcon icon={faYoutube} size="1.5x" className='mr-4' />
+                        </Link>                
+                        <Link href='https://www.instagram.com/chemisphere.in/' target='__blank'>
+                         <FontAwesomeIcon icon={faInstagram} size="1.5x" className='mr-4' />
+                        </Link> 
+                        <Link href='https://www.linkedin.com/company/79804759/admin/feed/posts/' target='__blank'>
+                         <FontAwesomeIcon icon={faLinkedin} size="1.5x" className='mr-4' />
+                        </Link> 
+                        <Link href='https://www.facebook.com/chemisphere.in?mibextid=ZbWKwL' target='__blank'>
+                         <FontAwesomeIcon icon={faFacebook} size="1.5x" className='mr-4' />
+                        </Link> 
+                    </div> 
                     </ul>
                      <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6  md:space-y-0 md:mt-0 pb-5 md:pb-0 hidden md:flex">  
                     </div>   
