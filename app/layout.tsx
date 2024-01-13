@@ -1,14 +1,8 @@
-// blogs
-// 
-// 
-// 
-
-
-
-
 import type { Metadata } from 'next'
 import './globals.css'
 import { Inter } from "@next/font/google"
+import { Analytics } from '@vercel/analytics/react';
+ 
 
 
 const inter = Inter({
@@ -31,7 +25,7 @@ export default function RootLayout({
      <head>
      <link rel="icon" href='/favicon.ico' sizes="any" />
      </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}<Analytics /></body>
     </html>
   )
 }
