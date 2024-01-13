@@ -73,7 +73,7 @@ const config: Config = {
         'silver': '#ecebff',
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
-        'chemisphere': "#fe0000",
+        'chemisphere': "#E62020",
         "tickgreen" :"#00D300"
 
       },
