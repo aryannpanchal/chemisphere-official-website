@@ -26,7 +26,7 @@ const Footer = () => {
             </ul>
         </div>
         <hr className="my-6 border-gray-900 sm:mx-auto dark:border-gray-900 lg:my-8" />
-        <p className='text-center text-sm  text-gray-500'>Website created by <Link href='https://www.linkedin.com/in/aryan-panchal-3a22491a9/'><span>Aryan Panchal</span></Link></p>
+        <p className='text-center text-sm  text-gray-500'>Website created by <Link href='https://www.linkedin.com/in/aryan-panchal-3a22491a9/'><span className='underline'>Aryan Panchal</span></Link></p>
 
     </div>
 </footer>
