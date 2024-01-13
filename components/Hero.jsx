@@ -28,7 +28,7 @@ const Hero = () => {
 <br /></p>
          <div className="flex pt-0 mt-0 items-center justify-center  md:space-y-0 md:mt-0 md:pb-0 md:justify-start">
                       <Link target="__blank" href=" https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20more%20about%20Chemisphere!"  className="rounded-full transition ease-in-out duration-300">
-                      <Image src="/whatsapp chat.svg" width={194} height={194} alt="chat on whatsapp button"  />
+                      <Image src="/connect-now.svg" width={194} height={194} alt="chat on whatsapp button"  />
                       </Link>
                       </div>
     </div>
