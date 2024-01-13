@@ -7,7 +7,7 @@ const Testimonials = () => {
             name: "Manasvi Patil",
             title: "MHTCET 2023",
             subtitle: "99.3 Percentile",
-            title2: "CBSE 2023 Chemistry",
+            title2: "CBSE'23 Chemistry",
             subtitle2: "95 percentile",
             title3: "NEET 2023",
             subtitle3: "93.4 Percentile",
