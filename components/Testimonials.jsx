@@ -33,7 +33,7 @@ const Testimonials = () => {
     ]
   return (
     <div>
-   <section className="py-14 bg-slate-100">
+   <section className="py-14 bg-white">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl sm:text-center md:mx-auto">
                     <h3 className="text-slate-900 text-4xl font-semibold sm:text-5xl">
