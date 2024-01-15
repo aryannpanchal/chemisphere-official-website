@@ -52,7 +52,7 @@ const Testimonials = () => {
                                         <div className="flex items-center gap-x-4">
                                             <Image src={item.avatar} className=" rounded-full" width={64} height={64} alt="logos" />
                                             <div>
-                                               <span className="block text-slate-100 font-semibold">{item.name}</span>
+                                               <span className="block text-white font-semibold">{item.name}</span>
                                                 <span className="block text-gray-300 text-sm mt-0.5">{item.title} <span className="font-bold  text-slate-100">{item.subtitle}</span></span>
                                                 <span className="block text-gray-300 text-sm mt-0.5">{item.title2} <span className="font-bold text-slate-100">{item.subtitle2}</span></span>
                                                 <span className="block text-gray-300 text-sm mt-0.5">{item.title3} <span className="font-bold text-slate-100">{item.subtitle3}</span></span>
