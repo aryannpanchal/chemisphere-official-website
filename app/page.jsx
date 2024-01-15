@@ -5,7 +5,8 @@ import Sticky from '@/components/Sticky';
 import OfferSection from '@/components/OfferSection';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
-import Mockup from '@/components/Mockup'
+import Mockup from '@/components/Mockup';
+import FAO from '@/components/FAQ';
 const page = () => {
   return (
     
@@ -17,6 +18,7 @@ const page = () => {
       <OfferSection />
       <Testimonials />
       <Mockup />
+      <FAQ />
       <Footer />
       
     </div>
