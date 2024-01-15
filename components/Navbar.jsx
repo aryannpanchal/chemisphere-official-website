@@ -17,8 +17,8 @@ const Navbar = () => {
     const [state, setState]=useState(false)
  // Replace javascript:void(0) path with your path
  const navigation = [
-    { title: "", path: "/" },
-    { title: "", path: "/blogs" },
+    { title: "About us", path: "/about-us" },
+    { title: "Blogs", path: "/blogs" },
 ]
 useEffect(() => {
     const handleClickOutside = (e) => {
