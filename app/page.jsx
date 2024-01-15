@@ -6,7 +6,7 @@ import OfferSection from '@/components/OfferSection';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import Mockup from '@/components/Mockup';
-import FAO from '@/components/FAQ';
+import FAQ from '@/components/FAQ';
 const page = () => {
   return (
     
