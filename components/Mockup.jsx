@@ -110,8 +110,7 @@ const mockup = () => {
       </div>
     </div>
       
-    </div>
-    </div>
+   
   </section>
  </>
    
@@ -119,3 +118,4 @@ const mockup = () => {
 }
 
 export default mockup
+
