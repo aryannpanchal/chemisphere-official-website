@@ -12,18 +12,18 @@ const FAQ = () => {
     <Accordion
         title="Why choose Chemisphere?"
         answer="Choose Chemisphere for a captivating chemistry learning experience! Learn from professionals with a decade of mentoring success. Enjoy engaging live classes, meticulous class notes, and track progress with regular assessments and examinations. Elevate your marks and embrace the joy of learning chemistry!"
-        className='font-semibold'
+        className='font-bold'
       />
       <Accordion
         title="How many classes happen in a week?"
         answer="a"
-        className='font-semibold'
+        className='font-bold'
 
       />
       <Accordion
         title="question 3" 
         answer="a" 
-        className='font-semibold'
+        className='font-bold'
 />
     </div>
     </div>
