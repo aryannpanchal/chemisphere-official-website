@@ -6,28 +6,62 @@ const Footer = () => {
     <div>
         
 
-<footer className=" rounded-lg shadow  m-4">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="https://chemisphere.in/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <Image src="chemisphere-black.svg" className="h-8" alt="Chemisphere Logo" height={100} width={100} />
-            </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-900 sm:mb-0 dark:text-gray-900">
-                <li>
-                    <Link href="#" className="hover:underline me-4 md:me-6">About Us</Link>
-                </li>
-                <li>
-                    <Link href="#" className="hover:underline me-4 md:me-6">Blogs</Link>
-                </li>
-                <li>
-                    <Link href="#" className="hover:underline me-4 md:me-6">Inquiry</Link>
-                </li>
-            
-            </ul>
-        </div>
-        <hr className="my-6 border-gray-900 sm:mx-auto dark:border-gray-900 lg:my-8" />
-        <p className='text-center text-sm  text-gray-500'>Website created by <Link href='https://www.linkedin.com/in/aryan-panchal-3a22491a9/'><span className='underline'>Aryan Panchal</span></Link></p>
-
+        <footer className="bg-gray-100 mt-12">
+    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className="md:flex md:justify-between">
+          <div className="mb-6 md:mb-0">
+              <a href="https://chemisphere.in/" className="flex items-center">
+                  <img src="/chemisphere-black.svg" className="h-8 me-3" alt="Chemisphere Logo" />
+              </a>
+          </div>
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                  <ul className="text-gray-500 font-medium">
+                      <li className="mb-4">
+                          <a href="#" className="hover:underline"></a>
+                      </li>
+                      <li>
+                          <a href="#" className="hover:underline"></a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
+                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                      <li className="mb-4">
+                          <a href="#" className="hover:underline ">Instagram</a>
+                      </li>
+                      <li className='mb-4'>
+                          <a href="#" className="hover:underline">Youtube</a>
+                      </li>
+                      <li className='mb-4'>
+                          <a href="#" className="hover:underline">LinkedIn</a>
+                      </li>
+                      <li className='mb-4'>
+                          <a href="#" className="hover:underline">Facebook</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
+                  <ul className="text-gray-500  font-medium">
+                      <li className="mb-4">
+                          <a href="#" className="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center">© 2023 <a href="https://chemisphere.in/" className="hover:underline">Chemisphere™</a>. All Rights Reserved.
+          </span>
+          
+      </div>
     </div>
 </footer>
 
