@@ -8,18 +8,47 @@ const AboutUsHome = () => {
         
         <div className="space-y-4 flex-1 sm:text-center lg:text-left">
             <h1 className="text-slate-800 font-bold text-4xl xl:text-5xl">
-                Welcome to Chemisphere!
+                Welcome to <span className='text-chemisphere'>Chemisphere!</span>
             </h1>
-            <p className="text-gray-900 max-w-xl leading-relaxed sm:mx-auto lg:ml-0 md:text-left">
-            Hi. I am Chandan Biswas. I am a professor of Chemistry, and CEO, Chemisphere and I have mentored over 15000 students in the last decade for JEE Main and Advanced, NEET, MHCET and Class 12th boards and I know inside out of all these exams. I have the honor to be the mentor for over 1000 IITians, and medical professionals.
-    <br /></p>
-             <div className="flex pt-0 mt-0 items-center justify-center  md:space-y-0 md:mt-0 md:pb-0 md:justify-start">
-                          <Link target="__blank" href=" https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20more%20about%20Chemisphere!"  className="rounded-full transition ease-in-out duration-300">
-                          <Image src="/connect-now.svg" width={194} height={194} alt="chat on whatsapp button"  />
-                          </Link>
-                          </div>
+            <p className="text-gray-900   md:text-left">
+            Welcome to Chemisphere, a dedicated hub for comprehensive and personalized chemistry education. As an independent educational platform, Chemisphere is committed to revolutionizing the learning experience for students seeking mastery in Chemistry across diverse educational levels.    <br /></p>
+            <h3  className="text-slate-800 font-bold text-2xl xl:text-2xl">
+              Our Distinct Features
+            </h3>
+            <div className='ml-6 text-slate-900'>
+              <li className='font-bold'>
+              Precision in Chemistry Learning: 
+              </li>
+              <p className='ml-6 mb-3'>Chemisphere specializes in delivering highly personalized and effective learning programs meticulously designed for students navigating Chemistry studies from classes 1 to 12. Additionally, our offerings extend to encompass competitive exams such as JEE, NEET, and more.</p>
+              <li className='font-bold'>
+              Technological Ingenuity in Learning: 
+              </li>
+              <p className='ml-6 mb-3'>Embracing the dynamic potential of technology, Chemisphere seamlessly integrates innovative practices with captivating content. Our interactive learning modules and visually rich material not only facilitate conceptual clarity but also foster long-term retention.</p>
+              <li className='font-bold'>
+              Guidance from Expert Educator: 
+              </li>
+              <p className='ml-6 mb-3'>Chemisphere is led by a distinguished team of subject matter experts and passionate educators. Our experts employ a diverse set of tools, including videos, interactive animations, quizzes, and assessments, to breathe life into complex concepts and make learning Chemistry an engaging experience.</p>
+              <li className='font-bold'>
+              Holistic Approach to Learning: 
+              </li>
+              <p className='ml-6 mb-3'>Recognizing the uniqueness of each learner, Chemisphere adopts a holistic approach to education. Every facet of a student's journey with Chemisphere is meticulously planned, ensuring a comprehensive and enriching learning experience that goes beyond traditional educational norms.</p>
+              <li className='font-bold'>
+              Progress Tracking:
+              </li>
+              <p className='ml-6 mb-3'>Regular assessments form the backbone of our approach. Personalized learning profiles are created to analyze individual strengths and identify areas for improvement. With an adaptive learning methodology, we ensure a smooth and motivating learning curve that encourages students to overcome challenges.</p>
+              <li className='font-bold'>
+              Passionate Learning:
+              </li>
+              <p className='ml-6 mb-3'>The educators at Chemisphere are not just mentors; they are dedicated enthusiasts driven by a profound passion for education. Our goal is not just to impart knowledge but to instill excitement and fulfillment in the study of Chemistry.</p>
+            
+            
+            
+            </div>
+              
+            
         </div>         
 </section>
+
     </div>
   )
 }
