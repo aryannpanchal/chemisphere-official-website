@@ -18,7 +18,7 @@ const page = () => {
     <div  >
       <FacebookChatPlugin />
       <MarqueeSection />
-      <Sticky />
+{/*       <Sticky /> */}
       <Navbar />
       <Hero />
       <Stats />
