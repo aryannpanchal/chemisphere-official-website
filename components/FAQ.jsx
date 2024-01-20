@@ -21,8 +21,8 @@ const FAQ = () => {
 
       />
       <Accordion
-        title="question 3" 
-        answer="a" 
+        title="Will there be tests? How will they be taken?" 
+        answer="Our coaching program leverages technology to enhance the learning experience. The Android/iOS app facilitates a convenient platform for conducting tests and enables parents to track their child's performance. This integration of technology ensures a modern and efficient learning environment. All the reports of the tests are also shared with the parent so that their performance is tracked." 
         className='font-bold'
 />
     </div>
