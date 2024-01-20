@@ -4,7 +4,8 @@ import Accordion from "./Accordian";
 const FAQ = () => {
   return (
     <div>
-      <div className='text-center text-2xl font-bold mt-20 mb-5' id="faq-section">
+      <section id="faq-section>
+      <div className='text-center text-2xl font-bold mt-20 mb-5 ">
         <h1>FAQ</h1>
       </div>
       <div className="p-4 bg-chemisphere rounded-lg text-white max-w-7xl mx-auto">
@@ -34,6 +35,7 @@ const FAQ = () => {
           className='lg:text-left'
         />
       </div>
+        </section>
     </div>
   );
 };
