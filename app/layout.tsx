@@ -13,6 +13,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Chemisphere. Chemistry made easy!',
   description: 'Premium Chemistry Lectures by Chandan Biswas',
+ openGraph: {
+    images : [
+    {
+      url: "/meta.png",
+      width: 1200,
+      height: 630,
+    },
+     
+    ],
+  },
 }
 
 export default function RootLayout({
