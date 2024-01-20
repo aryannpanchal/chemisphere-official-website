@@ -23,10 +23,13 @@ const FacebookChatPlugin = () => {
   }, []);
 
   useEffect(() => {
-    // Set up Facebook Chat Plugin attributes
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute('page_id', '110828641248126');
-    chatbox.setAttribute('attribution', 'biz_inbox');
+    // Set up Facebook Chat Plugin attributes after the SDK has loaded
+    if (window.FB) {
+      window.FB.XFBML.parse(); // Parse XFBML elements to render Facebook Chat Plugin
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute('page_id', '110828641248126');
+      chatbox.setAttribute('attribution', 'biz_inbox');
+    }
   }, []);
 
   return (
