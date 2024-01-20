@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: ExtendedMetadata = {
   title: 'Chemisphere. Chemistry made easy!',
   description: 'Premium Chemistry Lectures by Chandan Biswas',
-  image: '/your-image.jpg', // Replace with the actual path to your image
+  image: '/meta.png', // Replace with the actual path to your image
 };
 
 export default function RootLayout({
@@ -31,8 +31,8 @@ export default function RootLayout({
         <link rel="icon" href='/favicon.ico' sizes="any" />
 
         {/* Open Graph tags for social media sharing */}
-        <meta property="og:title" content={metadata.title ?? ''} />
-        <meta property="og:description" content={metadata.description ?? ''} />
+        <meta property="og:title" content={metadata.title.toString()} />
+        <meta property="og:description" content={metadata.description.toString()} />
         {metadata.image && <meta property="og:image" content={`https://www.chemisphere.in${metadata.image}`} />}
         <meta property="og:url" content="https://www.chemisphere.in" />
         <meta property="og:type" content="website" />
