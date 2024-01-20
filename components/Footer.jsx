@@ -55,11 +55,22 @@ const Footer = () => {
                   </ul>
               </div>
           </div>
-      </div>
+      </div>  
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
+
       <div className="flex items-center justify-center ">
           <span className="text-sm text-gray-500">© 2023 <a href="https://chemisphere.in/" className="hover:underline">Chemisphere™</a>. All Rights Reserved.
           </span>
+          
+          
+      </div>
+      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
+    
+
+      <div className="flex items-center justify-center ">
+          <span className="text-sm text-gray-500">Website made by <a href="https://www.linkedin.com/in/aryan-panchal-3a22491a9/" target="_blank" className="underline text-blue-600">Aryan Panchal</a>
+          </span>
+          
           
       </div>
     </div>
