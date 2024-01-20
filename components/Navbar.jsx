@@ -12,13 +12,15 @@ import {
 
 import Link from 'next/link'
 
+
 const Navbar = () => {    
     
     const [state, setState]=useState(false)
  // Replace javascript:void(0) path with your path
  const navigation = [
     { title: "About us", path: "/about-us" },
-    { title: "Blogs", path: "/blogs" },
+    { title: "Careers", path: "/" },
+    { title: "Privacy Policy", path: "/" },
 ]
 useEffect(() => {
     const handleClickOutside = (e) => {
@@ -35,15 +37,17 @@ useEffect(() => {
     };
 }, []);
   return (
+
     <div>
-         <nav className={`bg-slate-100 md:pb-5 lg:pb-1 items-center md:text-sm ${state ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0" : ""}`}>
-            <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
+
+         <nav className={`bg-white md:pb-5 lg:pb-1 items-center md:text-sm ${state ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0" : ""}`}>
+            <div className="gap-x-80 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
                 <div className="flex items-center justify-between py-5 md:block">
                     <a href="https://chemisphere.in">
                         
                     <Image  src="/chemisphere-logo-white.svg"
-                            width={120}
-                            height={10}
+                            width={200}
+                            height={20}
                             alt="Chemisphere-logo"
                         />
                     </a>
@@ -71,8 +75,8 @@ useEffect(() => {
                     </div>
                      
                 </div>
-                <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'} `}>
-                    <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0 pb-1">
+                <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'}  `}>
+                    <ul className="justify-center text-right items-center space-y-6 md:flex md:space-x-6 pl-86 md:space-y-0 pb-1">
                         {
                             navigation.map((item, idx) => {
                                 return (
