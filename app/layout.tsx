@@ -1,17 +1,17 @@
-import type { Metadata } from 'next'
+import type { Metadata as NextMetadata } from 'next'
 import './globals.css'
 import { Inter } from "@next/font/google"
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-})
 interface Metadata extends NextMetadata {
   image?: string;
 }
 
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 export const metadata: Metadata = {
   title: 'Chemisphere. Chemistry made easy!',
