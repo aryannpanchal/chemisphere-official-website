@@ -28,6 +28,7 @@
     "react-card-slider-component": "^1.0.9",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.2",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "react-social-icons": "^6.7.0",
     "slick-carousel": "^1.8.1"
