@@ -28,6 +28,11 @@ const FAQ = () => {
           answer="As an IIT Madras graduate with 12 years of teaching experience in various coaching institutes across India, I bring a unique perspective to the table. Unlike some coaching institutes that prioritize completing the syllabus and little focus beyond that, my focus is on understanding individual student needs and providing quality education. My experience allows me to guide students not just through the curriculum sooner but also to help them develop a deeper understanding of the subjects."
           className='lg:text-left' // Removed font-bold from here
         />
+        <Accordion
+          title={<h1 className='font-bold'>Notes and Study Materials are provided?</h1>}
+          answer="Yes, absolutely. To complement the learning experience, we provide meticulously crafted assignments and neatly handwritten notes after every class, which can be directly printed. Moreover, I also provide the  students the access to all the modules and books from the best coaching institutes in the country. This diverse range of study material aims to enrich the learning journey and provide comprehensive coverage of the subjects."
+          className='lg:text-left' // Removed font-bold from here
+        />
       </div>
     </div>
   );
