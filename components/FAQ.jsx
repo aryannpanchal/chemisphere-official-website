@@ -15,8 +15,8 @@ const FAQ = () => {
         className='font-bold'
       />
       <Accordion
-        title="How many classes happen in a week?"
-        answer="a"
+        title="How will student clarify his/her doubts regarding the subject?"
+        answer="Despite the higher number of hours at other institutes, the challenge lies in providing personalized attention to each student. We are committed to ensuring that students have direct communication with the teacher for doubt clarification through platforms like Telegram and WhatsApp. This allows for a more individualized and focused learning experience."
         className='font-bold'
 
       />
