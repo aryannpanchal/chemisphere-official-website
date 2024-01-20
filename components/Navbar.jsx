@@ -76,7 +76,7 @@ useEffect(() => {
                      
                 </div>
                 <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'}  `}>
-                    <ul className="justify-center text-right items-center space-y-6 md:flex md:space-x-6 pl-86 md:space-y-0 pb-1">
+                    <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 pl-86 md:space-y-0 pb-1">
                         {
                             navigation.map((item, idx) => {
                                 return (
