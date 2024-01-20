@@ -88,7 +88,7 @@ const Testimonials = () => {
 
           <div className='flex flex-col justify-center items-center gap-4 p-4'>
             
-            <p className=' md:text-5xl text-2xl italic text-gray-700 pt-2'>{d.review}</p>
+            <p className=' md:text-5xl text-xl italic text-gray-700 pt-2'>{d.review}</p>
             <Link href={d.link} target='__blank'>
             <button className='bg-slate-900 text-white text-lg px-6 py-1 rounded-xl lg:mt-20 hover:bg-slate-800 active:bg-slate-700 focus:outline-none'>
   Watch video
