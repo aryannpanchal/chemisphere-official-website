@@ -7,11 +7,15 @@ import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import Mockup from '@/components/Mockup';
 import FAQ from '@/components/FAQ';
+import MarqueeSection from './../components/MarqueeSection';
+import FacebookChatPlugin from './../components/Fbchat';
 const page = () => {
   return (
     
     
     <div  >
+      <FacebookChatPlugin />
+      <MarqueeSection />
       <Sticky />
       <Navbar />
       <Hero />
