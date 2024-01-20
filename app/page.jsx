@@ -9,6 +9,7 @@ import Mockup from '@/components/Mockup';
 import FAQ from '@/components/FAQ';
 import MarqueeSection from './../components/MarqueeSection';
 import FacebookChatPlugin from './../components/Fbchat';
+import Stats from './../components/Stats';
 
 const page = () => {
   return (
@@ -20,7 +21,9 @@ const page = () => {
       <Sticky />
       <Navbar />
       <Hero />
+      <Stats />
       <OfferSection />
+      
       <Testimonials />
       <Mockup />
       <FAQ />

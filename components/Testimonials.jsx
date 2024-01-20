@@ -77,7 +77,7 @@ const Testimonials = () => {
           <div className='rounded-xl bg-white h-[550px] border-slate-200 border-2'>
 
           <div className='rounded-t-xl bg-chemisphere flex p-4 items-center text-black'>
-           <img src={d.img} alt='f' className='rounded-full w-16 h-16 border-2 border-white' />
+           <img src={d.img} alt='image' className='rounded-full w-16 h-16 border-2 border-white' />
            <div>
             <p className='text-xl font-bold pl-2 text-white '>{d.name}</p>
             <p className='text-sm font-regular pl-2 text-white '>{d.ranking}</p>
