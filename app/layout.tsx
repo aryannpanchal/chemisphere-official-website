@@ -1,15 +1,20 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import Head from 'next/head';
 import { Inter } from "@next/font/google";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
+// Extend the Metadata type to include the 'image' property
+interface ExtendedMetadata extends Metadata {
+  image?: string;
+}
 
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400','700'],
 });
 
-export const metadata: Metadata = {
+export const metadata: ExtendedMetadata = {
   title: 'Chemisphere. Chemistry made easy!',
   description: 'Premium Chemistry Lectures by Chandan Biswas',
   image: '/apple-touch-icon.png', // Replace with the actual path to your image
@@ -18,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -28,8 +33,8 @@ export default function RootLayout({
         {/* Open Graph tags for social media sharing */}
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content={metadata.image} />
-        <meta property="og:url" content="https://www.chemisphere.in" /> {/* Replace with the actual URL of your page */}
+        {metadata.image && <meta property="og:image" content={metadata.image} />}
+        <meta property="og:url" content="https://www.chemisphere.in.com/" /> {/* Replace with the actual URL of your page */}
         <meta property="og:type" content="website" />
 
         <style>{inter.styles}</style>
