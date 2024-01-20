@@ -13,6 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Chemisphere. Chemistry made easy!',
   description: 'Premium Chemistry Lectures by Chandan Biswas',
+  image: '/chandan.svg'
 }
 
 export default function RootLayout({
