@@ -8,6 +8,10 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '700'],
 })
+interface Metadata extends NextMetadata {
+  image?: string;
+}
+
 
 export const metadata: Metadata = {
   title: 'Chemisphere. Chemistry made easy!',
