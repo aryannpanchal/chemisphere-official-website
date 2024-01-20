@@ -11,7 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Chemisphere: Chemistry made easy!',
+  title: 'Chemisphere. Chemistry made easy!',
   description: 'Premium Chemistry Lectures by Chandan Biswas',
 }
 

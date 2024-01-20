@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                  {/* <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Pages</h2> */}
                   <ul className="text-gray-500 font-medium">
                       <li className="mb-4">
                           <a href="#" className="hover:underline"></a>
@@ -30,16 +30,16 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline ">Instagram</a>
+                          <a href="https://www.instagram.com/chemisphere.in/" target="__blank" className="hover:underline ">Instagram</a>
                       </li>
                       <li className='mb-4'>
-                          <a href="#" className="hover:underline">Youtube</a>
+                          <a href="https://www.youtube.com/@Chemisphere" target="__blank" className="hover:underline">Youtube</a>
                       </li>
                       <li className='mb-4'>
-                          <a href="#" className="hover:underline">LinkedIn</a>
+                          <a href="https://www.linkedin.com/company/79804759/admin/feed/posts/" target='__blank' className="hover:underline">LinkedIn</a>
                       </li>
                       <li className='mb-4'>
-                          <a href="#" className="hover:underline">Facebook</a>
+                          <a href="https://www.facebook.com/chemisphere.in?mibextid=ZbWKwL" target="__blank" className="hover:underline">Facebook</a>
                       </li>
                   </ul>
               </div>
@@ -47,18 +47,18 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
                   <ul className="text-gray-500  font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline">Privacy Policy</a>
+                          <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                          {/* <a href="#" className="hover:underline">Terms &amp; Conditions</a> */}
                       </li>
                   </ul>
               </div>
           </div>
       </div>
-      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">© 2023 <a href="https://chemisphere.in/" className="hover:underline">Chemisphere™</a>. All Rights Reserved.
+      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
+      <div className="flex items-center justify-center ">
+          <span className="text-sm text-gray-500">© 2023 <a href="https://chemisphere.in/" className="hover:underline">Chemisphere™</a>. All Rights Reserved.
           </span>
           
       </div>

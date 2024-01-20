@@ -74,7 +74,8 @@ const config: Config = {
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
         'chemisphere': "#E62020",
-        "tickgreen" :"#00D300"
+        "tickgreen" :"#00D300",
+        "whatsapp-green": "#0FB73B"
 
       },
       

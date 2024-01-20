@@ -1,77 +1,109 @@
-import React from 'react'
-import Image from "next/image"
+"use client";
+import Image from 'next/image';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Link from 'next/link'
+
+const data = [
+
+{
+  name: 'Avnit Khade',
+  img: '/avnit.png',
+  review: "I cracked IIT JEE Advance'23, headed to IIT Bombay for Engineering Physics. Chandan sir at Chemisphere turned organic chemistry from a challenge to my strongest suit.",
+  ranking: 'IIT Bombay: Engineering Physics',
+  ranking2: 'JEE Main 2023: 97.8 percentile',
+  link: 'https://www.instagram.com/stories/highlights/17899477805131514/'
+},{
+  name: 'Anmol Dureja',
+  img: '/anmol.jpg',
+  review: "Chandan Sir's teaching made chemistry a breeze! From scoring 50% in school to acing JEE Advanced with 67%, I highly recommend his classes for a transformative learning experience.",
+  ranking: 'JEE Advanced 2023 AIR 2948',
+  ranking2: 'JEE Main 2023 AIR 14158',
+  link: 'https://www.youtube.com/watch?v=fxuOEgElz8w&list=PLmooGSc0cBAxKAEhjJaaIEz7mXdc10NNt&index=7'
+},
+{
+  name: 'Manasvi Patil',
+  img: '/manasvi.svg',
+  review: 'Chemsphere, led by Chandan sir, is a game-changer for NEET and MHTCET Chemistry. Online flexibility, in-depth coverage and effective doubt-solving make it a regret-free choice for success.',
+  ranking: 'NEET 2023 93.4 Percentile',
+  
+  link: 'https://www.youtube.com/watch?v=nT4l4oGTFdA&list=PLmooGSc0cBAxKAEhjJaaIEz7mXdc10NNt&index=8'
+},
+
+{
+  name: 'Mohit Laddha',
+  img: '/mohit.svg',
+  review: "Chandan Sir's two years of impactful teaching left an indelible mark on me. His impressive, well-structured lectures and organized notes were instrumental in my achievements.",
+  ranking: 'JEE Advanced 2022 AIR 5280',
+  ranking2: 'JEE Main 2022 AIR 8518',
+  link: 'https://www.youtube.com/watch?v=eCGhpR_-5OU&list=PLmooGSc0cBAxKAEhjJaaIEz7mXdc10NNt&index=5'
+},
+
+
+]
+
 const Testimonials = () => {
-    const testimonials = [
-        {
-            avatar: "/manasvi.svg",
-            name: "Manasvi Patil",
-            title: "MHTCET 2023",
-            subtitle: "99.3 Percentile",
-            title2: "CBSE'23 Chemistry",
-            subtitle2: "95 percentile",
-            title3: "NEET 2023",
-            subtitle3: "93.4 Percentile",
-            quote: "Hi, I am Manasvi Patil. I scored 93.4 percentile in NEET and 99.3 percentile in MHTCET Chemistry section. I give all my credits to Chandan sir and chemisphere. Besides teaching all the syllabus related topics in great detail, Chandan sir also enhanced and deepened my interest in chemistry. Rather than being a barrier, the online mode ensures flexible class time is multiple doubt solving sessions and also ensures having enough practice which is a must to improve time and speed in competitive examinations. Thus I recommend you to join Chemisphere without a second, third. It's a choice you won't regret.  "
-        },
-        {
-            avatar: "/vivansh.svg",
-            name: "Vivansh Gandhi",
-            title: "JEE Main 2023",
-            subtitle: "99.2 Percentile",
-            title2: "JEE Main 2023",
-            subtitle2: "98.9 Percentile",
-            title3: "MHTCET 2023",
-            subtitle3: "99.321 Percentile",
-            quote: "Hi, my name is Vivansh. I got 98.9 Percentile in JEE Mains and 99 Percentile in Chemistry and in MHTCET I got 99.321 Percentile. I have been learning from Chandan sir since one year and I love everything about the class. The class is very interesting and very enjoyable and also you learn at the same time. I owe all my Chemistry marks to Chandan sir and I am very grateful I found him. So yes, I recommend everyone to join this Chemisphere"
-        },
-        {
-            avatar: "/tanisha.svg",
-            name: "Tanisha Mondal",
-            title: "Student in Class 11",
-            quote: "My name is Tanisha Mondal. I study in class 11. My 10th percentage was 98.2%. I got to know about Chandan sir from many others so I joined his class. The fact is that earlier I used to dislike chemistry but now I do chemistry already because I have fallen in love with the subject so the credit goes to Chandan sir to make me feel loved with the subject. I really like the test system because I can check about my concepts whether they are clear or not. Also serve clears the doubt and I can also solve difficult questions which is really very helpful for me. "
-        },
-    ]
+
+    const settings = {
+        accessibility:true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
+      };
+
+
+
   return (
-    <div>
-   <section className="py-14 bg-white">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-xl sm:text-center md:mx-auto">
+    <>
+    <section className='py-14 bg-white mb-14'>
+    <div className='max-w-screen-xl mx-auto px-4 md:px-8'>
+    <div className="max-w-xl text-center md:mx-auto ">
                     <h3 className="text-slate-900 text-4xl font-semibold sm:text-5xl">
                         Hall of Fame
                     </h3>
                     <p className="mt-3 text-slate-900">
-                     Explore our hall of academic achievers, charting the course for success and inspiring the pursuit of knowledge at its finest.
+                     Explore our hall of academic achievers, charting the course 
+                     <br /> for success and inspiring the pursuit of knowledge at its finest.
                     </p>
                 </div>
-                <div className="mt-12">
-                    <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {
-                            testimonials.map((item, idx) => (
-                                <li key={idx} className="bg-chemisphere p-4 rounded-xl">
-                                    <figure>
-                                        <div className="flex items-center gap-x-4">
-                                            <Image src={item.avatar} className=" rounded-full" width={64} height={64} alt="logos" />
-                                            <div>
-                                               <span className="block text-white font-semibold">{item.name}</span>
-                                                <span className="block text-gray-300 text-sm mt-0.5">{item.title} <span className="font-bold  text-slate-100">{item.subtitle}</span></span>
-                                                <span className="block text-gray-300 text-sm mt-0.5">{item.title2} <span className="font-bold text-slate-100">{item.subtitle2}</span></span>
-                                                <span className="block text-gray-300 text-sm mt-0.5">{item.title3} <span className="font-bold text-slate-100">{item.subtitle3}</span></span>
-                                            </div>
-                                        </div>
-                                        <blockquote>
-                                            <p className="mt-6 text-slate-100 text-sm">
-                                                {item.quote}
-                                            </p>
-                                        </blockquote>
-                                    </figure>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
+    <div className='w-3/4 m-auto'>
+      <div className='mt-10'>
+        <Slider {...settings}>
+        {data.map((d)=> (
+          <div className='rounded-xl bg-white h-[550px] border-slate-200 border-2'>
+
+          <div className='rounded-t-xl bg-chemisphere flex p-4 items-center text-black'>
+           <img src={d.img} alt='f' className='rounded-full w-16 h-16 border-2 border-white' />
+           <div>
+            <p className='text-xl font-bold pl-2 text-white '>{d.name}</p>
+            <p className='text-sm font-regular pl-2 text-white '>{d.ranking}</p>
+            <p className='text-sm font-regular pl-2 text-white '>{d.ranking2}</p>
+           </div>
+          
+          </div>
+
+          <div className='flex flex-col justify-center items-center gap-4 p-4'>
+            
+            <p className=' md:text-5xl text-2xl italic text-gray-700 pt-2'>{d.review}</p>
+            <Link href={d.link} target='__blank'>
+            <button className='bg-slate-900 text-white text-lg px-6 py-1 rounded-xl lg:mt-20 hover:bg-slate-800 active:bg-slate-700 focus:outline-none'>
+  Watch video
+            </button>
+            </Link>
             </div>
-        </section>
-    </div>
+            </div>
+
+        ))}
+        </Slider>
+      </div>
+      </div>
+      </div>
+      </section>
+    </>
   )
 }
 

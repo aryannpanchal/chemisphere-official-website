@@ -19,8 +19,8 @@ const Navbar = () => {
  // Replace javascript:void(0) path with your path
  const navigation = [
     { title: "About us", path: "/about-us" },
-    { title: "Careers", path: "/" },
-    { title: "Privacy Policy", path: "/" },
+    // { title: "Careers", path: "/" },
+    { title: "Privacy Policy", path: "/privacy-policy" },
 ]
 useEffect(() => {
     const handleClickOutside = (e) => {
@@ -81,7 +81,7 @@ useEffect(() => {
                             navigation.map((item, idx) => {
                                 return (
                                     <li key={idx} className="text-gray-900 hover:text-red-500">
-                                        <a href={item.path} className="block">
+                                        <a href={item.path} className="block font-semibold">
                                             {item.title}
                                             
                                         </a>
