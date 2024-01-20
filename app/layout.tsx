@@ -24,6 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
      <head>
+        <meta property="og:image" content="/chandan.svg" />
+        <meta property="og:url" content="chemisphere.in" />
+        <meta property="og:type" content="website" />
      <link rel="icon" href='/favicon.ico' sizes="any" />
      </head>
       <body className={inter.className}>{children}<Analytics /><SpeedInsights/></body>
