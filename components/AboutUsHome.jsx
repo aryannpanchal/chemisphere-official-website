@@ -19,7 +19,7 @@ const AboutUsHome = () => {
               <li className='font-bold'>
               Precision in Chemistry Learning: 
               </li>
-              <p className='ml-6 mb-3'>Chemisphere specializes in delivering highly personalized and effective learning programs meticulously designed for students navigating Chemistry studies from classes 1 to 12. Additionally, our offerings extend to encompass competitive exams such as JEE, NEET, and more.</p>
+              <p className='ml-6 mb-3'>Chemisphere specializes in delivering highly personalized and effective learning programs meticulously designed for students navigating Chemistry studies. Additionally, our offerings extend to encompass competitive exams such as JEE, NEET, and more.</p>
               <li className='font-bold'>
               Technological Ingenuity in Learning: 
               </li>
