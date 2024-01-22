@@ -13,7 +13,7 @@ const mockup = () => {
     <h5 className="mb-2 text-3xl font-bold text-white dark:text-white">Entire student dashboard, now on your mobile.</h5>
      
       <p className="mb-5 text-base text-slate-100 sm:text-lg dark:text-white">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
-       <ul role="list" class="space-y-4 text-white dark:text-white pb-6">
+       <ul role="list" class="space-y-4 text-white dark:text-white pb-6 md:hidden block">
                 <li class="flex space-x-2 rtl:space-x-reverse items-center">
                     <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-400 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
