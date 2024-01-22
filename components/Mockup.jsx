@@ -4,12 +4,13 @@ import Image from 'next/image';
 const mockup = () => {
   return (
     <> 
-    <section className="text-gray-600 body-font md:hidden block">
-    <div>
+    <section className="text-gray-600 body-font">
+    
+<div className="w-full p-4 mt-6 text-center bg-chemisphere border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-chemisphere dark:border-chemisphere">
+      <div className='flex justify-center'>
         <Image src='/c-logo.svg' alt='mobile-image' width={500} height={500} className='flex items-center justify-center' />
     </div>
-<div className="w-full p-4 mt-6 text-center bg-chemisphere border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-chemisphere dark:border-chemisphere">
-      <h5 className="mb-2 text-3xl font-bold text-white dark:text-white">Entire student dashboard, now on your mobile.</h5>
+    <h5 className="mb-2 text-3xl font-bold text-white dark:text-white">Entire student dashboard, now on your mobile.</h5>
      
       <p className="mb-5 text-base text-slate-100 sm:text-lg dark:text-white">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
        <ul role="list" class="space-y-4 text-white dark:text-white pb-6">
