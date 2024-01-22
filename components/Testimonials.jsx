@@ -59,7 +59,7 @@ const Testimonials = () => {
 
   return (
     <>
-    <section className='py-14 bg-white mb-14'>
+    <section className='py-14 mb-14'>
     <div className='max-w-screen-xl mx-auto px-4 md:px-8'>
     <div className="max-w-xl text-center md:mx-auto ">
                     <h3 className="text-slate-900 text-4xl font-semibold sm:text-5xl">
@@ -76,12 +76,12 @@ const Testimonials = () => {
         {data.map((d)=> (
           <div className='rounded-xl bg-white h-[550px] border-slate-200 border-2'>
 
-          <div className='rounded-t-xl bg-chemisphere flex p-4 items-center text-black'>
+          <div className='rounded-t-xl  flex p-4 items-center text-black'>
            <img src={d.img} alt='image' className='rounded-full w-16 h-16 border-2 border-white' />
            <div>
-            <p className='text-xl font-bold pl-2 text-white '>{d.name}</p>
-            <p className='text-sm font-regular pl-2 text-white '>{d.ranking}</p>
-            <p className='text-sm font-regular pl-2 text-white '>{d.ranking2}</p>
+            <p className='text-xl font-bold pl-2 text-black '>{d.name}</p>
+            <p className='text-sm font-regular pl-2 text-black '>{d.ranking}</p>
+            <p className='text-sm font-regular pl-2 text-black '>{d.ranking2}</p>
            </div>
           
           </div>
