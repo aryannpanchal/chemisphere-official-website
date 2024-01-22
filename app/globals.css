@@ -18,16 +18,3 @@ body {
   margin: 0 10px;
 }
 
-.slick-arrow.slick-next:before {
-
-  color: white;
-  border: none; /* Remove border */
-  background-color: black; /* Set background color */
-  border-radius: 50%; /* Make it rounded */
-}
-.slick-arrow.slick-prev:before {
-  color: white;
-  border: none; /* Remove border */
-  background-color: black; /* Set background color */
-  border-radius: 50%; /* Make it rounded */
-}
