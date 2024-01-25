@@ -11,9 +11,7 @@ const Navbar = () => {
 
   const navigation = [
     { title: "About us", path: "/about-us" },
-    // { title: "Careers", path: "/" },
     { title: "Privacy Policy", path: "/privacy-policy" },
-    { title: "FAQ", path: "faq-section" }, // Update path to match the section's ID
   ];
 
   useEffect(() => {
@@ -71,7 +69,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'}  `}>
-            <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 pl-86 md:space-y-0 pb-1">
+            <ul className="justify-right items-center space-y-6 md:flex md:space-x-6 ml-auto md:space-y-0 pb-5">
+              <div className="md:flex-grow"></div> {/* Add this div to push items to the right */}
               {navigation.map((item, idx) => (
                 <li key={idx} className="text-gray-900 hover:text-red-500">
                   {item.path.startsWith('/') ? (
@@ -92,22 +91,21 @@ const Navbar = () => {
                   )}
                 </li>
               ))}
-              <div className='space-y-6 md:hidden'>
-                <Link href='https://www.youtube.com/@Chemisphere' target='__blank'>
-                  <FontAwesomeIcon icon={faYoutube} size="1.5x" className='mr-4' />
-                </Link>
-                <Link href='https://www.instagram.com/chemisphere.in/' target='__blank'>
-                  <FontAwesomeIcon icon={faInstagram} size="1.5x" className='mr-4' />
-                </Link>
-                <Link href='https://www.linkedin.com/company/79804759/admin/feed/posts/' target='__blank'>
-                  <FontAwesomeIcon icon={faLinkedin} size="1.5x" className='mr-4' />
-                </Link>
-                <Link href='https://www.facebook.com/chemisphere.in?mibextid=ZbWKwL' target='__blank'>
-                  <FontAwesomeIcon icon={faFacebook} size="1.5x" className='mr-4' />
-                </Link>
-              </div>
             </ul>
-            <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6  md:space-y-0 md:mt-0 pb-5 md:pb-0 hidden md:flex"></div>
+            <div className='space-y-6 md:hidden'>
+              <Link href='https://www.youtube.com/@Chemisphere' target='__blank'>
+                <FontAwesomeIcon icon={faYoutube} size="1.5x" className='mr-4' />
+              </Link>
+              <Link href='https://www.instagram.com/chemisphere.in/' target='__blank'>
+                <FontAwesomeIcon icon={faInstagram} size="1.5x" className='mr-4' />
+              </Link>
+              <Link href='https://www.linkedin.com/company/79804759/admin/feed/posts/' target='__blank'>
+                <FontAwesomeIcon icon={faLinkedin} size="1.5x" className='mr-4' />
+              </Link>
+              <Link href='https://www.facebook.com/chemisphere.in?mibextid=ZbWKwL' target='__blank'>
+                <FontAwesomeIcon icon={faFacebook} size="1.5x" className='mr-4' />
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
