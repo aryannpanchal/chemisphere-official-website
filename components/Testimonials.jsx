@@ -45,63 +45,68 @@ const data = [
 
 const Testimonials = () => {
 
-    const settings = {
-        accessibility:true,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        
-      };
-
+  const settings = {
+    accessibility: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 768, // Adjusted breakpoint for mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
 
   return (
     <>
-    <section className='py-14 mb-14'>
-    <div className='max-w-screen-xl mx-auto px-4 md:px-8'>
-    <div className="max-w-xl text-center md:mx-auto ">
-                    <h3 className="text-slate-900 text-4xl font-semibold sm:text-5xl">
-                        Hall of Fame
-                    </h3>
-                    <p className="mt-3 text-slate-900">
-                     Explore our hall of academic achievers, charting the course 
-                     <br /> for success and inspiring the pursuit of knowledge at its finest.
-                    </p>
-                </div>
-    <div className='w-3/4 m-auto'>
-      <div className='mt-10'>
-        <Slider {...settings}>
-        {data.map((d)=> (
-          <div className='rounded-xl bg-white h-[550px] border-slate-200 border-2'>
-
-          <div className='rounded-t-xl  flex p-4 items-center text-black'>
-           <img src={d.img} alt='image' className='rounded-full w-16 h-16 border-2 border-white' />
-           <div>
-            <p className='text-xl font-bold pl-2 text-black '>{d.name}</p>
-            <p className='text-sm font-regular pl-2 text-black '>{d.ranking}</p>
-            <p className='text-sm font-regular pl-2 text-black '>{d.ranking2}</p>
-           </div>
-          
+   <section className='py-14 mb-14'>
+        <div className='max-w-screen-xl mx-auto px-4 md:px-8'>
+          <div className="max-w-xl text-center md:mx-auto">
+            <h3 className="text-slate-900 text-4xl font-semibold sm:text-5xl">
+              Hall of Fame
+            </h3>
+            <p className="mt-3 text-slate-900">
+              Explore our hall of academic achievers, charting the course
+              <br /> for success and inspiring the pursuit of knowledge at its
+              finest.
+            </p>
           </div>
-
-          <div className='flex flex-col justify-center items-center gap-4 p-4'>
-            
-            <p className=' md:text-5xl text-xl italic text-gray-700 pt-2'>{d.review}</p>
-            <Link href={d.link} target='__blank'>
-            <button className='bg-slate-900 text-white text-lg px-6 py-1 rounded-xl lg:mt-20 hover:bg-slate-800 active:bg-slate-700 focus:outline-none'>
-  Watch video
-            </button>
-            </Link>
-            </div>
-            </div>
-
-        ))}
-        </Slider>
-      </div>
-      </div>
-      </div>
+          <div className='w-full mx-auto mt-10'>
+            <Slider {...settings}>
+              {data.map((d, index) => (
+                <div key={index} className='rounded-xl bg-white h-[380px] md:h-[350px] border-slate-200 border-2'>
+                  <div className='rounded-t-xl  flex p-4 items-center text-black'>
+                    <img
+                      src={d.img}
+                      alt='image'
+                      className='rounded-full w-16 h-16 border-2 border-white'
+                    />
+                    <div className='flex flex-col pl-2'>
+                      <p className='text-xl font-bold text-black'>{d.name}</p>
+                      <p className='text-sm font-regular text-black'>{d.ranking}</p>
+                      <p className='text-sm font-regular text-black'>{d.ranking2}</p>
+                    </div>
+                  </div>
+                  <div className='p-4'>
+                    <p className='md:text-2xl text-xl italic text-gray-700 pt-2'>{d.review}</p>
+                    <Link href={d.link} target='__blank'>
+                      <button className='bg-slate-900 text-white text-lg px-6 py-1 rounded-xl mt-4 hover:bg-slate-800 active:bg-slate-700 focus:outline-none'>
+                        Watch video
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </section>
     </>
   )

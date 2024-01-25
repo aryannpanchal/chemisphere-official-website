@@ -23,7 +23,6 @@ const page = () => {
       <Hero />
       <Stats />
       <OfferSection />
-      
       <Testimonials />
       <Mockup />
       <FAQ />
