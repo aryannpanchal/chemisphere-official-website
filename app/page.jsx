@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from './../components/Navbar';
+import NavbarSection from '../components/NavbarSection';
 import Hero from '@/components/Hero';
-import Sticky from '@/components/Sticky';
 import OfferSection from '@/components/OfferSection';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
@@ -19,7 +18,7 @@ const page = () => {
       <FacebookChatPlugin />
       <MarqueeSection />
 {/*       <Sticky /> */}
-      <Navbar />
+      <NavbarSection />
       <Hero />
       <Stats />
       <OfferSection />
