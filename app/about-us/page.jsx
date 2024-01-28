@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './../../components/Navbar';
+import NavbarSection from './../../components/NavbarSection';
 import AboutUsPageBreadcrumb from './../../components/AboutUsPageBreadcrumb';
 import AboutUsHome from './../../components/AboutUsHome'
 import Footer from './../../components/Footer'
@@ -9,7 +9,7 @@ import Footer from './../../components/Footer'
 const aboutUs = () => {
   return (
     <div>
-      <Navbar />
+      <NavbarSection />
       <AboutUsPageBreadcrumb />
       <AboutUsHome />
       <Footer />

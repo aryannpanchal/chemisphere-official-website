@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './../../components/Navbar';
+import NavbarSection from '../../components/NavbarSection';
 import PrivacyPolicyBreadcrumb from './../../components/PrivacyPolicyBreadcrumb';
 import PrivacyPolicy from './../../components/PrivacyPolicy'
 import Footer from './../../components/Footer'
@@ -9,7 +9,7 @@ import Footer from './../../components/Footer'
 const aboutUs = () => {
   return (
     <div>
-      <Navbar />
+      <NavbarSection />
       <PrivacyPolicyBreadcrumb />
       <PrivacyPolicy />
       <Footer />
