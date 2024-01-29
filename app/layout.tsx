@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
      <head>
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
-   
+
 <title>Chemisphere. Chemistry made easy!</title>
 <meta name="description" content="Premium Chemistry Lectures by Chandan Biswas" />
 
@@ -45,6 +45,7 @@ export default function RootLayout({
 <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/3116a3d5-10eb-4ba3-b710-032c605566aa.png?token=teQQGETxXm9ueSefetJlfGHTNA7ioB15ziWYrV0goGs&height=630&width=1200&expires=33241761321" />
 
      <link rel="icon" href='/favicon.ico' sizes="any" />
+
      </head>
       <body className={inter.className}>{children}<Analytics /><SpeedInsights/>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>

@@ -28,9 +28,9 @@ const Hero = () => {
 <br /></p> */}
          <div className="flex pt-0 mt-0 items-center justify-center md:space-y-0 md:mt-0 md:pb-0 md:justify-start ">
      <Link target="__blank" href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20classes%20of%20Chemisphere!" className="flex items-center rounded-full">
- <Button className=' transition ease-in-out duration-300 hover:bg-gray-900 hover:text-slate-900 focus:outline-none bg-whatsapp-green mt-5'>
+ <Button className=' border-2-black'>
       <Image src="/whatsapp-logo.svg" width={24} height={24} alt="chat on whatsapp button" />
-      <p className='text-white font-semibold pl-2'>Connect now to get more class info</p>
+      <p className='text-black font-semibold pl-2'>Connect now to get more class info</p>
   </Button>    
   </Link>
 
