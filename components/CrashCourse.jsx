@@ -39,7 +39,7 @@ const CrashCourse = () => {
   return (
   <>
   
-    <section className='ml-5 mr-5 mb-14 pt-5'>
+    <section className='ml-7 mr-7 mb-14 pt-5'>
         
     
           <Slider {...settings}>

@@ -6,7 +6,7 @@ const mockup = () => {
     <> 
 <section className="text-gray-600 body-font">
     
-<div className="w-full p-4 mt-6 text-center rounded-lg sm:p-8 lg:flex-row sm:flex-col md:flex gap-5 justify-center align-center">
+<div className="w-screen p-4 mt-6 text-center rounded-lg sm:p-8 lg:flex-row sm:flex-col md:flex gap-5 justify-center align-center">
       <div className='flex justify-center'>
         <Image src='/mob2.png' alt='mobile-image' width={700} height={700} className='flex items-center justify-center' />
     </div>
