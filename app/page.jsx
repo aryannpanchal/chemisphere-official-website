@@ -9,6 +9,8 @@ import FAQ from '@/components/FAQ';
 import MarqueeSection from './../components/MarqueeSection';
 import FacebookChatPlugin from './../components/Fbchat';
 import Stats from './../components/Stats';
+import CrashCourse from './../components/CrashCourse';
+
 
 const page = () => {
   return (
@@ -18,7 +20,8 @@ const page = () => {
       <FacebookChatPlugin />
       <MarqueeSection />
 {/*       <Sticky /> */}
-      <NavbarSection />
+      <NavbarSection />      <CrashCourse />
+
       <Hero />
       <Stats />
       <OfferSection />
