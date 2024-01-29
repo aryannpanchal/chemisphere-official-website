@@ -1,64 +1,46 @@
-'use client'
-// Import necessary components from React and Next.js
-import { useState } from 'react';
-import Image from 'next/image';
+import React from 'react'
 import Link from 'next/link';
 
-export default function NavbarSection() {
-  const [userMenuOpen, setUserMenuOpen] = useState(false);
-  const [dropdown1Open, setDropdown1Open] = useState(false);
-  const [dropdown2Open, setDropdown2Open] = useState(false);
-
-  const handleUserMenuToggle = () => {
-    setUserMenuOpen(!userMenuOpen);
-  };
-
-  const handleUserMenuClick = () => {
-    setUserMenuOpen(!userMenuOpen);
-  };
-
-  const handleDropdown1Toggle = () => {
-    setDropdown1Open(!dropdown1Open);
-  };
-
-  const handleDropdown2Toggle = () => {
-    setDropdown2Open(!dropdown2Open);
-  };
-
+const NavbarSection = () => {
   return (
-    <nav className="bg-white max-w-screen">
-      <div className=" max-w-screen px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+    <>
+    
 
-          <div className="flex sm:hidden items-center">
-            {/* Link the logo to '/' using Next.js Link */}
-            <Link href="/">
-              <Image
-                src="/chemisphere-logo-white.svg"
-                alt="Your Company"
-                height={50} // Set the height for laptops
-                width={200} // Set the width for laptops
-              />
-            </Link>
-          </div>
+<nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <Link href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="/chemisphere-logo-white.svg" class="md:h-12" alt="Flowbite Logo" />
+    </Link>
+    <button data-collapse-toggle="navbar-hamburger" type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    <div class="hidden w-full" id="navbar-hamburger">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-100 border-gray-700 ">
+        <li>
+          <Link href="about-us" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 " aria-current="page">About Us</Link>
+        </li>
+        <li>
+          <Link href="" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 ">JEE Main Portal</Link>
+        </li>
+        <li>
+          <Link href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">JEE Advanced Portal</Link>
+        </li>
+        <li>
+          <Link href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">NEET Portal</Link>
+        </li>
+        <li>
+          <Link href="privacy-policy" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 ">Privacy Policy</Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-          <div className="hidden sm:flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
-              {/* Link the logo to '/' using Next.js Link */}
-              <Link href="/">
-                <Image
-                  src="/chemisphere-logo-white.svg"
-                  alt="Your Company"
-                  height={64} // Set the height for laptops
-                  width={220} // Set the width for laptops
-                />
-              </Link>
-            </div>
-          </div>
-
-         
-        </div>
-      </div>
-    </nav>
-  );
+    </>
+  )
 }
+
+export default NavbarSection
