@@ -18,7 +18,7 @@ function NavbarSection() {
         <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-12" alt="Chemisphere Logo" />
       </NavbarBrand>
       <div className="flex md:order-2">
-        <Dropdown className='transition ease-in-out'
+        <Dropdown
           arrowIcon={false}
           inline
           label={
