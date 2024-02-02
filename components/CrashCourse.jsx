@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link'
-
+import Marquee from 'react-fast-marquee';
 
 const images = ["/jee adv1.jpg", "/jee adv2.jpg", "/jee adv3.jpg"];
 const links = [
@@ -38,20 +38,22 @@ const CrashCourse = () => {
 
   return (
   <>
-  
-    <section className='ml-7 mr-7 mb-14 pt-5'>
+  <div className='bg-chemisphere md:bg-white '>
+       <section className='ml-8 mr-8 mb-14 pt-10 pb-10'>
         
-    
+            <Marquee className='text-white pb-5 md:hidden block'>LATEST COURSE ANNOUNCEMENT</Marquee>
+
           <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
             
-            <div className=' bg-white border text-white border-gray-200 rounded-lg shadow flex-col gap-12 justify-center'>
-              <div>
+            <div className='  text-chemisphere border-gray-200 rounded-lg shadow flex-col gap-12 justify-center'>
+              <div>              
+
                   <img className="rounded-t-lg" src={image} alt={`Slide ${index + 1}`} />
               </div>
               <Link href={links[index]} target='__blank'>
-              <div className=' bg-chemisphere text-center hover:bg-white transition transform hover:text-chemisphere'>
+              <div className=' bg-gray-100 rounded-br-lg rounded-bl-lg text-center hover:bg-white transition transform hover:text-chemisphere'>
                 
                 <button className=" hover:underline font-bold py-2 px-4 rounded-full">
                   BOOK NOW!
@@ -65,6 +67,8 @@ const CrashCourse = () => {
         ))}
       </Slider>
     </section>
+  </div>
+ 
     </>
   );
 };
