@@ -30,3 +30,12 @@ body {
   color: black;
 }
 
+.testimonial {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.testimonial.active {
+  opacity: 1;
+}
