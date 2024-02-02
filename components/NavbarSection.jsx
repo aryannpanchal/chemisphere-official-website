@@ -14,7 +14,7 @@ import {
 
 function NavbarSection() {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className='mr-5 ml-5'>
       <NavbarBrand href="/">
         <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-12" alt="Chemisphere Logo" />
       </NavbarBrand>
@@ -23,7 +23,7 @@ function NavbarSection() {
           arrowIcon={false}
           inline
           label={
-            <Avatar alt="User settings" img="/bar.svg"/>
+            <Avatar alt="User settings" img="/bar.svg" className='w-6 h-6'/>
           }
         >
          
