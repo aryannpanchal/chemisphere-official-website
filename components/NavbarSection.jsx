@@ -1,4 +1,3 @@
-
 import {
   Avatar,
   Dropdown,
@@ -18,8 +17,8 @@ function NavbarSection() {
       <NavbarBrand href="/">
         <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-12" alt="Chemisphere Logo" />
       </NavbarBrand>
-      <div className="flex md:order-2">
-        <Dropdown
+      <div className="flex md:order-2 hover:text-black">
+        <Dropdown className=''
           arrowIcon={false}
           inline
           label={
@@ -27,13 +26,13 @@ function NavbarSection() {
           }
         >
          
-          <DropdownItem href='about-us'>About Us</DropdownItem>
-          <DropdownItem href=''>JEE Main Portal</DropdownItem>
-          <DropdownItem href=''>JEE Advanced Portal</DropdownItem>
-          <DropdownItem href=''>NEET Portal</DropdownItem>
+          <DropdownItem href='about-us' className='hover:bg-chemisphere' >About Us</DropdownItem>
+          <DropdownItem href='' className='hover:bg-chemisphere' >JEE Main Portal</DropdownItem>
+          <DropdownItem href='' className='hover:bg-chemisphere' >JEE Advanced Portal</DropdownItem>
+          <DropdownItem href='' className='hover:bg-chemisphere' >NEET Portal</DropdownItem>
 
           <DropdownDivider />
-          <DropdownItem href='privacy-policy'>Privacy Policy</DropdownItem>
+          <DropdownItem href='privacy-policy'  className='hover:bg-chemisphere' >Privacy Policy</DropdownItem>
         </Dropdown>
       </div>
   
