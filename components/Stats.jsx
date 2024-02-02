@@ -36,20 +36,20 @@ const Stats = () => {
         <div className="container px-5 pt-20 pb-2 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{activeStudents}+</h2>
-              <p className="leading-relaxed">Active Students</p>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-slate-900">{activeStudents}+</h2>
+              <p className="leading-relaxed md:text-3xl  font-bold">active students</p>
             </div>
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{rankHolders}+</h2>
-              <p className="leading-relaxed">Rank Holders</p>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-900">{rankHolders}+</h2>
+              <p className="leading-relaxed md:text-3xl font-bold">rank holders</p>
             </div>
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{communityMembers}K+</h2>
-              <p className="leading-relaxed">Thriving Community of Students</p>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-900">{communityMembers}K+</h2>
+              <p className="leading-relaxed md:text-3xl font-bold">thriving community of students</p>
             </div>
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{cities}+</h2>
-              <p className="leading-relaxed">Cities Influenced</p>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-900">{cities}+</h2>
+              <p className="leading-relaxed md:text-3xl font-bold">cities influenced</p>
             </div>
           </div>
         </div>

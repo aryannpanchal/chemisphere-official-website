@@ -6,13 +6,13 @@ const mockup = () => {
     <> 
 <section className="text-gray-600 body-font">
     
-<div className="w-screen p-4 mt-6 text-center rounded-lg sm:p-8 lg:flex-row sm:flex-col md:flex gap-5 justify-center align-center">
+<div className=" p-4 mt-6 text-center rounded-lg sm:p-8  sm:flex-col md:flex gap-5 justify-center align-center">
       <div className='flex justify-center'>
         <Image src='/mob2.png' alt='mobile-image' width={700} height={700} className='flex items-center justify-center' />
     </div>
     <div>
 
- <h5 className="mb-2 text-3xl font-bold text-black">Entire student dashboard, now on your mobile.</h5>
+ <h1 className="mb-2 md:text-5xl font-bold text-black">Entire student dashboard, now on your mobile.</h1>
      
      <p className="mb-5 text-base text-black sm:text-lg ">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
       <ul role="list" class="space-y-4 text-black pb-6 md:hidden block">

@@ -68,10 +68,10 @@ const Testimonials = () => {
    <section className='py-14 mb-14 overflow-hidden'>
         <div className='max-w-screen-xl mx-auto px-4 md:px-8'>
           <div className="max-w-xl text-center md:mx-auto">
-            <h3 className="text-slate-900 text-4xl font-semibold sm:text-5xl">
+            <h1 className="text-slate-900 text-5xl font-semibold sm:text-5xl">
               Hall of Fame
-            </h3>
-            <p className="mt-3 text-slate-900">
+            </h1>
+            <p className="mt-3 text-slate-900 text-1xl">
               Explore our hall of academic achievers, charting the course
               <br /> for success and inspiring the pursuit of knowledge at its
               finest.
@@ -80,7 +80,7 @@ const Testimonials = () => {
           <div className='w-full mx-auto mt-10'>
             <Slider {...settings}>
               {data.map((d, index) => (
-                <div key={index} className='rounded-xl bg-white h-[380px] md:h-[350px] border-slate-200 border-2'>
+                <div key={index} className=' rounded-xl bg-white h-[380px] md:h-[350px] border-slate-200 border-2'>
                   <div className='rounded-t-xl  flex p-4 items-center text-black'>
                     <img
                       src={d.img}
