@@ -11,6 +11,8 @@ import {
   NavbarToggle,
 } from 'flowbite-react';
 
+import Link from'next/link'
+
 function NavbarSection() {
   return (
     <Navbar fluid rounded className='mr-5 ml-5'>      
@@ -19,8 +21,18 @@ function NavbarSection() {
         <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-12" alt="Chemisphere Logo" />
       </NavbarBrand>            
 
-      <div className="flex md:order-2">         
-      <Avatar alt="User settings" img="/bar.svg" className='w-6 h-6 mr-5'/>
+      <div className="flex md:order-2">      
+
+         {/* social links  */}
+      <Link href='https://www.youtube.com/@Chemisphere' target="__blank">
+        <Avatar alt="youtube-logo" img="/yt.svg" className='w-6 h-6 mr-5'/>
+      </Link>
+      <Link href='https://www.linkedin.com/company/79804759/admin/feed/posts/' target="__blank">
+        <Avatar alt="linkedin-logo" img="/linkedin.svg" className='w-6 h-6 mr-5'/>
+      </Link>
+      <Link href='https://www.instagram.com/chemisphere.in/' target="__blank">
+        <Avatar alt="instagram-logo" img="/instagram.svg" className='w-6 h-6 mr-5'/>
+      </Link>
         <Dropdown
           arrowIcon={false}
           inline
