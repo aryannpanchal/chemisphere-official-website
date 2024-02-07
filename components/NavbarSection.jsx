@@ -13,7 +13,7 @@ function NavbarSection() {
     <Navbar fluid rounded className='mr-5 ml-5'>      
 
       <NavbarBrand href="/">
-        <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-10" alt="Chemisphere Logo" />
+        <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-8" alt="Chemisphere Logo" />
       </NavbarBrand>            
 
       <div className="flex">      
