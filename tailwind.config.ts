@@ -88,19 +88,7 @@ const config: Config = {
           "background-mobile" : "url(/chemisphere-bg-mobile.svg)",
           "background-hero" : "url(/background-hero.svg)"
       },
-      indicators: {
-        "active": {
-          "off": "bg-black hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800",
-          "on": "bg-black dark:bg-gray-800"
-        }},
-        control: {
-          "base": "inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
-          "icon": "h-5 w-5 text-black dark:text-white sm:h-6 sm:w-6"
-        },
-        scrollContainer: {
-          "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg",
-          "snap": "snap-x"
-        },
+      
         
     }
   
