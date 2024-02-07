@@ -23,7 +23,7 @@ function NavbarSection() {
        
     
     <div class=" w-full" id="navbar-dropdown">
-      <ul class="flex flex-row font-medium  border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+      <ul class="flex flex-row font-medium  border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
       {/* social links  */}
       <Link href='https://www.youtube.com/@Chemisphere' target="__blank">
         <Avatar alt="youtube-logo" img="/yt.svg" className='w-6 h-6 mr-5'/>
