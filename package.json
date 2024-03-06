@@ -26,6 +26,7 @@
     "clsx": "^2.1.0",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
+    "framer-motion": "^11.0.8",
     "lucide-react": "^0.321.0",
     "mojoauth-web-sdk": "^1.1.17",
     "mongodb": "^6.3.0",

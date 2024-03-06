@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import NavbarSection from '../components/NavbarSection';
 import Hero from '@/components/Hero';
@@ -10,16 +11,16 @@ import MarqueeSection from './../components/MarqueeSection';
 import FacebookChatPlugin from './../components/Fbchat';
 import Stats from './../components/Stats';
 import CrashCourse from './../components/CrashCourse';
-
+import Indicator from './../components/Indicator';
 
 const page = () => {
   return (
     
-    
-    <div  >
+ <div>
+   
       <FacebookChatPlugin />
       <MarqueeSection />
-{/*       <Sticky /> */}
+{/*       <Sticky /> */}<Indicator />
       <NavbarSection />      <CrashCourse />
 
       <Hero />
