@@ -45,7 +45,7 @@ function NavbarSection() {
         >
          
           <DropdownItem href='about-us' className='hover:bg-chemisphere'>About Us</DropdownItem>
-          <DropdownItem href='' className='hover:bg-chemisphere'>JEE Main Portal</DropdownItem>
+          <DropdownItem href='jee-main-portal' className='hover:bg-chemisphere'>JEE Main Portal</DropdownItem>
           <DropdownItem href=''className='hover:bg-chemisphere'>JEE Advanced Portal</DropdownItem>
           <DropdownItem href=''className='hover:bg-chemisphere'>NEET Portal</DropdownItem>
 
