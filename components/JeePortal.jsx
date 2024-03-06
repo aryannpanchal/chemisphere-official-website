@@ -6,7 +6,7 @@ const JeePortal = () => {
     <>
     
 
-    <div id="informational-banner" tabindex="-1" class=" start-0 z-50 flex flex-col justify-between w-full p-4 border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+    <div id="informational-banner" tabindex="-1" class=" start-0 z-50 flex flex-col justify-between w-full p-4 border-b border-gray-200 md:flex-row ">
     <div class="m-5 md:mb-0 md:me-4">
         <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">Download the JEE MAIN INFORMATION BULLETIN 2024</h2>
         <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">The JEE MAIN INFORMATION BULLETIN provides an A to Z brief on the examination.</p>
