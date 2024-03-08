@@ -20,9 +20,9 @@ const page = () => {
    
       <FacebookChatPlugin />
       <MarqueeSection />
-{/*       <Sticky /> */}<Indicator />
-      <NavbarSection />      <CrashCourse />
-
+      <Indicator />
+      <NavbarSection />      
+      <CrashCourse />
       <Hero />
       <Stats />
       <OfferSection />
