@@ -32,23 +32,25 @@ const Stats = () => {
 
   return (
     <div>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 pt-20 pb-2 mx-auto">
+      
+      <section className="text-gray-100 body-font bg-wave mt-24 ">
+     
+        <div className="container px-5 pb-10 pt-10 mx-auto  bg-h-100px">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-bold lg:text-6xl text-5xl text-slate-900">{activeStudents}+</h2>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-slate-100">{activeStudents}+</h2>
               <p className="leading-relaxed md:text-3xl  font-bold">active students</p>
             </div>
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-900">{rankHolders}+</h2>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-100">{rankHolders}+</h2>
               <p className="leading-relaxed md:text-3xl font-bold">rank holders</p>
             </div>
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-900">{communityMembers}K+</h2>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-100">{communityMembers}K+</h2>
               <p className="leading-relaxed md:text-3xl font-bold">thriving community of students</p>
             </div>
             <div className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-900">{cities}+</h2>
+              <h2 className="title-font font-bold lg:text-6xl text-5xl text-gray-100">{cities}+</h2>
               <p className="leading-relaxed md:text-3xl font-bold">cities influenced</p>
             </div>
           </div>

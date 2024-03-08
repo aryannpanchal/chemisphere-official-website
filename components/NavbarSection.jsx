@@ -11,7 +11,8 @@ import Link from'next/link'
 
 function NavbarSection() {
   return (
-    <Navbar fluid rounded className='mr-5 ml-5'>      
+    <>
+     <Navbar fluid rounded className='mr-5 ml-5'>      
 
       <NavbarBrand href="/">
         <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-8" alt="Chemisphere Logo" />
@@ -58,8 +59,47 @@ function NavbarSection() {
       
       </ul>
     </div>
+       
 </div>
+
     </Navbar>
+    {/* <header class="py-8 lg:pt-6 lg:pb-14 bg-pink-200">
+            <div 
+            class="container mx-auto lg:relative flex flex-col lg:flex-row
+            lg:justify-between gap-y-4 lg:gap-y-0">
+
+                <div class="flex justify-center lg:justify-normal">
+                    <a href="#">
+                        <img src="/chemisphere-logo-white.svg" alt="" />
+                    </a>
+                </div>
+                <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+                    <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                        <i class="ri-map-pin-line text-2xl text-accent"></i>
+                        <div class="text-secondary">Andheri, Mumbai</div>
+                    </div>
+                    <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                    <i class="ri-phone-fill text-2xl text-accent"></i>
+                    <div class="text-secondary">+91 9876543210</div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0"> Call now </button>
+                <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl 
+                lg:hidden transition-all duration-300 z-20">
+            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right -full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all ">btn</div>
+            <i class=" mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+            <div>
+                <a href="#"> 
+                    <img src="/chemisphere-logo-white.svg" />
+                </a>
+            </div>
+        </nav>
+                
+            </div>
+        </div>    
+        </header> */}
+
+    </>
+   
   );
 }
 

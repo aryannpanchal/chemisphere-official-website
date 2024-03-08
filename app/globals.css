@@ -4,7 +4,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  cursor: url(../public/cursor.svg), default;
+  background:
+  linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
@@ -39,4 +41,3 @@ body {
 .testimonial.active {
   opacity: 1;
 }
-

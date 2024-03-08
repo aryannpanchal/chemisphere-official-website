@@ -12,7 +12,6 @@ import FacebookChatPlugin from './../components/Fbchat';
 import Stats from './../components/Stats';
 import CrashCourse from './../components/CrashCourse';
 import Indicator from './../components/Indicator';
-
 const page = () => {
   return (
     

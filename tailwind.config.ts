@@ -9,14 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+
         darkMode: 'class',
        
         root: {
           "base": "fixed top-0 right-0 left-0 z-50 h-modal h-screen overflow-y-auto overflow-x-hidden md:inset-0 md:h-full",
           "show": {
             "on": "flex bg-gray-900 bg-opacity-50 dark:bg-opacity-80",
-            "off": "hidden"
+            "off": "hidden",
+            
           },
           
           sizes: {
@@ -78,7 +79,8 @@ const config: Config = {
         'bermuda': '#78dcca',
         'chemisphere': "#E62020",
         "tickgreen" :"#00D300",
-        "whatsapp-green": "#0FB73B"
+        "whatsapp-green": "#0FB73B",
+        "wave": "#1B003D"
 
       },
       
@@ -88,7 +90,10 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           "background1" : "url(/bg.svg)",
           "background-mobile" : "url(/chemisphere-bg-mobile.svg)",
-          "background-hero" : "url(/background-hero.svg)"
+          "background-hero" : "url(/background-hero.svg)",
+          "bg-wave": "url(/wave.svg)",
+          "bg-banner-wave": "url(/banner-wave.svg)",
+          "bg-bg-hero": "url(/bg-hero.svg)"
       },
       
         
