@@ -2,15 +2,18 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Plus_Jakarta_Sans } from "@next/font/google"
+import localFont from 'next/font/local'
+
+const myFont = localFont({  
+  src: [
+  {
+    path: '../fonts/CircularStd-Black.ttf',
+  },
+  {
+    path: '../fonts/CircularStd-Book.ttf',
+  },] })
 
 
-
-const inter = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400','700'],
-  
-})
 
 export const metadata: Metadata = {
   title: 'Chemisphere. Chemistry made easy!',
@@ -44,7 +47,7 @@ export default function RootLayout({
      <link rel="icon" href='/favicon.ico' sizes="any" />
 
      </head>
-      <body className={inter.className}>{children}<Analytics /><SpeedInsights/>
+      <body className={myFont.className}>{children}<Analytics /><SpeedInsights/>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
