@@ -73,7 +73,7 @@ const CrashCourse = () => {
         {images.map((image, index) => (
           <div key={index}>
             
-            <div className='  text-chemisphere border-gray-200 rounded-lg shadow flex-col gap-12 justify-center'>
+            <div className='  text-chemisphere flex-col gap-12 justify-center'>
               <div>              
 
                   <img className="rounded-t-lg" src={image} alt={`Slide ${index + 1}`} />
