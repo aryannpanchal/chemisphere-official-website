@@ -33,7 +33,7 @@ const Stats = () => {
   return (
     <div>
       
-      <section className="text-gray-100 body-font bg-wave mt-24 ">
+      <section className="text-gray-100 body-font bg-chemisphere mt-0">
      
         <div className="container px-5 pb-10 pt-10 mx-auto  bg-h-100px">
           <div className="flex flex-wrap -m-4 text-center">

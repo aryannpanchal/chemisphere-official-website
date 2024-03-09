@@ -2,28 +2,39 @@
 import React from 'react';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Banner } from 'flowbite-react';
+import { FaBookOpen } from 'react-icons/fa';
+import { HiArrowRight, HiX } from 'react-icons/hi';
 
 const JeePortal = () => {
   return (
     <>
-    
+    <Banner>
+      <div className="flex w-full flex-col justify-between border-b border-gray-200 bg-bg-banner-JEE bg-cover bg-center p-4 mt-2  md:flex-row">
+        <div className="mb-4 md:mb-0 md:mr-4">
+          <h2 className="mb-1 text-base font-semibold text-white">Download the JEE MAIN 2024 Information Bulletin now</h2>
+          <p className="flex items-center text-sm font-normal text-gray-100">
+            Crack JEE Main with Chemisphere!
+          </p>
+        </div>
+        <div className="flex flex-shrink-0 items-center">
+          
+          <a
+            href="https://jeemain.nta.ac.in/images/information-bulletin-for-jee-main-2024.pdf"
+            className="mr-2 inline-flex items-center justify-center rounded-lg bg-chemisphere px-3 py-2 text-xs font-medium text-white shadow-lg"
+           target='__blank'          
+          >
+            Download now
+            <HiArrowRight className="ml-2 h-4 w-4" />
+          </a>
+          <Banner.CollapseButton color="gray" className="border-0 bg-transparent text-white">
+            <HiX className="h-4 w-4" />
+          </Banner.CollapseButton>
+        </div>
+      </div>
+    </Banner>
 
-    <div id="informational-banner" tabindex="-1" class=" start-0 z-50 flex justify-center w-full p-4 ">
-    <div class="mt-5 md:mb-0 md:me-4 flex-row">
-        <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">Download the JEE MAIN INFORMATION BULLETIN 2024</h2>
-        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">The JEE MAIN INFORMATION BULLETIN provides an A to Z brief on the examination.</p>
-      <div class="flex items-center flex-shrink-0 pt-3">
-       
-        <a href="https://jeemain.nta.ac.in/images/information-bulletin-for-jee-main-2024.pdf" class="inline-flex items-center justify-center px-3 py-2 me-2 text-xs font-medium text-white bg-chemisphere rounded-lg hover:bg-black focus:ring-4 focus:ring-blue-300 dark:bg-chemisphere dark:hover:bg-black focus:outline-none dark:focus:ring-blue-800">Download</a>
-        <button data-dismiss-target="#informational-banner" type="button" class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-            </svg>
-            <span class="sr-only">Close banner</span>
-        </button>
-    </div> </div>
- 
-</div>
+    
       <div className='flex justify-left items-center mt-10 mx-2 sm:mx-5'>
         <div className='w-full min-w-md p-6 bg-white border border-gray-200 rounded-lg shadow text-center'>
           <Link href='#'>
@@ -34,6 +45,9 @@ const JeePortal = () => {
 
 NTA has created a system that is promoting teaching (by teachers), learning (by students), and assessment (by parents and institutions). NTA strongly believes in the quality, efficiency, effectiveness, equity, and security of assessments. To practice these values, NTA is constantly engaging with its stakeholders, viz. students, parents, teachers, experts, and partner institutions
           </p>
+        </div>
+        <div className='min-w-md w-full'>
+          helo
         </div>
       </div>
       <section class="text-gray-600 body-font">

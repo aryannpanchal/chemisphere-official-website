@@ -93,7 +93,8 @@ const config: Config = {
           "background-hero" : "url(/background-hero.svg)",
           "bg-wave": "url(/wave.svg)",
           "bg-banner-wave": "url(/banner-wave.svg)",
-          "bg-bg-hero": "url(/bg-hero.svg)"
+          "bg-bg-hero": "url(/bg-hero.svg)",
+          "bg-banner-JEE": "url(/bg-banner-JEE.svg)"
       },
       
         
