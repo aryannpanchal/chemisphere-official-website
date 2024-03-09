@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const images = ["/jee adv1.jpg", "/jee adv2.jpg", "/jee adv3.jpg"];
 const links = [
@@ -19,10 +20,10 @@ const links = [
 const CrashCourse = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    dots: true,
+    dots: true,infinite: true,
     responsive: [
       {
         breakpoint: 768,
@@ -39,11 +40,36 @@ const CrashCourse = () => {
   return (
   <>
   <div className='bg-chemisphere md:bg-white '>
-       <section className='ml-8 mr-8 mb-14 pt-10 pb-10'>
+       <section className='ml-8 mr-8 mb-14 pt-10 pb-10 lg:w-72'>
         
             <Marquee className='text-white pb-5 md:hidden block'>LATEST COURSE ANNOUNCEMENT</Marquee>
 
-          <Slider {...settings}>
+          {/* <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            
+            <div className='  text-chemisphere border-gray-200 rounded-lg shadow flex-col gap-12 justify-center'>
+              <div>              
+
+                  <img className="rounded-t-lg" src={image} alt={`Slide ${index + 1}`} />
+              </div>
+              <Link href={links[index]} target='__blank'>
+              <div className=' bg-gray-100 rounded-br-lg rounded-bl-lg text-center hover:bg-white transition transform hover:text-chemisphere'>
+                
+                <button className=" hover:underline font-bold py-2 px-4 rounded-full">
+                  BOOK NOW!
+                </button>
+                
+              </div> 
+              </Link>
+            </div>
+           
+          </div>
+        ))}
+      </Slider> */} 
+      <Swiper>
+  <SwiperSlide>
+  <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
             
@@ -66,9 +92,11 @@ const CrashCourse = () => {
           </div>
         ))}
       </Slider>
+  </SwiperSlide>
+ </Swiper>
     </section>
   </div>
- 
+
     </>
   );
 };

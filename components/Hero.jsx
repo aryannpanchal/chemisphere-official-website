@@ -3,9 +3,36 @@ import React, { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { Button} from 'flowbite-react';
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from 'react-slick';
+const images = ["/jee adv1.jpg", "/jee adv2.jpg", "/jee adv3.jpg"];
+const links = [
 
+    "https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advanced%202024%20Complete%20Crash%20Course%20on%20Organic%20Chemistry.",
+
+    "https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advanced%202024%20Complete%20Crash%20Course%20on%20Physical%20Chemistry.",
+
+    "https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advanced%202024%20Complete%20Crash%20Course%20on%20inorganic%20Chemistry."
+];
 const Hero = () => {
-
+  const settings = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
    
     <div>
@@ -34,8 +61,35 @@ const Hero = () => {
 
     </div>
     <div className="flex-1 text-center lg:mt-0 lg:ml-3">
-        <Image alt="chandan-sir" src="/chandan.gif" width={0} height={0} className="w-full mx-auto sm:w-10/12  lg:w-full" />
-    </div>
+      <section className='lg:w-96 w-80 lg:ml-24 '>
+       
+    <Swiper>
+  <SwiperSlide>
+  <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            
+            <div className='  text-chemisphere border-gray-200 rounded-lg shadow flex-col gap-12 justify-center p-6 lg:p-0'>
+              <div>              
+
+                  <img className="rounded-t-lg" src={image} alt={`Slide ${index + 1}`} />
+              </div>
+              <Link href={links[index]} target='__blank'>
+              <div className=' bg-gray-100 rounded-br-lg rounded-bl-lg text-center hover:bg-white transition transform hover:text-chemisphere'>
+                
+                <button className=" hover:underline font-bold py-2 px-4 rounded-full">
+                  BOOK NOW!
+                </button>
+                
+              </div> 
+              </Link>
+            </div>
+           
+          </div>
+        ))}
+      </Slider>
+  </SwiperSlide>
+ </Swiper>    </section> </div>
      
 </section></div>
 </div>

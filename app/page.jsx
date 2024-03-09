@@ -21,7 +21,7 @@ const page = () => {
       <MarqueeSection />
       <Indicator />
       <NavbarSection />      
-      <CrashCourse />
+      {/* <CrashCourse /> */}
       <Hero />
       <Stats />
       <OfferSection />
