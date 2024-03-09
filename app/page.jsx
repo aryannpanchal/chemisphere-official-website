@@ -10,7 +10,6 @@ import FAQ from '@/components/FAQ';
 import MarqueeSection from './../components/MarqueeSection';
 import FacebookChatPlugin from './../components/Fbchat';
 import Stats from './../components/Stats';
-import CrashCourse from './../components/CrashCourse';
 import Indicator from './../components/Indicator';
 const page = () => {
   return (
@@ -21,7 +20,6 @@ const page = () => {
       <MarqueeSection />
       <Indicator />
       <NavbarSection />      
-      {/* <CrashCourse /> */}
       <Hero />
       <Stats />
       <OfferSection />

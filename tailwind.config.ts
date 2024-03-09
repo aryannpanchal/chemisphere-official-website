@@ -18,6 +18,7 @@ const config: Config = {
             "on": "flex bg-gray-900 bg-opacity-50 dark:bg-opacity-80",
             "off": "hidden",
             
+            
           },
           
           sizes: {
