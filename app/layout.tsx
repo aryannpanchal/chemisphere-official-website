@@ -14,9 +14,7 @@ const myFont = localFont({
 
 
 export const metadata: Metadata = {
-  title: 'Chemisphere. Chemistry made easy!',
-  description: 'Premium Chemistry Lectures by Chandan Biswas',
- 
+  title: 'Chemisphere. Chemistry made easy!'
 }
 
 export default function RootLayout({
