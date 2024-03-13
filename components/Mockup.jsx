@@ -14,8 +14,9 @@ const mockup = () => {
 
  <h2 className="mb-2 text-2xl font-extrabold text-black">Entire student dashboard, now on your mobile.</h2>
      
-     <p className="mb-5 text-base text-black sm:text-lg font-thin ">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
-      <ul role="list" class="space-y-4 text-black pb-6 md:hidden block">
+     <p className="mb-5 text-base text-black sm:text-lg font-thin text-lg ">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
+      <div>
+         <ul role="list" class="space-y-4 text-black pb-6 md:hidden block text-xl">
                <li class="flex space-x-2 rtl:space-x-reverse items-center">
                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
@@ -89,6 +90,8 @@ const mockup = () => {
                    <span class="leading-tight">Safe and secure</span>
                </li>
                </ul>
+      </div>
+     
      <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
        <Link href="https://apps.apple.com/in/app/classplus/id1324522260" target='__blank'>
          <div className="w-full sm:w-auto bg-slate-900 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-slate-900 dark:hover:bg-gray-600 dark:focus:ring-gray-700">

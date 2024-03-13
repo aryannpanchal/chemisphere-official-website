@@ -7,7 +7,7 @@ const FAQ = () => {
       <div className='text-center text-4xl font-bold mt-20 mb-5' id="faq-section">
         <h1>Frequently asked queries</h1>
       </div>
-      <div className="p-4 bg-white rounded-lg text-black max-w-7xl mx-auto border border-1 shadow">
+      <div className="p-4 bg-white rounded-lg text-black max-w-7xl mx-auto border border-1 shadow text-md">
         <Accordion
           title={<h1 className='font-bold'>Why choose Chemisphere?</h1>}
           answer = {<p className='pt-2 text-black '>Choose Chemisphere for a captivating chemistry learning experience! Learn from professionals with a decade of mentoring success. Enjoy engaging live classes, meticulous class notes, and track progress with regular assessments and examinations. Elevate your marks and embrace the joy of learning chemistry!</p>}
