@@ -7,7 +7,7 @@ import localFont from 'next/font/local'
 const myFont = localFont({  
   src: [
   {
-    path: '../fonts/CircularStd-Black.ttf',
+    path: '../fonts/CircularStd-Book.ttf',
   }
   ] })
 
