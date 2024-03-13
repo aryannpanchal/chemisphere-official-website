@@ -46,7 +46,7 @@ function NavbarSection() {
         >
          
           <DropdownItem href='about-us' >About Us</DropdownItem>
-          <DropdownItem href='jee-main-portal' >JEE Main Portal</DropdownItem>
+          <DropdownItem href='' >JEE Main Portal</DropdownItem>
           <DropdownItem href=''>JEE Advanced Portal</DropdownItem>
           <DropdownItem href=''>NEET Portal</DropdownItem>
 
