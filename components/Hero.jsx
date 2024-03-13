@@ -22,7 +22,7 @@ const Hero = () => {
     <section className="lg:pt-6 mt-4 lg:mt-0 lg:pb-24 gap-14 lg:gap-0 pb-10 items-center flex-col flex md:px-8 md:flex-row text-left m-2 md:text-center lg:bg-none bg-cover bg-center lg:mr-14 ">
         
     <div className="space-x-xl flex-1   ">
-       <h1 className="text-slate-800 font-extrabold lg:text-6xl text-4xl mb-6 tracking-tighter ">
+       <h1 className="text-slate-800 font-extrabold lg:text-6xl text-4xl mb-6 tracking-tight ">
             Premium chemistry coaching <br/>for JEE (Main & Advanced), <br />NEET & Boards.
         </h1>
         <p className='lg:text-6xl text-4xl font-extrabold text-chemisphere tracking-tighter'>ADMISSIONS OPEN</p>
