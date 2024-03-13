@@ -45,13 +45,13 @@ function NavbarSection() {
           }
         >
          
-          <DropdownItem href='about-us' className='hover:bg-chemisphere'>About Us</DropdownItem>
-          <DropdownItem href='jee-main-portal' className='hover:bg-chemisphere'>JEE Main Portal</DropdownItem>
-          <DropdownItem href=''className='hover:bg-chemisphere'>JEE Advanced Portal</DropdownItem>
-          <DropdownItem href=''className='hover:bg-chemisphere'>NEET Portal</DropdownItem>
+          <DropdownItem href='about-us' >About Us</DropdownItem>
+          <DropdownItem href='jee-main-portal' >JEE Main Portal</DropdownItem>
+          <DropdownItem href=''>JEE Advanced Portal</DropdownItem>
+          <DropdownItem href=''>NEET Portal</DropdownItem>
 
           <DropdownDivider />
-          <DropdownItem href='privacy-policy'className='hover:bg-chemisphere'>Privacy Policy</DropdownItem>
+          <DropdownItem href='privacy-policy'>Privacy Policy</DropdownItem>
         </Dropdown>
       </div>
      
