@@ -45,7 +45,7 @@ const OfferSection = () => {
           <div className="mt-12">
             <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((item, idx) => (
-                <li key={idx} className="space-y-3 p-4 rounded-md neumorphic-card">
+                <li key={idx} className="space-y-3 p-4 rounded-md neumorphic-card border border-1 shadow">
                   <div className="w-12 h-12 bg-white border-chemisphere border-2 text-white rounded-full flex items-center justify-center grayscale">
                     <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
                   </div>
