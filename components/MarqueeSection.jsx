@@ -9,7 +9,7 @@ const MarqueeSection = () => {
   return (
     <div>
       <Banner>
-      <div className="flex w-full flex-col justify-between border-b border-gray-200 bg-bg-banner-wave bg-cover bg-center p-4  md:flex-row">
+      <div className="flex w-full flex-col justify-between border-b border-gray-200 bg-black p-4  md:flex-row">
         <div className="mb-4 md:mb-0 md:mr-4">                                  
           <h2 className="mb-1 text-base font-semibold text-white">Enroll in the new NEET 2024 chemistry crash course NOW!</h2>
           <p className="flex items-center text-sm font-normal text-gray-100">
