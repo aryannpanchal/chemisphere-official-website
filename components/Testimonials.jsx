@@ -68,9 +68,9 @@ const Testimonials = () => {
    <section className='py-14 mb-14 overflow-hidden bg-black'>
         <div className='max-w-screen-xl mx-auto px-10 md:px-8'>
           <div className="max-w-xl text-center md:mx-auto">
-            <h1 className="text-gray-100 text-5xl font-semibold sm:text-5xl">
+            <h3 className="text-gray-100 text-5xl font-semibold sm:text-5xl">
               Hall of Fame
-            </h1>
+            </h3>
             <p className="mt-3 text-gray-100 text-1xl">
               Explore our hall of academic achievers, charting the course
               <br /> for success and inspiring the pursuit of knowledge at its
