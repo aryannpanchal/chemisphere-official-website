@@ -32,7 +32,7 @@ export default function RootLayout({
 />
 
 <title>Chemisphere. Chemistry made easy!</title>
-<meta name="description" content=Certainly! Here's the meta description for your website:
+<meta name="description" content=
 
 "Looking to excel in JEE Main and Advanced, NEET, MHCET, or Class 12th boards? Look no further! Chandan Biswas, CEO of Chemisphere and a renowned Chemistry professor, offers personalized classes and mentorship to help you achieve your goals. With over a decade of experience and having mentored thousands of successful students, Chandan provides comprehensive resources, including video lectures, class notes, and regular tests, tailored to your needs. His expertise and guidance will not only make learning Chemistry enjoyable but also significantly boost your marks and ranking. Sign up for a free demo class now and embark on a journey to master Chemistry with ease!"/>
 
