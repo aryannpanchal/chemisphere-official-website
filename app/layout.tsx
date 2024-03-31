@@ -3,6 +3,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
+import { ClerkProvider } from '@clerk/nextjs'
 
 const myFont = localFont({  
   src: [
@@ -23,7 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <ClerkProvider>
+      <html lang="en">
      <head>
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
      <link
@@ -52,6 +54,8 @@ export default function RootLayout({
      
       </body>
     </html>
+    </ClerkProvider>
+    
   )
 }
 

@@ -1,52 +1,109 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react"
-import Image from "next/image"
-import { Button} from 'flowbite-react';
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/pagination';
-import { Pagination , Navigation} from 'swiper/modules';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
+import { Label, TextInput } from "flowbite-react";
+import Link from 'next/link'
 
 const Hero = () => {
-  
+  const [fullname, setFullname] = useState("");
+  const [phoneno, setPhoneno] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState([]);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("api/contact", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        fullname,
+        phoneno,
+        email,
+      }),
+    });
+
+    const { msg, success } = await res.json();
+    setError(msg);
+    setSuccess(success);
+
+    if (success) {
+      setFullname("");
+      setPhoneno("");
+      setEmail("");
+    }
+  };
   return (
    
     <div>
-       <div>
-        
-           
-    <section className="lg:pt-6 mt-4 lg:mt-0 lg:pb-24 gap-14 lg:gap-0 pb-10 items-center flex-col flex md:px-8 md:flex-row text-left m-2 md:text-center lg:bg-none bg-cover bg-center lg:mr-14 ">
-        
-    <div className="space-x-xl flex-1   ">
-       <h1 className="text-slate-800 font-extrabold lg:text-6xl text-4xl mb-3 tracking-tight ">
-            Chemisphere by Chandan Biswas
+      <section class="bg-bg-bg-hero bg-center bg-cover ">
+    <div class="grid px-10 py-8 mx-auto gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+        <h1 className="text-slate-900 font-extrabold laptop:text-6xl mobile:text-5xl mobile:text-center mb-3 tracking-tight laptop:text-left">
+            Chemisphere by Chandan Biswas.
         </h1>
-        <h2 className='text-slate-800 font-normal lg:text-5xl text-3xl mb-6 tracking-tight '> Premium chemistry coaching for JEE (Main & Advanced),<br /> NEET & Boards.</h2>
-        <p className='lg:text-6xl text-4xl font-extrabold text-chemisphere tracking-tighter'>ADMISSIONS OPEN</p>
-       
-         <div className="flex pt-1 mt-0 items-center justify-left md:space-y-0 md:mt-0 md:pb-0 md:justify-start ">
-     <Link target="__blank" href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20classes%20of%20Chemisphere!" className="flex items-center rounded-full">
- <div className='justify-center flex '>
-  <Button className=' bg-chemisphere transition hover:bg-gray-100 hover:text-gray smooth border-chemisphere border-2 shadow px-4 '>
-      <Image src="/whatsapp-logo.svg" width={34} height={24} alt="chat on whatsapp button"/>
-      <p className='text-black font-bold lg:text-2xl pl-4 px-42'>Connect now to get more class info</p>
-  </Button>
- </div>
-  </Link>
+            <p class="mobile:text-center text-slate-800 laptop:text-5xl mobile:text-xl my-6 tracking-tight laptop:text-left font-extrabold">Premium chemistry coaching for JEE (Main & Advanced),<br /> NEET & Boards.</p>
+            <p className='mobile:text-center laptop:text-6xl mobile:text-3xl font-extrabold text-chemisphere tracking-tighter laptop:text-left'>ADMISSIONS OPEN</p>
 
+           
+          
+        </div>
+        <div class="lg:mt-0 lg:col-span-5 flex justify-center ">
+        <div className=' shadow-2xl p-10 rounded-xl bg-white'> 
+
+<form className="flex  flex-col gap-4 "
+onSubmit={handleSubmit}
+>
+  <p className='font-semibold text-center mobile:text-2xl laptop:text-3xl '>Book a free demo class NOW!</p>
+  <div className='laptop:mx-20'>
+    <img src='/chandan.svg' />
+  </div>
+
+  <div>
+         <div className='flex justify-center'>
+         <Link href="/sign-up">
+        
+          <button className='text-center border-2 hover:border-chemisphere border-black rounded-lg hover:bg-chemisphere hover:text-white transition shadow-lg p-2'>
+          click here to proceed with booking 🡪
+          </button>
+         </Link>
+          </div> 
+          <p className='font-base pt-2 text-gray-500 text-center text-sm '>On booking, you will agree to the terms and conditions of chemisphere.</p>
+
+         
+          
+        </div>
+        
+</form>
+<div className=" flex flex-col">
+  {error &&
+    error.map((e, index) => (
+      <div
+        key={index}
+        className={`${
+          success ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+        } border border-green-400 rounded p-4 my-2`}
+        role="Alert"
+      >
+      {e}
+      </div>   
+
+
+    ))}
 </div>
 
-    </div>   
-    <div className='lg:mr-24'> 
-        <img width="480px" src="/chandan.svg" alt="" />
-
-       </div>
-  
-    </section>
+   </div>        
+   </div>                
+    </div>
+</section>
+       <div>
+        
+        
     
 </div>
 </div>
