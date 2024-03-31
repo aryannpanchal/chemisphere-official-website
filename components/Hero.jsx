@@ -69,7 +69,7 @@ onSubmit={handleSubmit}
          <Link href="/sign-up">
         
           <button className='text-center border-2 hover:border-chemisphere border-black rounded-lg hover:bg-chemisphere hover:text-white transition shadow-lg p-2'>
-          click here to proceed with booking 🡪
+          click here to proceed with booking 
           </button>
          </Link>
           </div> 
