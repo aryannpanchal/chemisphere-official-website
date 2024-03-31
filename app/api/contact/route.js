@@ -12,7 +12,7 @@ export async function POST(req) {
     await Contact.create({ fullname,  phoneno, email });
 
     return NextResponse.json({
-       msg: ["We recieved your application! Our team will contact you shortly."],
+       msg: ["We recieved your application! Our team will contact you shortly. Thank you!"],
       success: true,
     });
   } catch (error) {
