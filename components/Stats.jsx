@@ -19,13 +19,13 @@ const Stats = () => {
           clearInterval(intervalId);
         }
         setterFunction(currentValue);
-      }, 10); // Adjust the interval for smoother animation
+      }, 100); // Adjust the interval for smoother animation
     };
 
-    animateCounting(80, setActiveStudents);
-    animateCounting(50, setRankHolders);
-    animateCounting(70, setCommunityMembers);
-    animateCounting(10, setCities);
+    animateCounting(120, setActiveStudents);
+    animateCounting(70, setRankHolders);
+    animateCounting(210, setCommunityMembers);
+    animateCounting(20, setCities);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Run only once on component mount
@@ -33,9 +33,9 @@ const Stats = () => {
   return (
     <div>
       
-      <section className="text-gray-100 body-font bg-chemisphere">
+      <section className="text-gray-100 body-font bg-chemisphere laptop:mx-24 mobile:max-w-screen rounded-2xl my-24">
      
-        <div className="container px-5 pb-10 pt-10 mx-auto  bg-h-100px">
+        <div className="container px-5 pb-10 pt-10 mx-auto bg-h-100px">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 sm:w-1/4 w-1/2">
               <p className="title-font font-bold lg:text-6xl text-5xl text-slate-100">{activeStudents}+</p>

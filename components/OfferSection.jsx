@@ -39,8 +39,8 @@ const OfferSection = () => {
     <div>
       <section className="py-14 bg-white ">
         <div className="max-w-screen-xl mx-auto px-4 text-black md:px-8 pt-5 ">
-          <div className="max-w-xl space-y-3 pt-3">
-            <p className="text-black text-5xl font-semibold sm:text-4xl">What makes Chemisphere better?</p>
+          <div className="max-w-screen-xl space-y-3 pt-3">
+            <p className="text-black text-5xl font-semibold sm:text-4xl laptop:text-center">What makes Chemisphere better?</p>
           </div>
           <div className="mt-12">
             <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">

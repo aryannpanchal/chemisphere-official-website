@@ -67,7 +67,7 @@ const Testimonials = () => {
     <>
    <section className='py-14 mb-14 overflow-hidden bg-black'>
         <div className='max-w-screen-xl mx-auto px-10 md:px-8'>
-          <div className="max-w-xl text-center md:mx-auto">
+          <div className="max-w-screen-xl text-center md:mx-auto">
             <h3 className="text-gray-100 text-5xl font-semibold sm:text-5xl">
               Hall of Fame
             </h3>
@@ -77,10 +77,10 @@ const Testimonials = () => {
               finest.
             </p>
           </div>
-          <div className='w-full mx-auto mt-10'>
+          <div className='max-w-lg mx-auto mt-10 gap-10'>
             <Slider {...settings}>
               {data.map((d, index) => (
-                <div key={index} className=' rounded-xl bg-white h-[380px] md:h-[250px] border-slate-200 border-2'>
+                <div key={index} className=' rounded-xl bg-white h-[380px] md:h-[250px] border-slate-200 border-2 gap-5'>
                   <div className='rounded-t-xl  flex p-4 items-center text-black'>
                     <img
                       src={d.img}
