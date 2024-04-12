@@ -12,11 +12,11 @@ const mockup = () => {
     </div>
     <div>
 
- <h2 className="mb-2 text-2xl font-extrabold text-black">Entire student dashboard, now on your mobile.</h2>
+ <h2 className="mb-2 text-2xl font-extrabold text-black mobile:pt-5">Entire student dashboard, now on your mobile.</h2>
      
-     <p className="mb-5 text-base text-black sm:text-lg font-thin max-w-md">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
+     <p className="mb-5 laptop:text-base text-black mobile:pt-5 mobile:text-xl font-thin max-w-md">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
       <div>
-         <ul role="list" class="space-y-4 text-black pb-6 md:hidden block text-xl">
+         <ul role="list" class="space-y-4 text-black mobile:pt-5 pb-6 md:hidden block text-lg">
                <li class="flex space-x-2 rtl:space-x-reverse items-center">
                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>

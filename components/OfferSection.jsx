@@ -49,8 +49,8 @@ const OfferSection = () => {
                   <div className="w-12 h-12 bg-white border-chemisphere border-2 text-white rounded-full flex items-center justify-center grayscale">
                     <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
                   </div>
-                  <h4 className="text-2xl text-chemisphere font-semibold">{item.title}</h4>
-                  <p className="text-black text-xl">{item.desc}</p>
+                  <h4 className="text-xl text-chemisphere font-semibold">{item.title}</h4>
+                  <p className="text-black laptop:text-xl mobile:text-lg">{item.desc}</p>
                 </li>
               ))}
             </ul>
