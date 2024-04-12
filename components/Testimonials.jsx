@@ -49,7 +49,7 @@ const Testimonials = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow:1,
+    slidesToShow:2,
     slidesToScroll: 1,
     responsive: [
       {
@@ -65,23 +65,23 @@ const Testimonials = () => {
 
   return (
     <>
-   <section className='py-14 mb-14 overflow-hidden bg-black'>
-        <div className='max-w-screen-xl mx-auto px-10 md:px-8'>
-          <div className="max-w-screen-xl text-center md:mx-auto">
-            <h3 className="text-gray-100 text-5xl font-semibold sm:text-5xl">
+   <section className='py-16 mb-14 overflow-hidden bg-white laptop:px-0 mt-10'>
+        <div className='laptop:max-w-screen-2xl mx-auto px-10 mobile:px-8 '>
+          <div className="laptop:max-w-screen-2xl text-center mobile:mx-auto">
+            <h3 className="text-gray-900 text-5xl font-semibold mobile:text-5xl pb-5">
               Hall of Fame
             </h3>
-            <p className="mt-3 text-gray-100 text-1xl">
+            <p className="mt-3 text-gray-900 text-1xl pb-5">
               Explore our hall of academic achievers, charting the course
               <br /> for success and inspiring the pursuit of knowledge at its
               finest.
             </p>
           </div>
-          <div className='max-w-lg mx-auto mt-10 gap-10'>
+          <div className='mobile:max-w-l mx-2 px-2 mt-10 gap-15 border-lg NeoButton1'>
             <Slider {...settings}>
               {data.map((d, index) => (
-                <div key={index} className=' rounded-xl bg-white h-[380px] md:h-[250px] border-slate-200 border-2 gap-5'>
-                  <div className='rounded-t-xl  flex p-4 items-center text-black'>
+                <div key={index} className=' bg-white mobile:h-[420px] laptop:h-[250px] w-[600px] border-slate-200 border-2 gap-15 mr-5'>
+                  <div className='rounded-t-xl  flex p-4 items-center text-black gap-10'>
                     <img
                       src={d.img}
                       alt='image'
@@ -93,6 +93,7 @@ const Testimonials = () => {
                       <p className='text-sm font-regular text-black'>{d.ranking2}</p>
                     </div>
                   </div>
+                  <hr />
                   <div className='p-4'>
                     <p className='md:text-2xl text-xl italic text-gray-700 pt-2'>{d.review}</p>
                     

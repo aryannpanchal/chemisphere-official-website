@@ -41,9 +41,9 @@ const Hero = () => {
   return (
    
     <div>
-      <section class="bg-bg-bg-hero bg-center bg-cover ">
-    <div class="grid px-10 py-8 mx-auto gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
+      <section class="  ">
+    <div class="grid px-10 py-8 mx-auto gap-8 xl:gap-0 laptop:py-16 lg:grid-cols-12 ">
+        <div class="mr-auto place-self-center lg:col-span-7 ">
         <h1 className="text-slate-900 font-extrabold laptop:text-6xl mobile:text-5xl mobile:text-center mb-3 tracking-tight laptop:text-left">
             Chemisphere by Chandan Biswas.
         </h1>
@@ -53,8 +53,8 @@ const Hero = () => {
            
           
         </div>
-        <div class="lg:mt-0 lg:col-span-5 flex justify-center ">
-        <div className=' shadow-2xl p-10 rounded-xl bg-white'> 
+        <div className=" lg:mt-0 lg:col-span-5 flex justify-center ">
+        <div className='NeoButton shadow-3xl p-10 rounded-xl bg-white'> 
 
 <form className="flex  flex-col gap-4 "
 onSubmit={handleSubmit}
@@ -68,7 +68,7 @@ onSubmit={handleSubmit}
          <div className='flex justify-center'>
          <Link href="/sign-up">
         
-          <button className='text-center border-2 hover:border-chemisphere border-black rounded-lg hover:bg-chemisphere hover:text-white transition shadow-lg p-2'>
+          <button className=' NeoButton2 text-center hover:border-chemisphere  rounded-lg hover:bg-chemisphere hover:text-white transition  p-2'>
           click here to proceed with booking 
           </button>
          </Link>
