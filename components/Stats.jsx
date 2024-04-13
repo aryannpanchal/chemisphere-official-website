@@ -10,7 +10,7 @@ const Stats = () => {
   useEffect(() => {
     const animateCounting = (targetValue, setterFunction) => {
       let currentValue = 0;
-      const increment = Math.ceil(targetValue / 100); // Adjust the speed of counting
+      const increment = Math.ceil(targetValue / 100000); // Adjust the speed of counting
 
       const intervalId = setInterval(() => {
         currentValue += increment;
