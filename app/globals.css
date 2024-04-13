@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html,
+body {
+  cursor: url('/cursor.svg'), auto;
+  scroll-behavior: smooth;
+}
 body {
   color: rgb(var(--foreground-rgb));
-  cursor: url(../public/cursor.svg), default;
   --swiper-theme-color: #000000;
 
   background:
