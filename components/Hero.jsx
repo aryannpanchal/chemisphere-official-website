@@ -49,9 +49,6 @@ const Hero = () => {
         </h1>
             <p class="mobile:text-center text-slate-800 laptop:text-5xl mobile:text-xl my-6 tracking-tight laptop:text-left font-extrabold">Premium chemistry coaching for JEE (Main & Advanced),<br /> NEET & Boards.</p>
             <p className='mobile:text-center laptop:text-6xl mobile:text-3xl font-extrabold text-chemisphere tracking-tighter laptop:text-left'>ADMISSIONS OPEN</p>
-
-           
-          
         </div>
         <div className=" lg:mt-0 lg:col-span-5 flex justify-center ">
         <div className='NeoButton shadow-3xl p-10 rounded-xl bg-white'> 
@@ -63,22 +60,27 @@ onSubmit={handleSubmit}
   <div className='laptop:mx-20'>
     <img src='/chandan.svg' />
   </div>
-
-  <div>
-         <div className='flex justify-center'>
-         <Link href="/sign-up">
-        
-          <button className=' NeoButton2 text-center hover:border-chemisphere  rounded-lg hover:bg-chemisphere hover:text-white transition  p-2'>
-          click here to proceed with booking 
+         <div className='flex laptop:flex-row mobile:flex-col justify-center item-center laptop:gap-10 mobile:gap-5 mobile:pt-3 mobile:text-center laptop:pt-5'>
+         <Link  href="/sign-up">
+          <button  className=' NeoButton2 text-center hover:border-chemisphere  rounded-lg hover:bg-chemisphere hover:text-white transition p-2'>
+          Book via form
           </button>
          </Link>
-          </div> 
-          <p className='font-base pt-2 text-gray-500 text-center text-sm '>On booking, you will agree to the terms and conditions of chemisphere.</p>
-
-         
-          
-        </div>
-        
+         {/* <p className='text-center laptop:pt-2'>or</p> */}
+        <div>
+         <div>
+         <Link target='__blank' href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20classes%20of%20Chemisphere!">
+          <button className=' NeoButton2 text-center hover:border-chemisphere  rounded-lg hover:bg-chemisphere hover:text-white transition p-2'>
+          Book via WhatsApp 
+          </button>
+         </Link>
+          </div>
+          <p className='text-center py-2 text-gray-600'>⚡Faster way</p>
+        </div> 
+        </div>         
+        <p className='font-base pt-2 text-gray-500 text-center text-sm '>On booking, you will agree to the terms and conditions of chemisphere.</p>
+ 
+       
 </form>
 <div className=" flex flex-col">
   {error &&
