@@ -42,7 +42,7 @@ export default function RootLayout({
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Chemisphere. Chemistry made easy!" />
 <meta property="og:description" content="Premium Chemistry Lectures by Chandan Biswas" />
-<meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/3116a3d5-10eb-4ba3-b710-032c605566aa.png?token=teQQGETxXm9ueSefetJlfGHTNA7ioB15ziWYrV0goGs&height=630&width=1200&expires=33241761321" />
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/806069f2-7815-40ca-b733-aac9e3c8f923.png?token=SlFne835EzolWqIi_qHebUj0Jva7sTK_ux4aHyV6TQQ&height=630&width=1200&expires=33249019515" />
 
      <link rel="icon" href='/favicon.ico' sizes="any" />
 
