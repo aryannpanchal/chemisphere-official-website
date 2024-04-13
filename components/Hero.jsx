@@ -7,37 +7,6 @@ import { Label, TextInput } from "flowbite-react";
 import Link from 'next/link'
 
 const Hero = () => {
-  const [fullname, setFullname] = useState("");
-  const [phoneno, setPhoneno] = useState("");
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState([]);
-  const [success, setSuccess] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const res = await fetch("api/contact", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        fullname,
-        phoneno,
-        email,
-      }),
-    });
-
-    const { msg, success } = await res.json();
-    setError(msg);
-    setSuccess(success);
-
-    if (success) {
-      setFullname("");
-      setPhoneno("");
-      setEmail("");
-    }
-  };
   return (
    
     <div>
@@ -53,8 +22,7 @@ const Hero = () => {
         <div className=" lg:mt-0 lg:col-span-5 flex justify-center ">
         <div className='NeoButton shadow-3xl p-10 rounded-xl bg-white'> 
 
-<form className="flex  flex-col gap-4 "
-onSubmit={handleSubmit}
+<div className="flex  flex-col gap-4 "
 >
   <p className='font-semibold text-center mobile:text-2xl laptop:text-3xl '>Book a free demo class NOW!</p>
   <div className='laptop:mx-20'>
@@ -81,23 +49,8 @@ onSubmit={handleSubmit}
         <p className='font-base pt-2 text-gray-500 text-center text-sm '>On booking, you will agree to the terms and conditions of chemisphere.</p>
  
        
-</form>
-<div className=" flex flex-col">
-  {error &&
-    error.map((e, index) => (
-      <div
-        key={index}
-        className={`${
-          success ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
-        } border border-green-400 rounded p-4 my-2`}
-        role="Alert"
-      >
-      {e}
-      </div>   
-
-
-    ))}
 </div>
+
 
    </div>        
    </div>                
