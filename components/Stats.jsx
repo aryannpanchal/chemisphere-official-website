@@ -2,40 +2,17 @@
 import React, { useState, useEffect } from 'react';
 
 const Stats = () => {
-  const [activeStudents, setActiveStudents] = useState(0);
-  const [rankHolders, setRankHolders] = useState(0);
-  const [communityMembers, setCommunityMembers] = useState(0);
-  const [cities, setCities] = useState(0);
-
-  useEffect(() => {
-    const animateCounting = (targetValue, setterFunction) => {
-      let currentValue = 0;
-      const increment = Math.ceil(targetValue / 100000); // Adjust the speed of counting
-
-      const intervalId = setInterval(() => {
-        currentValue += increment;
-        if (currentValue >= targetValue) {
-          currentValue = targetValue;
-          clearInterval(intervalId);
-        }
-        setterFunction(currentValue);
-      }, 100); // Adjust the interval for smoother animation
-    };
-
-    animateCounting(120, setActiveStudents);
-    animateCounting(70, setRankHolders);
-    animateCounting(210, setCommunityMembers);
-    animateCounting(20, setCities);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Run only once on component mount
+  const activeStudents = 200;
+  const rankHolders = 100;
+  const communityMembers = 250;
+  const cities = 25;
 
   return (
     <div>
       
-      <section className="text-gray-100 body-font bg-chemisphere laptop:mx-24 mobile:max-w-screen rounded-2xl my-24">
+      <section className="text-gray-100 body-font bg-chemisphere  mb-24 laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl ">
      
-        <div className="container px-5 pb-10 pt-10 mx-auto bg-h-100px">
+        <div className="container px-5  mx-auto bg-h-100px">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 sm:w-1/4 w-1/2">
               <p className="title-font font-bold lg:text-6xl text-5xl text-slate-100">{activeStudents}+</p>
