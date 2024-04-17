@@ -10,8 +10,8 @@ const Hero = () => {
   return (
    
     <div>
-      <section class="  ">
-    <div class="grid px-10 py-8 mx-auto gap-8 xl:gap-0 laptop:py-16 lg:grid-cols-12 ">
+      <section>
+    <div class="grid px-10 mx-auto gap-8 xl:gap-0 laptop:py-8 lg:grid-cols-12 mb-24 mobile:mt-12 ">
         <div class="mr-auto place-self-center lg:col-span-7 ">
         <h1 className="text-slate-900 font-extrabold laptop:text-6xl mobile:text-5xl mobile:text-center mb-3 tracking-tight laptop:text-left">
             Chemisphere by Chandan Biswas.

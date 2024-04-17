@@ -65,19 +65,19 @@ const Testimonials = () => {
 
   return (
     <>
-   <section className='py-16 mb-14 overflow-hidden bg-white laptop:px-0 mt-10'>
+   <section className=' mb-24 overflow-hidden bg-white  laptop:px-0'>
         <div className='laptop:max-w-screen-2xl mx-auto px-10 mobile:px-8 '>
           <div className="laptop:max-w-screen-2xl text-center mobile:mx-auto">
-            <h3 className="text-gray-900 text-5xl font-semibold mobile:text-5xl pb-5">
+            <p className="text-gray-900 text-5xl font-semibold mobile:text-5xl laptop:pb-5">
               Hall of Fame
-            </h3>
+            </p>
             <p className="mt-3 text-gray-900 text-1xl pb-5">
               Explore our hall of academic achievers, charting the course
               <br /> for success and inspiring the pursuit of knowledge at its
               finest.
             </p>
           </div>
-          <div className='mobile:max-w-l mx-2 px-2 mt-10 gap-15 border-lg NeoButton1'>
+          <div className='mobile:max-w-l mx-2 px-2 laptop:mt-10 gap-15 border-lg NeoButton1'>
             <Slider {...settings}>
               {data.map((d, index) => (
                 <div key={index} className=' bg-white mobile:h-[420px] laptop:h-[250px] w-[600px] border-slate-200 border-2 gap-15 mr-5'>
@@ -104,6 +104,7 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
+      
     </>
   )
 }
