@@ -92,6 +92,7 @@ const config: Config = {
         'chemisphere': "#E62020",
         "tickgreen" :"#00D300",
         "whatsapp-green": "#0FB73B",
+        "black": "#252525",
         "wave": "#1B003D"
 
       },
