@@ -15,7 +15,7 @@ const AboutUsHome = () => {
             
             <div className='flex justify-center items-center pt-12 p-6'>
               <div className='mobile:aspect-w-16 mobile:aspect-h-9 embed-responsive'>
-               <iframe className="laptop:w-[560px] laptop:h-[315px]" src="https://www.youtube.com/embed/765qd0vmxmM?si=0856vAYFQYvOyt9j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <iframe className="laptop:w-[560px] laptop:h-[315px] mobile:h-[350px] mobile:w-[310px]" src="https://www.youtube.com/embed/765qd0vmxmM?si=0856vAYFQYvOyt9j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
               </div>
             </div>
             
