@@ -19,18 +19,18 @@ const page = () =>  {
   return (
     
  <div>
-      <AnimatedChild><FacebookChatPlugin /></AnimatedChild>
+     <FacebookChatPlugin />
        <MarqueeSection />
-        <AnimatedChild><Indicator /></AnimatedChild>
-        <AnimatedChild><NavbarSection /></AnimatedChild>  
+        <Indicator />
+        <NavbarSection />  
         <Hero />
 
-        <AnimatedChild><Stats /></AnimatedChild>
-        <AnimatedChild><OfferSection /></AnimatedChild>
-        <AnimatedChild><Testimonials /></AnimatedChild>
-        <AnimatedChild><Mockup /></AnimatedChild>
-        <AnimatedChild><FAQ /></AnimatedChild>
-        <AnimatedChild><Footer /></AnimatedChild>        
+   <Stats />
+        <OfferSection />
+        <Testimonials />
+        <Mockup />
+        <FAQ />
+        <Footer />       
       
 
 

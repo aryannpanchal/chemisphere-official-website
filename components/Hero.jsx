@@ -17,9 +17,9 @@ const Hero = () => {
             {isMounted && (
               <>
                 <motion.div
-                  initial={{ x: '-100vw', opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                  initial={{ y: 50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', stiffness: 100, damping: 20, ease: 'easeIn' }}
                   className="mr-auto place-self-center lg:col-span-7"
                 >
                   <h1 className="text-slate-900 font-extrabold laptop:text-6xl mobile:text-5xl mobile:text-center mb-3 tracking-tight laptop:text-left">
@@ -29,9 +29,9 @@ const Hero = () => {
                   <p className='mobile:text-center laptop:text-6xl mobile:text-3xl font-extrabold text-chemisphere tracking-tighter laptop:text-left'>ADMISSIONS OPEN</p>
                 </motion.div>
                 <motion.div
-                  initial={{ x: '100vw', opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                  initial={{ y: 50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', stiffness: 100, damping: 20, ease: 'easeIn' }}
                   className="lg:mt-0 lg:col-span-5 flex justify-center"
                 >
                   <div className='NeoButton shadow-3xl p-10 rounded-xl bg-white'>
