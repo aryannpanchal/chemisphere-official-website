@@ -10,7 +10,7 @@ export const PageWrapper = ({ children }) => {
       ref={ref}
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
       >
         {children}
       </motion.div>
@@ -26,7 +26,7 @@ export const AnimatedChild = ({ children }) => {
       ref={ref}
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       {children}
     </motion.div>
