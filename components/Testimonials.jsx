@@ -1,17 +1,12 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Link from 'next/link';
 import Image from 'next/image'
-import { useInView } from 'react-intersection-observer';
 
 const Testimonials = () => {
 
   return (
     <>
-    <section className='laptop:mb-[150px]'>
+    <section className='laptop:mb-[150px] laptop:mx-24  mobile:mx-4'>
       <h2 className='laptop:hidden text-center mobile:block font-semibold text-4xl'>Testimonials</h2>
       <div className='grid laptop:grid-cols-4 gap-6 mt-5 p-6'>
         <div className='relative bg-white text-black shadow-2xl p-6 rounded-lg laptop:col-span-2'>

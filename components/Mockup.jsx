@@ -1,31 +1,25 @@
-import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import Image from 'next/image';
-import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Mockup = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5, // When 50% of the element is visible
-  });
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   return (
     <>
-      <section ref={ref} className={`fade-in-section ${inView ? 'is-visible' : ''}`}>
-        <div className="text-gray-600 body-font mb-24">
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="text-gray-600 body-font mb-24 laptop:mx-24  mobile:mx-4">
           <div className="p-4 py-16 mt-6 text-center rounded-lg sm:p-8  sm:flex-col md:flex gap-5 justify-center align-center items-center">
             <div className='flex justify-center'>
               <Image src='/mob2.png' alt='mobile-image' width={700} height={700} className='flex items-center justify-center' />
             </div>
             <div>
-              <h2 className="mb-2 text-2xl font-extrabold text-black mobile:pt-5">Entire student dashboard, now on your mobile.</h2>
+              <h2 className="mb-2 mobile:text-2xl font-extrabold text-black laptop:text-4xl mobile:pt-5 laptop:text-left">Entire student dashboard, now on your mobile.</h2>
 
-              <p className="mb-5 laptop:text-base text-black mobile:pt-5 mx-6 mobile:text-l font-thin max-w-md">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
+              <p className="mb-5 laptop:text-xl text-black mobile:pt-5 mobile:text-lg font-thin laptop:text-left">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
               <div>
                 <ul role="list" className="space-y-4 text-black mobile:pt-5 pb-6 px-2 md:hidden block text-base">
                   <li className="flex space-x-2 rtl:space-x-reverse items-center">
@@ -65,7 +59,7 @@ const Mockup = () => {
                 </ul>
               </div>
 
-              <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+              <div className="items-center justify-left space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
                 <Link href="https://apps.apple.com/in/app/classplus/id1324522260" target='__blank'>
                   <div className=" w-full sm:w-auto bg-slate-900 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-slate-900 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                     <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
@@ -90,18 +84,7 @@ const Mockup = () => {
             </div>
           </div>
         </div>
-      </section>
-      <style jsx>{`
-        .fade-in-section {
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 2s, transform 2s;
-        }
-        .is-visible {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      `}</style>
+      </motion.section>
     </>
   )
 }

@@ -56,8 +56,8 @@ const OfferSection = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-white laptop:mb-64 mobile:mb-24">
-      <div className="max-w-screen-xl mx-auto px-4 text-betterblack md:px-8 pt-5">
+    <section className="bg-white laptop:mb-64 mobile:mb-24 laptop:mx-24  mobile:mx-4">
+      <div className=" px-4 text-betterblack md:px-8 pt-5">
         <div className="max-w-screen-xl space-y-3 pt-3">
           <motion.p
             className="text-black text-5xl font-semibold sm:text-4xl laptop:text-center"
@@ -70,12 +70,12 @@ const OfferSection = () => {
             What makes Chemisphere better?
           </motion.p>
         </div>
-        <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 ">
+          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3 ">
             {features.map((item, idx) => (
               <motion.li
                 key={idx}
-                className="space-y-3 p-4 rounded-md neumorphic-card border border-1 shadow"
+                className="space-y-3 p-4 rounded-md neumorphic-card shadow-lg"
                 initial="hidden"
                 animate={controls}
                 variants={variants}
@@ -90,7 +90,7 @@ const OfferSection = () => {
                   <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
                 </motion.div>
                 <motion.h4
-                  className="text-xl text-chemisphere font-semibold"
+                  className="text-chemisphere mobile:text-xl laptop:text-3xl"
                   initial="hidden"
                   animate={controls}
                   variants={variants}
@@ -98,7 +98,7 @@ const OfferSection = () => {
                   {item.title}
                 </motion.h4>
                 <motion.p
-                  className="text-black laptop:text-xl mobile:text-lg"
+                  className="text-black laptop:text-2xl mobile:text-lg"
                   initial="hidden"
                   animate={controls}
                   variants={variants}

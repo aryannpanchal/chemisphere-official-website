@@ -24,10 +24,9 @@ const page = () =>  {
         <Indicator />
         <NavbarSection />  
         <Hero />
-
-   <Stats />
-        <OfferSection />
         <Testimonials />
+        <Stats />
+        <OfferSection />
         <Mockup />
         <FAQ />
         <Footer />       

@@ -43,8 +43,8 @@ const Hero = () => {
 
   return (
     <div>
-      <section>
-        <div className="mobile:mb-24 grid px-10 mx-auto gap-8 xl:gap-0 laptop:py-8 lg:grid-cols-12 laptop:mb-44 mobile:mt-12 ">
+      <section className='laptop:mx-24 mobile:mx-4'>
+        <div className="mobile:mb-24 grid  mx-auto gap-8 xl:gap-0 laptop:py-8 lg:grid-cols-12  mobile:mt-12  ">
           <motion.div
             className="mr-auto place-self-center lg:col-span-7"
             initial="hidden"

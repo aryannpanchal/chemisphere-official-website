@@ -24,18 +24,18 @@ const Stats = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
         transition={{ duration: 1, ease: 'easeOut' }}
-        className="mobile:mb-24 text-gray-100 body-font bg-chemisphere laptop:mb-56 laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl"
+        className="mobile:mb-24 text-gray-100 body-font laptop:mb-56 shadow-2xl laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl  "
       >
-        <section className="container px-5 mx-auto bg-h-100px">
-          <div className="flex flex-wrap -m-4 text-center">
+        <section className="container px-5 mx-auto bg-h-100px p-6">
+          <div className="flex flex-wrap m-4 text-center text-black ">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
               transition={{ duration: 1, ease: 'easeOut' }}
               className="p-4 sm:w-1/4 w-1/2"
             >
-              <p className="title-font font-bold lg:text-6xl text-5xl text-slate-100">{activeStudents}+</p>
-              <p className="leading-relaxed md:text-3xl font-bold">active students</p>
+              <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{activeStudents}+</p>
+              <p className="leading-relaxed laptop:text-3xl font-bold">active students</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -43,8 +43,8 @@ const Stats = () => {
               transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
               className="p-4 sm:w-1/4 w-1/2"
             >
-              <p className="title-font font-bold lg:text-6xl text-5xl text-gray-100">{rankHolders}+</p>
-              <p className="leading-relaxed md:text-3xl font-bold">rank holders</p>
+              <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{rankHolders}+</p>
+              <p className="leading-relaxed laptop:text-3xl font-bold">rank holders</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -52,8 +52,8 @@ const Stats = () => {
               transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
               className="p-4 sm:w-1/4 w-1/2"
             >
-              <p className="title-font font-bold lg:text-6xl text-5xl text-gray-100">{communityMembers}K+</p>
-              <p className="leading-relaxed md:text-3xl font-bold">thriving community of students</p>
+              <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{communityMembers}K+</p>
+              <p className="leading-relaxed laptop:text-3xl font-bold">thriving community of students</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -61,8 +61,8 @@ const Stats = () => {
               transition={{ duration: 1, ease: 'easeOut', delay: 0.6 }}
               className="p-4 sm:w-1/4 w-1/2"
             >
-              <p className="title-font font-bold lg:text-6xl text-5xl text-gray-100">{cities}+</p>
-              <p className="leading-relaxed md:text-3xl font-bold">cities influenced</p>
+              <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{cities}+</p>
+              <p className="leading-relaxed laptop:text-3xl font-bold">cities influenced</p>
             </motion.div>
           </div>
         </section>
