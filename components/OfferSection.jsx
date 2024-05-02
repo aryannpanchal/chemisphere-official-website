@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const OfferSection = () => {
@@ -13,7 +13,7 @@ const OfferSection = () => {
     {
       title: 'Online tests',
       desc: 'Evaluate your knowledge with our comprehensive online testing platform.',
-      image: '/online tests.svg',
+      image: '/online_tests.svg',
     },
     {
       title: 'Online study materials',
@@ -37,37 +37,80 @@ const OfferSection = () => {
     },
   ];
 
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const controls = useAnimation();
+
+  const variants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
 
   return (
-    <div ref={ref}>
-      <section className="bg-white mb-24">
-        <div className="max-w-screen-xl mx-auto px-4 text-betterblack md:px-8 pt-5">
-          <div className="max-w-screen-xl space-y-3 pt-3">
-            <p className="text-black text-5xl font-semibold sm:text-4xl laptop:text-center">What makes Chemisphere better?</p>
-          </div>
-          <div className="mt-12">
-            <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
-              {features.map((item, idx) => (
-                <motion.li
-                  key={idx}
-                  className="space-y-3 p-4 rounded-md neumorphic-card border border-1 shadow"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-                  transition={{ duration: 2, delay: inView ? idx * 0.2 : 0 }}
-                >
-                  <div className="w-12 h-12 bg-white border-chemisphere border-2 text-white rounded-full flex items-center justify-center grayscale">
-                    <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
-                  </div>
-                  <h4 className="text-xl text-chemisphere font-semibold">{item.title}</h4>
-                  <p className="text-black laptop:text-xl mobile:text-lg">{item.desc}</p>
-                </motion.li>
-              ))}
-            </ul>
-          </div>
+    <section className="bg-white laptop:mb-64">
+      <div className="max-w-screen-xl mx-auto px-4 text-betterblack md:px-8 pt-5">
+        <div className="max-w-screen-xl space-y-3 pt-3">
+          <motion.p
+            className="text-black text-5xl font-semibold sm:text-4xl laptop:text-center"
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={variants}
+            transition={{ duration: 1.5}}
+          >
+            What makes Chemisphere better?
+          </motion.p>
         </div>
-      </section>
-    </div>
+        <div className="mt-12">
+          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((item, idx) => (
+              <motion.li
+                key={idx}
+                className="space-y-3 p-4 rounded-md neumorphic-card border border-1 shadow"
+                initial="hidden"
+                animate={controls}
+                variants={variants}
+                transition={{ duration: 1.5, delay: idx * 1 }}
+              >
+                <motion.div
+                  className="w-12 h-12 bg-white border-chemisphere border-2 text-white rounded-full flex items-center justify-center grayscale"
+                  initial="hidden"
+                  animate={controls}
+                  variants={variants}
+                >
+                  <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
+                </motion.div>
+                <motion.h4
+                  className="text-xl text-chemisphere font-semibold"
+                  initial="hidden"
+                  animate={controls}
+                  variants={variants}
+                >
+                  {item.title}
+                </motion.h4>
+                <motion.p
+                  className="text-black laptop:text-xl mobile:text-lg"
+                  initial="hidden"
+                  animate={controls}
+                  variants={variants}
+                >
+                  {item.desc}
+                </motion.p>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
   );
 };
 
