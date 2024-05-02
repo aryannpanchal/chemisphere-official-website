@@ -13,7 +13,7 @@ const OfferSection = () => {
     {
       title: 'Online tests',
       desc: 'Evaluate your knowledge with our comprehensive online testing platform.',
-      image: '/online_tests.svg',
+      image: '/online tests.svg',
     },
     {
       title: 'Online study materials',
@@ -65,7 +65,7 @@ const OfferSection = () => {
             initial="hidden"
             animate={controls}
             variants={variants}
-            transition={{ duration: 1.5}}
+            transition={{ duration: 1}}
           >
             What makes Chemisphere better?
           </motion.p>
@@ -79,7 +79,7 @@ const OfferSection = () => {
                 initial="hidden"
                 animate={controls}
                 variants={variants}
-                transition={{ duration: 1.5, delay: idx * 1 }}
+                transition={{ duration: 1, delay: idx * 0.5 }}
               >
                 <motion.div
                   className="w-12 h-12 bg-white border-chemisphere border-2 text-white rounded-full flex items-center justify-center grayscale"
