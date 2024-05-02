@@ -56,7 +56,7 @@ const OfferSection = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-white laptop:mb-64">
+    <section className="bg-white laptop:mb-64 mobile:mb-24">
       <div className="max-w-screen-xl mx-auto px-4 text-betterblack md:px-8 pt-5">
         <div className="max-w-screen-xl space-y-3 pt-3">
           <motion.p
