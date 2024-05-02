@@ -12,9 +12,6 @@ const myFont = localFont({
   }
   ] })
 
-export const metadata: Metadata = {
-  title: 'Chemisphere. Chemistry made easy!'
-}
 
 export default function RootLayout({
   children,
@@ -38,7 +35,7 @@ export default function RootLayout({
 
 <meta property="og:url" content="https://www.chemisphere.in" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="chemisphere classes by Chandan Biswas" />
+<meta property="og:title" content="Premium chemistry coaching for JEE (Main & Advanced), NEET & Boards by Chandan Biswas" />
 <meta property="og:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/chemisphere.in/Chemisphere%20by%20Chandan%20Biswas/Premium%20online%20chemistry%20IIT%20JEE%2C%20NEET%20%26%20class%2011th-12th%20boards%20lectures%20exclusively%20at%20affordable%20prices!/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F806069f2-7815-40ca-b733-aac9e3c8f923.png%3Ftoken%3DSlFne835EzolWqIi_qHebUj0Jva7sTK_ux4aHyV6TQQ%26height%3D630%26width%3D1200%26expires%3D33249019515/og.png" />
 
      <link rel="icon" href='/favicon.ico' sizes="any" />
