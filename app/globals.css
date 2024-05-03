@@ -50,5 +50,20 @@ button.slick-arrow.slick-next{
 }
 
 
+@keyframes gradient {
+  0% {
+    border-image: linear-gradient(90deg, red, black);
+  }
+  50% {
+    border-image: linear-gradient(90deg, black, red);
+  }
+  100% {
+    border-image: linear-gradient(90deg, red, black);
+  }
+}
+
+.border-gradient {
+  animation: gradient 10000s linear infinite;
+}
 
 

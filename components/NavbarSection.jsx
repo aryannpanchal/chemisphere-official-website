@@ -46,9 +46,7 @@ function NavbarSection() {
         >
          
           <DropdownItem href='about-us' >About Us</DropdownItem>
-          <DropdownItem href='' >JEE Main Portal</DropdownItem>
-          <DropdownItem href=''>JEE Advanced Portal</DropdownItem>
-          <DropdownItem href=''>NEET Portal</DropdownItem>
+          <DropdownItem href='rank' >JEE Main 2024 rank predictor</DropdownItem>
 
           <DropdownDivider />
           <DropdownItem href='privacy-policy'>Privacy Policy</DropdownItem>

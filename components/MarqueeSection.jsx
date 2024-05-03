@@ -8,7 +8,7 @@ import { HiArrowRight, HiX } from 'react-icons/hi';
 const MarqueeSection = () => {
   return (
     <div>
-<Banner className="bg-gradient-to-r from-chemisphere to-black">
+<Banner className="bg-gradient-to-r from-black to-chemisphere">
       <div className="flex w-full flex-col justify-between border-b border-gray-200 p-4  md:flex-row">
         <div className="mb-4 md:mb-0 md:mr-4">                                  
           <h2 className="mb-1 text-base font-semibold text-white">Enroll in the new JEE ADVANCED 2024 chemistry crash course NOW!</h2>

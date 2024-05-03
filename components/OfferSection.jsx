@@ -58,9 +58,9 @@ const OfferSection = () => {
   return (
     <section className="bg-white laptop:mb-64 mobile:mb-24 laptop:mx-24  mobile:mx-4">
       <div className=" px-4 text-betterblack md:px-8 pt-5">
-        <div className="max-w-screen-xl space-y-3 pt-3">
+        <div className="max-w-screen-xl space-y-3 pt-3 text-center ">
           <motion.p
-            className="text-black text-5xl font-semibold sm:text-4xl laptop:text-center"
+            className="text-black text-5xl font-semibold sm:text-4xl text-center mobile:text-left"
             ref={ref}
             initial="hidden"
             animate={controls}
