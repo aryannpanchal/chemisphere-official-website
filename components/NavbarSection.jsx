@@ -46,7 +46,7 @@ function NavbarSection() {
         >
          
           <DropdownItem href='about-us' >About Us</DropdownItem>
-          <DropdownItem href='rank' >JEE Main 2024 rank predictor</DropdownItem>
+          <DropdownItem href='/' >JEE Main 2024 rank predictor</DropdownItem>
 
           <DropdownDivider />
           <DropdownItem href='privacy-policy'>Privacy Policy</DropdownItem>
