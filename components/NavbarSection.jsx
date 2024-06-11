@@ -12,7 +12,7 @@ import Link from'next/link'
 function NavbarSection() {
   return (
     <>
-     <Navbar fluid rounded className='mr-5 ml-5'>      
+     <Navbar fluid rounded className='m-5'>      
 
       <NavbarBrand href="/">
         <img src="/chemisphere-logo-white.svg" className="mr-3 md:h-9 h-8" alt="Chemisphere Logo" />

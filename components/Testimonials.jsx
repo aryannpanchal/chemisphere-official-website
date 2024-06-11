@@ -61,7 +61,7 @@ const Testimonials = () => {
             </marquee>
           </div>           
        
-        <div className='relative bg-blue-900 text-white p-8 rounded-lg laptop:row-span-2 laptop:row-start-2 laptop:col-start-1 shadow-2xl'>
+        <div className='relative bg-black text-white p-8 rounded-lg laptop:row-span-2 laptop:row-start-2 laptop:col-start-1 shadow-2xl'>
           <div className='flex justiify-start space-x-4 relative z-10'>
             <Image src='/mohit.svg' alt='' width={32} height={32} className='h-12 w-12 rounded-full border-2 border-pruple-400'/>
             <div>

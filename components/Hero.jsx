@@ -91,11 +91,6 @@ const Hero = () => {
                   />
                 </div>
                 <div className="flex laptop:flex-row mobile:flex-col justify-center item-center laptop:gap-10 mobile:gap-5 mobile:pt-3 mobile:text-center laptop:pt-5">
-                  <Link href="/sign-up">
-                    <button className="NeoButton2 text-center hover:border-chemisphere rounded-lg hover:bg-chemisphere hover:text-white transition p-2">
-                      Book via form
-                    </button>
-                  </Link>
                   <div>
                     <div>
                       <Link
@@ -107,7 +102,7 @@ const Hero = () => {
                         </button>
                       </Link>
                     </div>
-                    <p className="text-center py-2 text-gray-600">⚡Faster way</p>
+                    <p className="text-center py-2 text-gray-600">⚡Get a faster response</p>
                   </div>
                 </div>
                 <p className="font-base pt-2 text-gray-500 text-center text-sm">

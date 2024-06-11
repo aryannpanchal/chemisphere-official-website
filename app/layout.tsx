@@ -3,7 +3,6 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
-import { ClerkProvider } from '@clerk/nextjs'
 
 const myFont = localFont({  
   src: [
@@ -18,7 +17,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
       <html lang="en">
      <head>
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
@@ -49,7 +47,6 @@ export default function RootLayout({
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       </body>
     </html>
-    </ClerkProvider>
     
   )
 }

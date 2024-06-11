@@ -11,6 +11,7 @@ const InquiryLanding = () => {
     <>
     <NavbarSection />
     <InquiryHomePageBreadcrumb />
+    
     <section className='grid laptop:mx-24 mobile:mx-4 pt-24 justify-center items-center gap-14 laptop:grid-cols-3'>
  
     <Card

@@ -20,7 +20,7 @@ const page = () =>  {
     
  <div>
      <FacebookChatPlugin />
-       <MarqueeSection />
+       {/* <MarqueeSection /> */}
         <Indicator />
         <NavbarSection />  
         <Hero />
