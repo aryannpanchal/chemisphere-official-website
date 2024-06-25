@@ -115,7 +115,7 @@ const InquiryLanding = () => {
           <span className="text-base font-normal leading-tight text-black line-through opacity-50">Advanced topics covered</span>
         </li>
       </ul>
-      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Main%20batch%of%Chemisphere!">
+      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Main%20batch%20of%20Chemisphere!">
       <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
       <button className='py-2 text-sm'>
         Send an inquiry →
@@ -258,7 +258,7 @@ const InquiryLanding = () => {
           <span className="text-base font-normal leading-tight text-black ">Personal attention</span>
         </li>
       </ul>
-      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advance%20batch%of%Chemisphere!">      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
+      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advance%20batch%20of%20Chemisphere!">      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
       <button className='py-2 text-sm'>
         Send an inquiry →
       </button>
