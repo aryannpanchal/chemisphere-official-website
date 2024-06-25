@@ -351,7 +351,7 @@ const InquiryLanding = () => {
         <li className='flex space-x-3'>
         </li>
       </ul>
-      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20NEET%20batch%of%Chemisphere!">
+      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20NEET%20batch%20of%20Chemisphere!">
       <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
       <button className='py-2 text-sm'>
         Send an inquiry →
