@@ -35,7 +35,7 @@ const Stats = () => {
               className="p-4 sm:w-1/4 w-1/2"
             >
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{activeStudents}+</p>
-              <p className="leading-relaxed laptop:text-3xl font-bold">active students</p>
+              <p className="leading-relaxed laptop:text-3xl font-thin">active students</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -44,7 +44,7 @@ const Stats = () => {
               className="p-4 sm:w-1/4 w-1/2"
             >
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{rankHolders}+</p>
-              <p className="leading-relaxed laptop:text-3xl font-bold">rank holders</p>
+              <p className="leading-relaxed laptop:text-3xl font-thin">rank holders</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -53,7 +53,7 @@ const Stats = () => {
               className="p-4 sm:w-1/4 w-1/2"
             >
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{communityMembers}K+</p>
-              <p className="leading-relaxed laptop:text-3xl font-bold">thriving community of students</p>
+              <p className="leading-relaxed laptop:text-3xl font-thin">thriving community of students</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -62,7 +62,7 @@ const Stats = () => {
               className="p-4 sm:w-1/4 w-1/2"
             >
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{cities}+</p>
-              <p className="leading-relaxed laptop:text-3xl font-bold">cities influenced</p>
+              <p className="leading-relaxed laptop:text-3xl font-thin">cities influenced</p>
             </motion.div>
           </div>
         </section>

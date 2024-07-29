@@ -56,11 +56,11 @@ const OfferSection = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-white laptop:mb-64 mobile:mb-24 laptop:mx-24  mobile:mx-4">
+    <section className="bg-white laptop:mb-48 mobile:mb-24 laptop:mx-24  mobile:mx-4">
       <div className=" px-4 text-betterblack md:px-8 pt-5">
         <div className="max-w-screen-xl space-y-3 pt-3 text-center ">
           <motion.p
-            className="text-black text-5xl font-semibold sm:text-4xl text-center mobile:text-left"
+            className="text-black text-5xl font-thin sm:text-4xl text-center mobile:text-left"
             ref={ref}
             initial="hidden"
             animate={controls}
@@ -75,7 +75,7 @@ const OfferSection = () => {
             {features.map((item, idx) => (
               <motion.li
                 key={idx}
-                className="space-y-3 p-4 rounded-md neumorphic-card shadow-lg"
+                className="space-y-6 p-4 rounded-md neumorphic-card shadow-lg"
                 initial="hidden"
                 animate={controls}
                 variants={variants}
@@ -90,7 +90,7 @@ const OfferSection = () => {
                   <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
                 </motion.div>
                 <motion.h4
-                  className="text-chemisphere mobile:text-xl laptop:text-3xl"
+                  className="text-chemisphere mobile:text-xl laptop:text-2xl"
                   initial="hidden"
                   animate={controls}
                   variants={variants}
@@ -98,7 +98,7 @@ const OfferSection = () => {
                   {item.title}
                 </motion.h4>
                 <motion.p
-                  className="text-black laptop:text-2xl mobile:text-lg"
+                  className="text-black laptop:text-xl mobile:text-lg"
                   initial="hidden"
                   animate={controls}
                   variants={variants}
