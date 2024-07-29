@@ -36,22 +36,6 @@ function NavbarSection() {
       <Link href='https://www.instagram.com/chemisphere.in/' target="__blank">
         <Avatar alt="instagram-logo" img="/instagram.svg" className='w-6 h-6 mr-5'/>
       </Link>
-      <div className="flex md:order-2">
-        <Dropdown
-          arrowIcon={false}
-          inline
-          label={
-            <Avatar alt="User settings" img="/bar.svg" className='md:w-fit md:h-fit w-5 h-5'/>
-          }
-        >
-         
-          <DropdownItem href='about-us' >About Us</DropdownItem>
-          <DropdownItem href='/' >JEE Main 2024 rank predictor</DropdownItem>
-
-          <DropdownDivider />
-          <DropdownItem href='privacy-policy'>Privacy Policy</DropdownItem>
-        </Dropdown>
-      </div>
      
         
       
