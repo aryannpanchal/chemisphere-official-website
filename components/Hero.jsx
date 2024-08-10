@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import '../app/globals.css'
 import localFont from 'next/font/local'
+import Atom from './Atom';
 
 
 const myFont2 = localFont({  
@@ -45,18 +46,22 @@ const Hero = () => {
     <div>
       <section className='laptop:mx-24 mobile:mx-4'>
         <div className="mobile:mb-24 grid  mx-auto gap-16 xl:gap-0 laptop:py-8 lg:grid-cols-12  mobile:mt-12  ">
+         
           <motion.div
             className="mr-auto place-self-center lg:col-span-7"
             initial="hidden"
             animate="visible"
             variants={variants}
-          >
+          > 
+
+          
             <h1 className="text-slate-900 font-thin laptop:text-5xl mobile:text-3xl mobile:text-left mb-3 tracking-tight laptop:text-left pb-5">
               Premium chemistry coaching <br />for JEE (Main & Advanced),<br /> NEET & Boards.
             </h1>
             <p className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`} >
               {text}
             </p>
+            
 
 <div className='mobile:text-left laptop:text-left'>
   <Link href="/inquiry" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group mobile:text-center md:text-left">
@@ -79,7 +84,7 @@ const Hero = () => {
           >
             <div className="NeoButton shadow-3xl p-10 rounded-xl bg-white">
               <div className="flex flex-col gap-4">
-                <p className="font-thin text-center mobile:text-2xl laptop:text-3xl">
+                <Atom /><p className="font-thin text-center mobile:text-2xl laptop:text-3xl">
                   Book a free demo class NOW!
                 </p>
                 <div className="laptop:mx-20">
@@ -109,6 +114,7 @@ const Hero = () => {
                   On booking, you will agree to the terms and conditions of chemisphere.
                 </p>
               </div>
+              
             </div>
           </motion.div>
         </div>
