@@ -12,6 +12,7 @@ import FacebookChatPlugin from '../components/Fbchat';
 import Stats from '../components/Stats';
 import Indicator from '../components/Indicator';
 import { AnimatedChild} from '../components/page-wrapper';
+import AnnouncementMarquee from './../components/AnnouncementMarquee';
 
 
 const page = () =>  {
@@ -20,9 +21,10 @@ const page = () =>  {
     
  <div>
      <FacebookChatPlugin />
-       {/* <MarqueeSection /> */}
+
         <Indicator />
         <NavbarSection />  
+        <AnnouncementMarquee />
         <Hero />
         <Testimonials />
         <Stats />
