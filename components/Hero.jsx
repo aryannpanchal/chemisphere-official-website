@@ -1,29 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import "swiper/css/pagination";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Label, TextInput } from "flowbite-react";
 import Link from "next/link";
 import Image from "next/image";
-import '../app/globals.css'
-import localFont from 'next/font/local'
-import Atom from './Atom';
+import "../app/globals.css";
+import localFont from "next/font/local";
+import Atom from "./Atom";
 
-
-const myFont2 = localFont({  
+// Custom font for styling
+const myFont2 = localFont({
   src: [
-  {
-    path: '../fonts/hand.ttf',
-  }
-  ] })
-
+    {
+      path: "../fonts/hand.ttf",
+    },
+  ],
+});
 
 const Hero = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const phrases = ["Chemistry made easy!"];
 
+  // Typing effect for the text
   useEffect(() => {
     const interval = setInterval(() => {
       if (index < phrases[0].length) {
@@ -37,6 +34,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [index]);
 
+  // Framer motion animation variants
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { delay: 0.5, duration: 1 } },
@@ -44,41 +42,59 @@ const Hero = () => {
 
   return (
     <div>
-      <section className='laptop:mx-24 mobile:mx-4'>
-        <div className="mobile:mb-24 grid  mx-auto gap-16 xl:gap-0 laptop:py-8 lg:grid-cols-12  mobile:mt-12  ">
-         
+      <section className="laptop:mx-24 mobile:mx-4">
+        <div className="mobile:mb-24 grid mx-auto gap-16 xl:gap-0 laptop:pb-8 lg:grid-cols-12 mobile:mt-12">
+          {/* Image at the top */}
+          <motion.div
+            className="laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-8"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
+            <Image
+              src="/ChemisphereBanner.svg" // Replace with your image path
+              width={500}
+              height={500}
+              className="rounded-lg shadow-lg mobile:visible laptop:hidden"
+              alt="Top Image"
+            />
+          </motion.div>
+
+          {/* Heading and description */}
           <motion.div
             className="mr-auto place-self-center lg:col-span-7"
             initial="hidden"
             animate="visible"
             variants={variants}
-          > 
-
-          
+          >
             <h1 className="text-slate-900 font-thin laptop:text-5xl mobile:text-3xl mobile:text-left mb-3 tracking-tight laptop:text-left pb-5">
-              Premium chemistry coaching <br />for JEE (Main & Advanced),<br /> NEET & Boards.
+              Premium chemistry coaching <br />
+              for JEE (Main & Advanced),<br /> NEET & Boards.
             </h1>
-            <p className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`} >
+            <p
+              className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`}
+            >
               {text}
             </p>
-            {/* <p>More than 
-              <br /> kk
-            </p> */}
-            
 
-<div className='mobile:text-left laptop:text-left'>
-  <Link href="/inquiry" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group mobile:text-center md:text-left">
-  <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-chemisphere rounded group-hover:-mr-4 group-hover:-mt-4">
-    <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-  </span>
-  <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-red-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
-  <span class="mobile:text-center relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Proceed to inquiry →</span>
-</Link>
-</div>
-
-
-            
+            {/* Inquiry link button */}
+            <div className="mobile:text-left laptop:text-left">
+              <Link
+                href="/inquiry"
+                className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group mobile:text-center md:text-left"
+              >
+                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-chemisphere rounded group-hover:-mr-4 group-hover:-mt-4">
+                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                </span>
+                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-red-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
+                <span className="mobile:text-center relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                  Proceed to inquiry →
+                </span>
+              </Link>
+            </div>
           </motion.div>
+
+          {/* Booking section */}
           <motion.div
             className="lg:mt-0 lg:col-span-5 flex justify-center"
             initial="hidden"
@@ -86,8 +102,9 @@ const Hero = () => {
             variants={variants}
           >
             <div className="NeoButton shadow-3xl p-10 rounded-xl bg-white">
-              <div className="flex flex-col gap-4">
-                <Atom /><p className="font-thin text-center mobile:text-2xl laptop:text-3xl">
+              <div className="laptop:flex laptop:flex-col gap-4">
+                <Atom />
+                <p className="font-thin text-center mobile:text-2xl laptop:text-3xl">
                   Book a free demo class NOW!
                 </p>
                 <div className="laptop:mx-20">
@@ -110,19 +127,20 @@ const Hero = () => {
                         </button>
                       </Link>
                     </div>
-                    <p className="text-center py-2 text-gray-600">⚡Get a faster response</p>
+                    <p className="text-center py-2 text-gray-600">
+                      ⚡Get a faster response
+                    </p>
                   </div>
                 </div>
                 <p className="font-base pt-2 text-gray-500 text-center text-sm">
-                  On booking, you will agree to the terms and conditions of chemisphere.
+                  On booking, you will agree to the terms and conditions of
+                  chemisphere.
                 </p>
               </div>
-              
             </div>
           </motion.div>
         </div>
       </section>
-      <div></div>
     </div>
   );
 };
