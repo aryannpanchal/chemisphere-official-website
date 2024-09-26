@@ -61,6 +61,9 @@ const Hero = () => {
             <p className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`} >
               {text}
             </p>
+            {/* <p>More than 
+              <br /> kk
+            </p> */}
             
 
 <div className='mobile:text-left laptop:text-left'>

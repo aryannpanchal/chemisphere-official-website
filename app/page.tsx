@@ -23,9 +23,10 @@ const page = () =>  {
      <FacebookChatPlugin />
 
         <Indicator />
+        <AnnouncementMarquee />
         <NavbarSection />  
         
-        <AnnouncementMarquee />
+        
         <Hero />
         
         <Testimonials />
