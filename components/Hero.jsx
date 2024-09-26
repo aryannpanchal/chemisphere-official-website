@@ -78,7 +78,7 @@ const Hero = () => {
             </p> */}
 
             {/* Inquiry link button */}
-            {/* <div className="mobile:text-left laptop:text-left">
+            <div className="mobile:text-center laptop:text-left mobile:mt-6">
               <Link
                 href="/inquiry"
                 className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group mobile:text-center md:text-left"
@@ -91,7 +91,7 @@ const Hero = () => {
                   Proceed to inquiry →
                 </span>
               </Link>
-            </div> */}
+            </div>
           </motion.div>
 
           {/* Booking section */}
