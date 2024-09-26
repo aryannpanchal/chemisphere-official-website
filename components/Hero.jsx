@@ -104,7 +104,7 @@ const Hero = () => {
             <div className="NeoButton shadow-3xl p-10 rounded-xl bg-white">
               <div className="laptop:flex laptop:flex-col gap-4">
                 {/* <Atom /> */}
-                <p className="font-thin text-center mobile:text-2xl laptop:text-3xl">
+                <p className="font-thin text-center mobile:text-2xl laptop:text-3xl mb-4">
                   Book a free demo class NOW!
                 </p>
                 <div className="laptop:mx-20">
@@ -122,8 +122,8 @@ const Hero = () => {
                         target="__blank"
                         href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20classes%20of%20Chemisphere!"
                       >
-                        <button className="NeoButton2 text-center hover:border-chemisphere rounded-lg hover:bg-chemisphere hover:text-white transition p-2">
-                          Book via WhatsApp
+                        <button className="NeoButton2 text-center hover:border-chemisphere rounded-lg hover:bg-chemisphere hover:text-white transition p-2 my-4">
+                        Book via WhatsApp 🚀
                         </button>
                       </Link>
                     </div>
