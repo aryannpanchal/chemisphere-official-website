@@ -46,13 +46,13 @@ const Hero = () => {
         <div className="mobile:mb-24 grid mx-auto gap-16 xl:gap-0 laptop:pb-8 lg:grid-cols-12 mobile:mt-12">
           {/* Image at the top */}
           <motion.div
-            className="laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-8"
+            className="laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-2"
             initial="hidden"
             animate="visible"
             variants={variants}
           >
             <Image
-              src="/ChemisphereBanner.svg" // Replace with your image path
+              src="/ChemisphereBanner.png" // Replace with your image path
               width={500}
               height={500}
               className="rounded-lg shadow-lg mobile:visible laptop:hidden"
