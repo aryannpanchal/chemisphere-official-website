@@ -62,23 +62,23 @@ const Hero = () => {
 
           {/* Heading and description */}
           <motion.div
-            className="mr-auto place-self-center lg:col-span-7"
+            className="place-self-center lg:col-span-7"
             initial="hidden"
             animate="visible"
             variants={variants}
           >
-            <h1 className="text-slate-900 font-thin laptop:text-5xl mobile:text-3xl mobile:text-left mb-3 tracking-tight laptop:text-left pb-5">
+            <h1 className="text-slate-900 font-bold laptop:text-5xl mobile:text-3xl mobile:text-center tracking-tight laptop:text-left">
               Premium chemistry coaching <br />
               for JEE (Main & Advanced),<br /> NEET & Boards.
             </h1>
-            <p
+            {/* <p
               className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`}
             >
               {text}
-            </p>
+            </p> */}
 
             {/* Inquiry link button */}
-            <div className="mobile:text-left laptop:text-left">
+            {/* <div className="mobile:text-left laptop:text-left">
               <Link
                 href="/inquiry"
                 className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group mobile:text-center md:text-left"
@@ -91,7 +91,7 @@ const Hero = () => {
                   Proceed to inquiry →
                 </span>
               </Link>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Booking section */}
@@ -103,7 +103,7 @@ const Hero = () => {
           >
             <div className="NeoButton shadow-3xl p-10 rounded-xl bg-white">
               <div className="laptop:flex laptop:flex-col gap-4">
-                <Atom />
+                {/* <Atom /> */}
                 <p className="font-thin text-center mobile:text-2xl laptop:text-3xl">
                   Book a free demo class NOW!
                 </p>
