@@ -44,19 +44,35 @@ const Hero = () => {
     <div>
       <section className="laptop:mx-24 mobile:mx-4">
         <div className="mobile:mb-24 grid mx-auto gap-16 xl:gap-0 laptop:pb-8 lg:grid-cols-12 mobile:mt-12">
-          {/* Image at the top */}
+          {/* Image at the top for mobile */}
           <motion.div
-            className="laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-2"
+            className="mobile:block laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-2"
             initial="hidden"
             animate="visible"
             variants={variants}
           >
             <Image
-              src="/ChemisphereBanner.png" // Replace with your image path
+              src="/ChemisphereBanner.svg" // Replace with your mobile image path
               width={500}
               height={500}
               className="rounded-lg shadow-lg mobile:visible laptop:hidden"
-              alt="Top Image"
+              alt="Mobile Top Image"
+            />
+          </motion.div>
+
+          {/* Image for laptop/PC only */}
+          <motion.div
+            className="mobile:hidden laptop:col-span-12 laptop:flex justify-center mb-2"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
+            <Image
+              src="/ChemisphereBannerPC.svg" // Replace with your laptop image path
+              width={1080}
+              height={300}
+              className="rounded-lg shadow-lg laptop:mb-12"
+              alt="Laptop Top Image"
             />
           </motion.div>
 
@@ -71,6 +87,7 @@ const Hero = () => {
               Premium chemistry coaching <br />
               for JEE (Main & Advanced),<br /> NEET & Boards.
             </h1>
+            {/* Typing effect text */}
             {/* <p
               className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`}
             >
@@ -123,7 +140,7 @@ const Hero = () => {
                         href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20classes%20of%20Chemisphere!"
                       >
                         <button className="NeoButton2 text-center hover:border-chemisphere rounded-lg hover:bg-chemisphere hover:text-white transition p-2 my-4">
-                        Book via WhatsApp 🚀
+                          Book via WhatsApp 🚀
                         </button>
                       </Link>
                     </div>
