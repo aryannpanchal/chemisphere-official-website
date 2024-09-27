@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import "../app/globals.css";
 import localFont from "next/font/local";
-import Atom from "./Atom";
 
 // Custom font for styling
 const myFont2 = localFont({
@@ -34,10 +33,28 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [index]);
 
+  // Image rotation logic (fade effect)
+  const [currentImage, setCurrentImage] = useState(0);
+  const mobileImages = ["/ChemisphereBanner.svg", "/ChemisphereBannerMobile.svg"];
+  const laptopImages = ["/ChemisphereBannerPC.svg", "/ChemisphereBannerPC2.svg"];
+
+  useEffect(() => {
+    const imageInterval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % mobileImages.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(imageInterval);
+  }, [mobileImages.length]);
+
   // Framer motion animation variants
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { delay: 0.5, duration: 1 } },
+  };
+
+  const fadeVariants = {
+    fadeOut: { opacity: 0, transition: { duration: 1 } },
+    fadeIn: { opacity: 1, transition: { duration: 1 } },
   };
 
   return (
@@ -51,13 +68,21 @@ const Hero = () => {
             animate="visible"
             variants={variants}
           >
-            <Image
-              src="/ChemisphereBanner.svg" // Replace with your mobile image path
-              width={500}
-              height={500}
-              className="rounded-lg shadow-lg mobile:visible laptop:hidden"
-              alt="Mobile Top Image"
-            />
+            <motion.div
+              key={mobileImages[currentImage]}
+              initial="fadeOut"
+              animate="fadeIn"
+              exit="fadeOut"
+              variants={fadeVariants}
+            >
+              <Image
+                src={mobileImages[currentImage]}
+                width={500}
+                height={500}
+                className="rounded-lg shadow-lg mobile:visible laptop:hidden"
+                alt="Mobile Top Image"
+              />
+            </motion.div>
           </motion.div>
 
           {/* Image for laptop/PC only */}
@@ -67,13 +92,21 @@ const Hero = () => {
             animate="visible"
             variants={variants}
           >
-            <Image
-              src="/ChemisphereBannerPC.svg" // Replace with your laptop image path
-              width={1080}
-              height={300}
-              className="rounded-lg shadow-lg laptop:mb-12"
-              alt="Laptop Top Image"
-            />
+            <motion.div
+              key={laptopImages[currentImage]}
+              initial="fadeOut"
+              animate="fadeIn"
+              exit="fadeOut"
+              variants={fadeVariants}
+            >
+              <Image
+                src={laptopImages[currentImage]}
+                width={1080}
+                height={300}
+                className="rounded-lg shadow-lg laptop:mb-12"
+                alt="Laptop Top Image"
+              />
+            </motion.div>
           </motion.div>
 
           {/* Heading and description */}
@@ -87,13 +120,6 @@ const Hero = () => {
               Premium chemistry coaching <br />
               for JEE (Main & Advanced),<br /> NEET & Boards.
             </h1>
-            {/* Typing effect text */}
-            {/* <p
-              className={`text-chemisphere mobile:text-left mobile:text-2xl laptop:text-4xl laptop:text-left pb-5 ${myFont2.className}`}
-            >
-              {text}
-            </p> */}
-
             {/* Inquiry link button */}
             <div className="mobile:text-center laptop:text-left mobile:mt-6">
               <Link
@@ -120,7 +146,6 @@ const Hero = () => {
           >
             <div className="NeoButton shadow-3xl p-10 rounded-xl bg-white">
               <div className="laptop:flex laptop:flex-col gap-4">
-                {/* <Atom /> */}
                 <p className="font-thin text-center mobile:text-2xl laptop:text-3xl mb-4">
                   Book a free demo class NOW!
                 </p>
