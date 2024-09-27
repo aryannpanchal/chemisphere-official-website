@@ -25,7 +25,7 @@ const Testimonials = () => {
           Chandan sir at Chemisphere turned organic chemistry from a challenge to my strongest suit.
           </p>
         </div>
-        <div className='relative bg-black text-white p-8 rounded-lg shadow-2xl'>
+        <div className='relative bg-white text-black p-8 rounded-lg shadow-2xl'>
           <div className='flex justiify-start space-x-4 relative z-10'>
             <Image src='/anmol.jpg' alt='' width={32} height={32} className='h-12 w-12 rounded-full border-2 border-pruple-400'/>
             <div>
@@ -40,7 +40,7 @@ const Testimonials = () => {
           Chandan Sir's teaching made chemistry a breeze!
           </p>
         </div>
-        <div className='relative bg-red-600 text-white p-8 rounded-lg laptop:row-span-2 shadow-2xl'>
+        <div className='relative bg-white text-black p-8 rounded-lg laptop:row-span-2 shadow-2xl'>
           <div className='flex justiify-start space-x-4 relative z-10'>
             <Image src='/manasvi.svg' alt='' width={32} height={32} className='h-12 w-12 rounded-full border-2 border-pruple-400'/>
             <div>
@@ -61,7 +61,7 @@ const Testimonials = () => {
             </marquee>
           </div>           
        
-        <div className='relative bg-black text-white p-8 rounded-lg laptop:row-span-2 laptop:row-start-2 laptop:col-start-1 shadow-2xl'>
+        <div className='relative bg-white text-black p-8 rounded-lg laptop:row-span-2 laptop:row-start-2 laptop:col-start-1 shadow-2xl'>
           <div className='flex justiify-start space-x-4 relative z-10'>
             <Image src='/mohit.svg' alt='' width={32} height={32} className='h-12 w-12 rounded-full border-2 border-pruple-400'/>
             <div>
