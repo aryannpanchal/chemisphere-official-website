@@ -35,8 +35,8 @@ const Hero = () => {
 
   // Image rotation logic (fade effect)
   const [currentImage, setCurrentImage] = useState(0);
-  const mobileImages = ["/ChemisphereBanner.svg", "/ChemisphereBannerMobile.svg", "/ChemisphereM3.svg", "/ChemisphereM4.svg"];
-  const laptopImages = ["/ChemisphereBannerPC.svg", "/ChemisphereBannerPC2.svg", "/ChemisphereBannerPCYT.svg", "/ChemisphereBannerPCIG.svg"];
+  const mobileImages = ["/m1.png", "/m2.png", "/m3.png", "/m4.png", "/m5.png"];
+  const laptopImages = ["/pc1.png", "/pc2.png","/pc3.png","/pc4.png","/pc1.png"];
 
   useEffect(() => {
     const imageInterval = setInterval(() => {
