@@ -9,671 +9,86 @@ import Link from 'next/link'
 const InquiryLanding = () => {
   return (
     <>
-    <NavbarSection />
-    <InquiryHomePageBreadcrumb />
-    
-    <section className='grid laptop:mx-24 mobile:mx-4 pt-24 justify-center items-center gap-14 laptop:grid-cols-3'>
- 
-    <Card
-      className="max-w-sm p-2"
-      renderImage={() => 
-      <Image width={500} height={500} src="/jee-main-1.svg" alt="JEE Main image" />
-      }>
-        <marquee className='bg-chemisphere text-white rounded-md shadow-lg'>
-        📣 Admissions open
-        </marquee>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        JEE Main batch
-      </h5>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-white border-[2px] border-opacity-50 border-chemisphere rounded-xl text-black px-2 py-1 text-sm'>👑 Top rated</p>
-        </div>
-        <div>
-        <p className='w-fit bg-slate-900 rounded-xl text-white px-2 py-1 text-sm'>🎤 Interactive</p>
-        </div>
-      </div>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-black rounded-xl text-white px-2 py-1 text-sm'>🎁 Free student preparation kit included!</p>
-        </div>
-      </div>
-      <ul className='space-y-3 pt-4'>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Full syllabus coverage</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Monthly payment system</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Doubt solving sessions</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Assignment after lecture</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-black opacity-50"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black line-through opacity-50">Advanced topics covered</span>
-        </li>
-      </ul>
-      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Main%20batch%20of%20Chemisphere!">
-      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
-      <button className='py-2 text-sm'>
-        Send an inquiry →
-      </button>
-      </div>
-      </Link>
-    </Card> 
-    <Card
-      className="max-w-sm shadow-2xl border-4 border-black p-2 relative"
-      renderImage={() => 
-      <Image width={500} height={500} src="/jee-adv.svg" alt="JEE Advanced image" />
-      }>
-        <Image className='absolute laptop:-top-[90px] transform laptop:-rotate-12 laptop:-left-[50px] mobile:-top-[30px] mobile:-left-[5px] z-10 mobile:w-[100px] laptop:w-[180px] laptop:h-[150px]' src='/best-seller.svg' width={180} height={150} alt='best seller' />
-        <marquee className='bg-chemisphere text-white rounded-md shadow-lg'>
-        📣 Admissions open
-        </marquee>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        JEE Advanced batch
-      </h5>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-white border-[2px] border-opacity-50 border-chemisphere rounded-xl text-black px-2 py-1 text-sm'>👑 Top rated</p>
-        </div>
-        <div>
-        <p className='w-fit bg-slate-900 rounded-xl text-white px-2 py-1 text-sm'>🎤 Interactive</p>
-        </div>
-      </div>
-      <div className='flex items items-center justify-left gap-` pt-1'>
-        <div>
-        <p className='w-fit bg-black rounded-xl text-white px-2 py-1 text-sm'>🎁 Free student preparation kit included!</p>
-        </div>
-      </div>
-      <div>
-        <p className='w-fit bg-black rounded-xl text-white px-2 py-1 text-sm'>+ Admission counselling</p>
-        </div>
-      <ul className='space-y-3 pt-4'>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Full syllabus coverage</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Monthly payment system</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Doubt solving sessions</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Assignment after lecture</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black ">Advanced topics covered</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black ">Small batches</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black ">Personal attention</span>
-        </li>
-      </ul>
-      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advance%20batch%20of%20Chemisphere!">      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
-      <button className='py-2 text-sm'>
-        Send an inquiry →
-      </button>
-      </div>
-      </Link>
-    </Card> 
-    <Card
-      className="max-w-sm p-2"
-      renderImage={() => 
-      <Image width={500} height={500} src="/neet.svg" alt="NEET image" />
-      }>
-        <marquee className='bg-chemisphere text-white rounded-md shadow-lg'>
-        📣 Admissions open
-        </marquee>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        NEET batch
-      </h5>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-white border-[2px] border-opacity-50 border-chemisphere rounded-xl text-black px-2 py-1 text-sm'>👑 Top rated</p>
-        </div>
-        <div>
-        <p className='w-fit bg-slate-900 rounded-xl text-white px-2 py-1 text-sm'>🎤 Interactive</p>
-        </div>
-      </div>
-      <div>
-        <p className='w-fit bg-black rounded-xl text-white px-2 py-1 text-sm'>🎁 Free student preparation kit included!</p>
-        </div>
-      <ul className='space-y-3 pt-4'>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Full syllabus coverage</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Monthly payment system</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Doubt solving sessions</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Assignment after lecture</span>
-        </li>
-        <li className='flex space-x-3'>
-        </li>
-      </ul>
-      <Link href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20NEET%20batch%20of%20Chemisphere!">
-      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
-      <button className='py-2 text-sm'>
-        Send an inquiry →
-      </button>
-      </div>
-      </Link>
-    </Card>
-    {/* <Card
-      className="max-w-sm p-2"
-      renderImage={() => 
-      <Image width={500} height={500} src="/jee-main-1.svg" alt="JEE Main image" />
-      }>
-        <marquee className='bg-chemisphere text-white rounded-md shadow-lg'>
-        📣 Admissions open
-        </marquee>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        JEE Main batch
-      </h5>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-white border-[2px] border-opacity-50 border-chemisphere rounded-xl text-black px-2 py-1 text-sm'>👑 Top rated</p>
-        </div>
-        <div>
-        <p className='w-fit bg-slate-900 rounded-xl text-white px-2 py-1 text-sm'>🎤 Interactive</p>
-        </div>
-      </div>
-      <ul className='space-y-3 pt-4'>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Full syllabus coverage</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Monthly payment system</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Doubt solving sessions</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Assignment after lecture</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-black opacity-50"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black line-through opacity-50">Advanced topics covered</span>
-        </li>
-      </ul>
-      <Link href='/'>
-      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
-      <button className='py-2 text-sm'>
-        Send an inquiry →
-      </button>
-      </div>
-      </Link>
-    </Card> 
-    <Card
-      className="max-w-sm p-2"
-      renderImage={() => 
-      <Image width={500} height={500} src="/jee-main-1.svg" alt="JEE Main image" />
-      }>
-        <marquee className='bg-chemisphere text-white rounded-md shadow-lg'>
-        📣 Admissions open
-        </marquee>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        JEE Main batch
-      </h5>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-white border-[2px] border-opacity-50 border-chemisphere rounded-xl text-black px-2 py-1 text-sm'>👑 Top rated</p>
-        </div>
-        <div>
-        <p className='w-fit bg-slate-900 rounded-xl text-white px-2 py-1 text-sm'>🎤 Interactive</p>
-        </div>
-      </div>
-      <ul className='space-y-3 pt-4'>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Full syllabus coverage</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Monthly payment system</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Doubt solving sessions</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Assignment after lecture</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-black opacity-50"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black line-through opacity-50">Advanced topics covered</span>
-        </li>
-      </ul>
-      <Link href='/'>
-      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
-      <button className='py-2 text-sm'>
-        Send an inquiry →
-      </button>
-      </div>
-      </Link>
-    </Card>  
-    <Card
-      className="max-w-sm p-2"
-      renderImage={() => 
-      <Image width={500} height={500} src="/jee-main-1.svg" alt="JEE Main image" />
-      }>
-        <marquee className='bg-chemisphere text-white rounded-md shadow-lg'>
-        📣 Admissions open
-        </marquee>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        JEE Main batch
-      </h5>
-      <div className='flex items items-center justify-left gap-2 pt-1'>
-        <div>
-        <p className='w-fit bg-white border-[2px] border-opacity-50 border-chemisphere rounded-xl text-black px-2 py-1 text-sm'>👑 Top rated</p>
-        </div>
-        <div>
-        <p className='w-fit bg-slate-900 rounded-xl text-white px-2 py-1 text-sm'>🎤 Interactive</p>
-        </div>
-      </div>
-      <ul className='space-y-3 pt-4'>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Full syllabus coverage</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Monthly payment system</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Doubt solving sessions</span>
-        </li>
-        <li className='flex space-x-2'>
-        <svg
-            className="h-5 w-5 shrink-0 text-tickgreen"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black">Assignment after lecture</span>
-        </li>
-        <li className='flex space-x-3'>
-        <svg
-            className="h-5 w-5 shrink-0 text-black opacity-50"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-base font-normal leading-tight text-black line-through opacity-50">Advanced topics covered</span>
-        </li>
-      </ul>
-      <Link href='/'>
-      <div className='hover:bg-chemisphere bg-black text-white hover:text-white transition 2s  text-center rounded-lg shadow-lg flex justify-center '>
-      <button className='py-2 text-sm'>
-        Send an inquiry →
-      </button>
-      </div>
-      </Link>
-    </Card>   */}
+      <NavbarSection />
+      <InquiryHomePageBreadcrumb />
 
-    </section>
-    <Footer />
+      {/* JEE Main Section */}
+      <p className='text-center font-semibold text-4xl mt-16'>Explore Batches</p>
+      <section className="text-gray-600 mobile:mx-4 body-font overflow-hidden laptop:mx-16 border-2 rounded-lg border-gray-400 mt-12">
+        <div className="container laptop:px-5 mt-12 mb-4 mx-auto">
+          <div className=" divide-y-2 divide-chemisphere-100">
+            <div className="pb-8 flex flex-wrap sm:flex-nowrap lg:flex-nowrap">
+              <div className="lg:w-64 sm:w-full mb-6 lg:mb-0 flex-shrink-0 flex flex-col">
+                <span className="font-semibold title-font text-gray-700">JEE MAIN BATCH</span>
+                <Link href='/jee-main' className="mt-1 text-gray-500 text-sm underline">About JEE Main →</Link>
+              </div>
+              <div className="lg:flex-grow sm:flex-grow">
+                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                  Get ready to ace your JEE Main with our top-rated, fully interactive batch!
+                </h2>
+                <p className="leading-relaxed">
+                  Our JEE Main batch offers full syllabus coverage, flexible monthly payment plans, regular doubt-solving sessions, and personalized assignments after each lecture. You'll be well-prepared for the upcoming JEE Main with our comprehensive program!
+                </p>
+                <Link className="text-chemisphere inline-flex items-center mt-4" href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Main%20batch%20of%20Chemisphere!">
+                  Reach out to our team for JEE Main batch admission
+                  <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* JEE Advanced Section */}
+            <div className="py-8 flex flex-wrap sm:flex-nowrap lg:flex-nowrap">
+              <div className="lg:w-64 sm:w-full mb-6 lg:mb-0 flex-shrink-0 flex flex-col">
+                <span className="font-semibold title-font text-gray-700">JEE ADVANCED BATCH</span>
+                <span className="mt-1 text-gray-500 text-sm underline">About JEE Advanced →</span>
+              </div>
+              <div className="lg:flex-grow sm:flex-grow">
+                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                  Master the JEE Advanced with our expert-led coaching!
+                </h2>
+                <p className="leading-relaxed">
+                  Our JEE Advanced batch is specifically tailored for students aiming to excel in the JEE Advanced exam. With in-depth coverage of advanced topics, problem-solving workshops, and guidance from seasoned experts, you’ll be fully prepared to face the toughest challenges of the exam.
+                </p>
+                <Link className="text-chemisphere inline-flex items-center mt-4" href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20JEE%20Advanced%20batch%20of%20Chemisphere!">
+                  Reach out to our team for JEE Advanced batch admission
+                  <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* NEET Section */}
+            <div className="py-8 flex flex-wrap sm:flex-nowrap lg:flex-nowrap">
+              <div className="lg:w-64 sm:w-full mb-6 lg:mb-0 flex-shrink-0 flex flex-col">
+                <span className="font-semibold title-font text-gray-700">NEET BATCH</span>
+                <span className="mt-1 text-gray-500 text-sm underline">About NEET →</span>
+              </div>
+              <div className="lg:flex-grow sm:flex-grow">
+                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                  Prepare for NEET with our comprehensive medical entrance coaching!
+                </h2>
+                <p className="leading-relaxed">
+                  Our NEET batch is designed to cover the entire NEET syllabus, focusing on all the important concepts, frequent question patterns, and strategies to ace the medical entrance exam. Join us to boost your chances of getting into a top medical school!
+                </p>
+                <Link className="text-chemisphere inline-flex items-center mt-4" href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20NEET%20batch%20of%20Chemisphere!">
+                  Reach out to our team for NEET batch admission
+                  <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <Footer />
     </>
   )
 }

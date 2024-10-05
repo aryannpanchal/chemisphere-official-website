@@ -4,6 +4,9 @@ import { Card } from "flowbite-react";
 const AboutUsHome = () => {
   return (
     <div>
+      <section className="container px-5 mx-auto bg-h-100px p-6 mobile:mb-24 laptop:mt-8 text-gray-100 body-font laptop:mb-56 shadow-2xl laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl ">
+        <div className='flex flex-wrap m-4 text-center text-black'>s</div>
+      </section>
       <section className="lg:mt-14 mx-auto max-w-screen-xl mb-0 px-6 items-center md:flex-row md:px-8 flex flex-col-reverse mt-5 ">
         
         <div className="space-y-4 flex-1 lg:text-left">
