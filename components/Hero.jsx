@@ -33,18 +33,18 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [index]);
 
-  // Image rotation logic (fade effect)
-  const [currentImage, setCurrentImage] = useState(0);
-  const mobileImages = ["/m1.png", "/m2.png", "/m3.png", "/m4.png", "/m5.png"];
-  const laptopImages = ["/pc1.png", "/pc2.png","/pc3.png","/pc4.png","/pc1.png"];
+  // // Image rotation logic (fade effect)
+  // const [currentImage, setCurrentImage] = useState(0);
+  // // const mobileImages = [ "/m2.png", "/m3.png", "/m4.png", "/m5.png"];
+  // // const laptopImages = [ "/pc2.png","/pc3.png","/pc4.png","/pc1.png"];
 
-  useEffect(() => {
-    const imageInterval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % mobileImages.length);
-    }, 5000); // Change image every 5 seconds
+  // useEffect(() => {
+  //   const imageInterval = setInterval(() => {
+  //     setCurrentImage((prevImage) => (prevImage + 1) % mobileImages.length);
+  //   }, 5000); // Change image every 5 seconds
 
-    return () => clearInterval(imageInterval);
-  }, [mobileImages.length]);
+  //   return () => clearInterval(imageInterval);
+  // }, [mobileImages.length]);
 
   // Framer motion animation variants
   const variants = {
@@ -62,7 +62,7 @@ const Hero = () => {
       <section className="laptop:mx-24 mobile:mx-4">
         <div className="mobile:mb-24 grid mx-auto gap-16 xl:gap-0 laptop:pb-8 lg:grid-cols-12 mobile:mt-12">
           {/* Image at the top for mobile */}
-          <motion.div
+          {/* <motion.div
             className="mobile:block laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-2"
             initial="hidden"
             animate="visible"
@@ -83,10 +83,10 @@ const Hero = () => {
                 alt="Mobile Top Image"
               />
             </motion.div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Image for laptop/PC only */}
-          <motion.div
+          {/* <motion.div
             className="mobile:hidden laptop:col-span-12 laptop:flex justify-center mb-2"
             initial="hidden"
             animate="visible"
@@ -107,7 +107,7 @@ const Hero = () => {
                 alt="Laptop Top Image"
               />
             </motion.div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Heading and description */}
           <motion.div
