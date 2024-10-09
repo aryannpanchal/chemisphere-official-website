@@ -66,4 +66,21 @@ button.slick-arrow.slick-next{
   animation: gradient 10000s linear infinite;
 }
 
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.rotate-gradient {
+  animation: spin 4s linear infinite;
+  animation-timing-function: linear; /* Ensure constant speed */
+}
+        
 
+
+.storeButton{
+  --spread: 90deg; --shimmer-color: #ff0000; --radius: 10px; --speed: 1.5s; --cut: 0.1em; --bg: radial-gradient(ellipse 80% 50% at 50% 120%,rgba(62, 61, 117),rgba(18, 18, 38));
+}

@@ -116,6 +116,18 @@ const Hero = () => {
             animate="visible"
             variants={variants}
           >
+            <div className="flex justify-center items-center my-8 laptop:hidden mobile:block">
+  <button className="laptop:hidden storeButton group mobile:block relative cursor-pointer overflow-hidden whitespace-nowrap py-1 text-white [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 flex justify-center">
+    <div className="laptop:hidden absolute inset-0 overflow-hidden">
+      <div className="laptop:hidden absolute inset-[-100%] rotate-gradient">
+        <div className="laptop:hidden absolute inset-0 [background:conic-gradient(from_calc(270deg-(var(--spread)*0.1)),transparent_0,hsl(0_100%_50%/1)_var(--spread),transparent_var(--spread))]"></div>
+      </div>
+    </div>
+    <div className="laptop:hidden absolute bg-white [border-radius:var(--radius)] [inset:var(--cut)]"></div>
+    <span className="laptop:hidden z-10 w-fit px-4 whitespace-pre bg-gradient-to-b from-black from-30% to-chemisphere bg-clip-text text-center text-sm leading-none tracking-tight text-black">Visit Chemisphere Store → </span>
+  </button>
+</div>
+
             <h1 className="text-slate-900 font-bold laptop:text-5xl mobile:text-3xl mobile:text-center tracking-tight laptop:text-left">
               Premium chemistry coaching <br />
               for JEE (Main & Advanced),<br /> NEET & Boards.
@@ -135,6 +147,7 @@ const Hero = () => {
                 </span>
               </Link>
             </div>
+            
           </motion.div>
 
           {/* Booking section */}
