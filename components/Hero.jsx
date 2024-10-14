@@ -157,20 +157,20 @@ const Hero = () => {
             animate="visible"
             variants={variants}
           >
-            <div className="NeoButton shadow-3xl p-10 rounded-xl bg-white">
+            <div className="rounded-xl bg-white laptop:mt-8">
               <div className="laptop:flex laptop:flex-col gap-4">
-                <p className="font-thin text-center mobile:text-2xl laptop:text-3xl mb-4">
+                {/* <p className="font-thin text-center mobile:text-2xl laptop:text-3xl mb-4">
                   Book a free demo class NOW!
-                </p>
-                <div className="laptop:mx-20">
+                </p> */}
+                <div className="">
                   <Image
-                    src="/chandan.svg"
-                    width={1139}
-                    height={654}
+                    src="/newChemisphereHeroPhoto.svg"
+                    width={400}
+                    height={500}
                     alt="chandan-sir-image"
                   />
                 </div>
-                <div className="flex laptop:flex-row mobile:flex-col justify-center item-center laptop:gap-10 mobile:gap-5 mobile:pt-3 mobile:text-center laptop:pt-5">
+                {/* <div className="flex laptop:flex-row mobile:flex-col justify-center item-center laptop:gap-10 mobile:gap-5 mobile:pt-3 mobile:text-center laptop:pt-5">
                   <div>
                     <div>
                       <Link
@@ -186,11 +186,11 @@ const Hero = () => {
                       ⚡Get a faster response
                     </p>
                   </div>
-                </div>
-                <p className="font-base pt-2 text-gray-500 text-center text-sm">
+                </div> */}
+                {/* <p className="font-base pt-2 text-gray-500 text-center text-sm">
                   On booking, you will agree to the terms and conditions of
                   chemisphere.
-                </p>
+                </p> */}
               </div>
             </div>
           </motion.div>

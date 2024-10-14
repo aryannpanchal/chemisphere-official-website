@@ -67,7 +67,7 @@ const NavbarSection = () => {
     </div>
   </div>
   <div className="absolute bg-white [border-radius:var(--radius)] [inset:var(--cut)]"></div>
-  <span className="z-10 w-fit px-4 whitespace-pre bg-gradient-to-b from-black from-30% to-chemisphere bg-clip-text text-center text-sm leading-none tracking-tight text-black">Visit Chemisphere Store</span>
+  <a target='__blank' href='https://www.chemisphere.store' className="z-10 w-fit px-4 whitespace-pre bg-gradient-to-b from-black from-30% to-chemisphere bg-clip-text text-center text-sm leading-none tracking-tight text-black">Visit Chemisphere Store</a>
 </button>
 
 
