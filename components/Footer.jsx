@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="px-3 pt-4 laptop:px-9 border-t-2 bg-gray-50 border-t-chemisphere border-2">
-            <div className="grid gap-10 row-gap-6 laptop:mt-8 mb-8 laptop:mx-4 mobile:grid-cols-1 laptop:grid-cols-4">
+            <div className="grid gap-10 row-gap-6 laptop:mt-8 mb-8 laptop:mx-4 mobile:grid-cols-1 laptop:grid-cols-3">
                 {/* Company Info */}
                 <div>
                     <a href="#" className="inline-flex items-center">
