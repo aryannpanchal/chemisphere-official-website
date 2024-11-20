@@ -24,10 +24,10 @@ const Stats = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
         transition={{ duration: 1, ease: 'easeOut' }}
-        className="mobile:mb-24 text-gray-100 body-font laptop:mb-56 shadow-2xl laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl  "
+        className="mobile:mb-24 text-gray-100 body-font laptop:mb-44 shadow-2xl laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl  "
       >
-        <section className="container px-5 mx-auto bg-h-100px p-6">
-          <div className="flex flex-wrap m-4 text-center text-black ">
+        <section className="container px-5 mx-auto bg-h-100px p-6 bg-black rounded-3xl">
+          <div className="flex flex-wrap m-4 text-center text-white ">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}

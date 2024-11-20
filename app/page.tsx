@@ -13,7 +13,10 @@ import Stats from '../components/Stats';
 import Indicator from '../components/Indicator';
 import { AnimatedChild} from '../components/page-wrapper';
 import AnnouncementMarquee from './../components/AnnouncementMarquee';
-
+import Header from './../components/Header';
+import HeaderMobile from './../components/HeaderMobile';
+import Chandan from './../components/Chandan';
+import ExamCard from './../components/ExamCard';
 
 const page = () =>  {
 
@@ -22,16 +25,23 @@ const page = () =>  {
  <div>
      <FacebookChatPlugin />
 
+
+        <HeaderMobile />
+        {/* <AnnouncementMarquee /> */}
+        <Header />
         <Indicator />
-        <AnnouncementMarquee />
-        <NavbarSection />  
+        {/* <NavbarSection />   */}
         
         
         <Hero />
-        
+        <Chandan />
+      
         <Testimonials />
         <Stats />
+
+        <ExamCard />
         <OfferSection />
+
         <Mockup />
         <FAQ />
         <Footer />       

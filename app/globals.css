@@ -5,6 +5,10 @@
 html,
 body {
   scroll-behavior: smooth;
+  /* background-image: url('/bgg.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: none; */
 }
 .svg {
   fill: black;

@@ -1,0 +1,168 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
+import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+
+const Header = () => {
+  const [navigationMenuOpen, setNavigationMenuOpen] = useState(false);
+  const [navigationMenu, setNavigationMenu] = useState('');
+  const [navigationMenuCloseTimeout, setNavigationMenuCloseTimeout] = useState(null);
+
+  const navigationMenuLeave = () => {
+    setNavigationMenuCloseTimeout(
+      setTimeout(() => {
+        setNavigationMenuOpen(false);
+        setNavigationMenu('');
+      }, 200)
+    );
+  };
+
+  const navigationMenuReposition = (navElement) => {
+    clearTimeout(navigationMenuCloseTimeout);
+    const dropdown = document.querySelector('#navigationDropdown');
+    dropdown.style.left = `${navElement.offsetLeft}px`;
+    dropdown.style.marginLeft = `${navElement.offsetWidth / 2}px`;
+  };
+
+  return (
+    <nav className="z-30 laptop:flex fixed pb-8  items-center top-0 justify-between w-full mobile:hidden px-6 pt-8 mt-0 bg-white">
+      {/* Logo Section */}
+      <div className="flex items-center">
+        <Link href="/">
+          <img
+            src="/chemisphere-logo-white.svg"
+            alt="Logo"
+            className="h-10 cursor-pointer"
+          />
+        </Link>
+      </div>
+
+      {/* Navigation Links */}
+      <ul className="flex items-center space-x-12">
+        <li>
+          <a
+            href="#about"
+            className="text-sm font-medium text-gray-900 hover:text-chemisphere transition-colors"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#qualifications"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Classes 
+          </a>
+        </li>
+        <li>
+          <a
+            href="#awards"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Stats
+          </a>
+        </li>
+        <li>
+          <button
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors flex items-center"
+            onMouseOver={(e) => {
+              setNavigationMenuOpen(true);
+              navigationMenuReposition(e.target);
+              setNavigationMenu('getting-started');
+            }}
+            onMouseLeave={navigationMenuLeave}
+          >
+            <span>JEE</span>
+          </button>
+        </li>
+        <li>
+          <button
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors flex items-center"
+            onMouseOver={(e) => {
+              setNavigationMenuOpen(true);
+              navigationMenuReposition(e.target);
+              setNavigationMenu('learn-more');
+            }}
+            onMouseLeave={navigationMenuLeave}
+          >
+            <span>NEET</span>
+          </button>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      {/* Social Media & Button Section */}
+         {/* LinkedIn */}
+
+         
+          
+      <div className="flex items-center space-x-8 mobile:hidden laptop:block text-gray-500">
+      <Link href="https://www.youtube.com/@Chemisphere" target="__blank">
+                <FaYoutube size={24} className="hover:text-red-500 " />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/79804759/admin/feed/posts/"
+                target="__blank"
+              >
+                <FaLinkedin size={24} className="hover:text-blue-700" />
+              </Link>
+              <Link href="https://www.instagram.com/chemisphere.in/" target="__blank">
+                <FaInstagram size={24} className="hover:text-pink-500" />
+              </Link>
+        <button className="px-4 py-2 text-sm font-medium text-white bg-chemisphere rounded-md hover:bg-black hover:text-white transition-colors">
+          Go ahead with admissions →
+        </button>
+      </div>
+
+      {/* Dropdown Section */}
+      <div
+        id="navigationDropdown"
+        className={`absolute top-0 mt-6 transition-all duration-200 ease-out -translate-x-1/2 translate-y-11 ${
+          navigationMenuOpen ? 'block' : 'hidden'
+        }`}
+        onMouseOver={() => clearTimeout(navigationMenuCloseTimeout)}
+        onMouseLeave={navigationMenuLeave}
+      >
+        <div className="flex justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
+          {navigationMenu === 'getting-started' && (
+            <div className="flex items-stretch justify-center w-full max-w-2xl p-6 gap-x-3">
+              <div className="w-72">
+                <a href="#projects" className="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                  Projects
+                </a>
+                <a href="#patents" className="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                  Patents
+                </a>
+              </div>
+            </div>
+          )}
+          {navigationMenu === 'learn-more' && (
+            <div className="flex items-stretch justify-center w-full p-6">
+              <div className="w-72">
+                <a href="#bodies" className="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                  Professional Bodies
+                </a>
+                <a href="#committees" className="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                  Committees
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Header;

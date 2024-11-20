@@ -1,199 +1,156 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/image";
-import "../app/globals.css";
-import localFont from "next/font/local";
-
-// Custom font for styling
-const myFont2 = localFont({
-  src: [
-    {
-      path: "../fonts/hand.ttf",
-    },
-  ],
-});
+'use client'
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Hero = () => {
-  const [text, setText] = useState("");
-  const [index, setIndex] = useState(0);
-  const phrases = ["Chemistry made easy!"];
+  const [formStatus, setFormStatus] = useState("");
 
-  // Typing effect for the text
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (index < phrases[0].length) {
-        setText((prevText) => prevText + phrases[0][index]);
-        setIndex((prevIndex) => prevIndex + 1);
-      } else {
-        clearInterval(interval);
-      }
-    }, 100); // Adjust typing speed here (milliseconds)
-
-    return () => clearInterval(interval);
-  }, [index]);
-
-  // // Image rotation logic (fade effect)
-  // const [currentImage, setCurrentImage] = useState(0);
-  // // const mobileImages = [ "/m2.png", "/m3.png", "/m4.png", "/m5.png"];
-  // // const laptopImages = [ "/pc2.png","/pc3.png","/pc4.png","/pc1.png"];
-
-  // useEffect(() => {
-  //   const imageInterval = setInterval(() => {
-  //     setCurrentImage((prevImage) => (prevImage + 1) % mobileImages.length);
-  //   }, 5000); // Change image every 5 seconds
-
-  //   return () => clearInterval(imageInterval);
-  // }, [mobileImages.length]);
-
-  // Framer motion animation variants
-  const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { delay: 0.5, duration: 1 } },
-  };
-
-  const fadeVariants = {
-    fadeOut: { opacity: 0, transition: { duration: 1 } },
-    fadeIn: { opacity: 1, transition: { duration: 1 } },
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormStatus(""); // Clear previous status
+    emailjs
+      .sendForm(
+        "service_584nbo7", // Replace with your EmailJS service ID
+        "template_ryhh51o", // Replace with your EmailJS template ID
+        e.target,
+        "BpLl6GlYWdp4RpFjQ" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          setFormStatus("Booking request sent successfully to Chemisphere!");
+          e.target.reset(); // Reset form fields
+        },
+        (error) => {
+          setFormStatus("Failed to send message. Please try again.");
+        }
+      );
   };
 
   return (
-    <div>
-      <section className="laptop:mx-24 mobile:mx-4">
-        <div className="mobile:mb-24 grid mx-auto gap-16 xl:gap-0 laptop:pb-8 lg:grid-cols-12 mobile:mt-12">
-          {/* Image at the top for mobile */}
-          {/* <motion.div
-            className="mobile:block laptop:mt-0 laptop:col-span-12 laptop:flex justify-center mb-2"
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-          >
-            <motion.div
-              key={mobileImages[currentImage]}
-              initial="fadeOut"
-              animate="fadeIn"
-              exit="fadeOut"
-              variants={fadeVariants}
-            >
-              <Image
-                src={mobileImages[currentImage]}
-                width={500}
-                height={500}
-                className="rounded-lg shadow-lg mobile:visible laptop:hidden"
-                alt="Mobile Top Image"
-              />
-            </motion.div>
-          </motion.div> */}
-
-          {/* Image for laptop/PC only */}
-          {/* <motion.div
-            className="mobile:hidden laptop:col-span-12 laptop:flex justify-center mb-2"
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-          >
-            <motion.div
-              key={laptopImages[currentImage]}
-              initial="fadeOut"
-              animate="fadeIn"
-              exit="fadeOut"
-              variants={fadeVariants}
-            >
-              <Image
-                src={laptopImages[currentImage]}
-                width={1080}
-                height={300}
-                className="rounded-lg shadow-lg laptop:mb-12"
-                alt="Laptop Top Image"
-              />
-            </motion.div>
-          </motion.div> */}
-
+    <div className="bg-bgg bg-cover mobile:pb-[2px] rounded-3xl laptop:mt-32 laptop:mx-4">
+      <section className="laptop:mx-24 mobile:mx-4 mt-0 pt-0">
+        <div className="mobile:mb-24 grid mx-auto gap-4 laptop:pb-8 laptop:mb-0 laptop:grid-cols-12 mt-8">
           {/* Heading and description */}
-          <motion.div
-            className="place-self-center lg:col-span-7"
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-          >
-            <div className="flex justify-center items-center my-8 laptop:hidden mobile:block">
-  <button className="laptop:hidden storeButton group mobile:block relative cursor-pointer overflow-hidden whitespace-nowrap py-1 text-white [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 flex justify-center">
-    <div className="laptop:hidden absolute inset-0 overflow-hidden">
-      <div className="laptop:hidden absolute inset-[-100%] rotate-gradient">
-        <div className="laptop:hidden absolute inset-0 [background:conic-gradient(from_calc(270deg-(var(--spread)*0.1)),transparent_0,hsl(0_100%_50%/1)_var(--spread),transparent_var(--spread))]"></div>
-      </div>
-    </div>
-    <div className="laptop:hidden absolute bg-white [border-radius:var(--radius)] [inset:var(--cut)]"></div>
-    <span className="laptop:hidden z-10 w-fit px-4 whitespace-pre bg-gradient-to-b from-black from-30% to-chemisphere bg-clip-text text-center text-sm leading-none tracking-tight text-black">Visit Chemisphere Store → </span>
-  </button>
-</div>
-
-            <h1 className="text-slate-900 font-bold laptop:text-5xl mobile:text-3xl mobile:text-center tracking-tight laptop:text-left">
-              Premium chemistry coaching <br />
-              for JEE (Main & Advanced),<br /> NEET & Boards.
-            </h1>
-            {/* Inquiry link button */}
-            <div className="mobile:text-center laptop:text-left mobile:mt-6">
-              <Link
-                href="/inquiry"
-                className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group mobile:text-center md:text-left"
-              >
-                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-chemisphere rounded group-hover:-mr-4 group-hover:-mt-4">
-                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-                </span>
-                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-red-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
-                <span className="mobile:text-center relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
-                  Proceed to inquiry →
-                </span>
-              </Link>
+          <div className="laptop:col-span-7 laptop:mt-[-12px]">
+            <div className="laptop:bg-white p-4 rounded-b-3xl flex-col justify-center">
+              <h1 className="laptop:text-slate-900 mobile:text-white laptop:pb-12 mobile:mt-12 font-bold laptop:text-4xl mobile:text-3xl text-center tracking-tight laptop:text-left mobile:pb-0 mobile:mb-0">
+                Premium chemistry coaching <br />
+                for JEE (Main & Advanced),<br /> NEET & Boards.
+              </h1>
             </div>
-            
-          </motion.div>
 
-          {/* Booking section */}
-          <motion.div
-            className="lg:mt-0 lg:col-span-5 flex justify-center"
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-          >
-            <div className="rounded-xl bg-white laptop:mt-8">
-              <div className="laptop:flex laptop:flex-col gap-4">
-                {/* <p className="font-thin text-center mobile:text-2xl laptop:text-3xl mb-4">
-                  Book a free demo class NOW!
-                </p> */}
-                <div className="">
-                  <Image
-                    src="/newChemisphereHeroPhoto.svg"
-                    width={400}
-                    height={500}
-                    alt="chandan-sir-image"
-                  />
-                </div>
-                {/* <div className="flex laptop:flex-row mobile:flex-col justify-center item-center laptop:gap-10 mobile:gap-5 mobile:pt-3 mobile:text-center laptop:pt-5">
-                  <div>
-                    <div>
-                      <Link
-                        target="__blank"
-                        href="https://wa.me/+918850436230?text=I'm%20interested%20in%20inquiring%20about%20classes%20of%20Chemisphere!"
-                      >
-                        <button className="NeoButton2 text-center hover:border-chemisphere rounded-lg hover:bg-chemisphere hover:text-white transition p-2 my-4">
-                          Book via WhatsApp 🚀
-                        </button>
-                      </Link>
-                    </div>
-                    <p className="text-center py-2 text-gray-600">
-                      ⚡Get a faster response
+            <div className="bg-white p-4 rounded-3xl mt-4 mobile:hidden laptop:block">
+              <div className="max-w-screen-xl mx-auto p-5">
+                <div className="rounded overflow-hidden flex flex-col max-w-fit mx-auto">
+                  <iframe
+                    className="rounded-3xl mobile:w-fit mobile:h-fit laptop:w-[670px] laptop:h-[370px]"
+                    src="https://www.youtube.com/embed/hYblxRG5WrY?si=ozHJrn8MsvxQzdjb"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                  <div className="relative px-10 pt-5 pb-5 bg-black rounded-3xl mt-4">
+                    <a
+                      href="#"
+                      className="font-normal text-lg text-white inline-block hover:text-indigo-600 transition duration-500 ease-in-out  mb-2"
+                    >
+                      Why choose Chemisphere?
+                    </a>
+                    <p className="text-gray-400 text-base">
+                      There are customized classes for you to suit your needs.
+                      Also, you will get a lot of video and text resources to
+                      learn along with the most neat class notes which will
+                      probably make you fall in love with Chemistry again! You
+                      will be able to track your progress at every level with
+                      weekly and monthly tests.
                     </p>
                   </div>
-                </div> */}
-                {/* <p className="font-base pt-2 text-gray-500 text-center text-sm">
-                  On booking, you will agree to the terms and conditions of
-                  chemisphere.
-                </p> */}
+                </div>
               </div>
             </div>
-          </motion.div>
+          </div>
+
+          {/* Booking section */}
+          <div className="laptop:mt-0 laptop:col-span-5 flex justify-center max-h-fit mobile:mt-0 mobile:pt-0">
+            <div className="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden max-h-fit mobile:mt-0 mobile:pt-0">
+              <div className="text-2xl py-4 px-6 bg-white text-white text-center font-bold uppercase max-h-fit mobile:mt-0 mobile:pt-0">
+                <img
+                  src="/newChemisphereHeroPhoto.svg"
+                  className="w-[350px] pt-0 mt-0 max-h-fit rounded-3xl"
+                  alt="Chemisphere Hero"
+                />
+              </div>
+              <form
+                className="py-4 px-6"
+                onSubmit={handleSubmit}
+                method="POST"
+              >
+                <div className="mb-4">
+                  <label
+                    className="block text-gray-700 font-bold mb-2"
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    name="from_name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    className="block text-gray-700 font-bold mb-2"
+                    htmlFor="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    name="from_email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    className="block text-gray-700 font-bold mb-2"
+                    htmlFor="phone"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+                <div className="flex items-center justify-center mb-4 mt-8">
+                  <button
+                    className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
+                    type="submit"
+                  >
+                    Book Appointment
+                  </button>
+                </div>
+                {formStatus && (
+                  <p className="text-center text-sm text-gray-500 mt-2">
+                    {formStatus}
+                  </p>
+                )}
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </div>
