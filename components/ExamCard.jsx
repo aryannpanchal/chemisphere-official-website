@@ -50,8 +50,8 @@ const ExamCard = () => {
   ];
 
   return (
-    <section className="container mx-auto px-10 md:p-20 antialiased ">
-      <p className='font-semibold text-center mb-12 text-4xl'>Our programs</p>
+    <section className="container mx-auto laptop:px-10 md:p-20 antialiased ">
+      <p className='font-semibold text-center mb-12 laptop:text-4xl mobile:text-3xl'>Our programs</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 rounded-lg">
         {cardsData.map((card, index) => (
           <Card key={index} {...card} />
