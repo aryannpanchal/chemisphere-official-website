@@ -42,21 +42,13 @@ const Hero = () => {
             <div className="bg-white p-4 rounded-3xl laptop:mt-4 mobile:mt-12">
               <div className="mx-auto p-5">
                 <div className="rounded flex flex-col max-w-fit mx-auto w-full">
-                  <iframe
-                    className="rounded-3xl w-full aspect-video"
-                    src="https://www.youtube.com/embed/hYblxRG5WrY?si=ozHJrn8MsvxQzdjb"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
+                  <iframe className="rounded-3xl w-full aspect-video" src="https://www.youtube.com/embed/765qd0vmxmM?si=b6L_jSC_XYJBi2RK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   <div className="relative px-6 pt-5 pb-5 bg-black rounded-3xl mt-4">
-                    <a
-                      href="#"
+                    <p
                       className="font-normal text-lg text-white hover:text-indigo-600 transition duration-500 ease-in-out"
                     >
                       Why choose Chemisphere?
-                    </a>
+                    </p>
                     <p className="text-gray-400 text-sm">
                       There are customized classes for you to suit your needs.
                       Also, you will get a lot of video and text resources to
