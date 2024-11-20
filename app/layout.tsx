@@ -46,7 +46,6 @@ export default function RootLayout({
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
-<title>Chemisphere. Chemistry made easy!</title>
      <link rel="icon" href='/favicon.ico' sizes="any" />
      </head>
       <body className={myFont.className}>{children}<Analytics /><SpeedInsights/>
