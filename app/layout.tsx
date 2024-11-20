@@ -2,6 +2,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
+import { Metadata } from "next";
 
 const myFont = localFont({  
   src: [
@@ -9,6 +10,27 @@ const myFont = localFont({
     path: '../fonts/CircularStd-Book.ttf',
   }
   ] })
+
+  export const metadata: Metadata = {
+    title: "Chemisphere.in",
+    description: "Looking to excel in JEE Main and Advanced, NEET, MHCET, or Class 12th boards? Look no further! Chandan Biswas, CEO of Chemisphere and a renowned Chemistry professor, offers personalized classes and mentorship to help you achieve your goals. With over a decade of experience and having mentored thousands of successful students, Chandan provides comprehensive resources, including video lectures, class notes, and regular tests, tailored to your needs. His expertise and guidance will not only make learning Chemistry enjoyable but also significantly boost your marks and ranking. Sign up for a free demo class now and embark on a journey to master Chemistry with ease!",
+    openGraph: {
+      title: "Chemisphere.in",
+      description: "Looking to excel in JEE Main and Advanced, NEET, MHCET, or Class 12th boards? Look no further! Chandan Biswas, CEO of Chemisphere and a renowned Chemistry professor, offers personalized classes and mentorship to help you achieve your goals. With over a decade of experience and having mentored thousands of successful students, Chandan provides comprehensive resources, including video lectures, class notes, and regular tests, tailored to your needs. His expertise and guidance will not only make learning Chemistry enjoyable but also significantly boost your marks and ranking. Sign up for a free demo class now and embark on a journey to master Chemistry with ease!",
+      url: "https://www.chemisphere.in/", // Replace with your actual URL
+      siteName: "Chemisphere.in",
+      images: [
+        {
+          url: "/meta.png", // Path to your local image
+          width: 1200,  // Adjust width as needed
+          height: 630,  // Adjust height as needed
+          type: "image/png", // Change to 'image/png'
+        },
+      ],
+      type: "website",
+    },
+  };
+  
 
 export default function RootLayout({
   children,
@@ -29,15 +51,6 @@ export default function RootLayout({
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-<meta name="description" content=
-
-"Looking to excel in JEE Main and Advanced, NEET, MHCET, or Class 12th boards? Look no further! Chandan Biswas, CEO of Chemisphere and a renowned Chemistry professor, offers personalized classes and mentorship to help you achieve your goals. With over a decade of experience and having mentored thousands of successful students, Chandan provides comprehensive resources, including video lectures, class notes, and regular tests, tailored to your needs. His expertise and guidance will not only make learning Chemistry enjoyable but also significantly boost your marks and ranking. Sign up for a free demo class now and embark on a journey to master Chemistry with ease!"/>
-
-<meta property="og:url" content="https://www.chemisphere.in" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Premium chemistry coaching for JEE (Main & Advanced), NEET & Boards by Chandan Biswas" />
-<meta property="og:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/chemisphere.in/Chemisphere%20by%20Chandan%20Biswas/Premium%20online%20chemistry%20IIT%20JEE%2C%20NEET%20%26%20class%2011th-12th%20boards%20lectures%20exclusively%20at%20affordable%20prices!/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F806069f2-7815-40ca-b733-aac9e3c8f923.png%3Ftoken%3DSlFne835EzolWqIi_qHebUj0Jva7sTK_ux4aHyV6TQQ%26height%3D630%26width%3D1200%26expires%3D33249019515/og.png" />
-
      <link rel="icon" href='/favicon.ico' sizes="any" />
 
      </head>
