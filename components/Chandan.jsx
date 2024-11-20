@@ -2,7 +2,7 @@ import React from 'react';
 
 const Chandan = () => {
   return (
-    <div className="mobile:flex mobile:flex-col laptop:flex-row mobile:my-8  mobile:mx-4 items-center justify-center laptop:mx-12 laptop:my-24 laptop:gap-12 mobile:mb-24">
+    <div id='about' className="mobile:flex mobile:flex-col laptop:flex-row mobile:my-8  mobile:mx-4 items-center justify-center laptop:mx-12 laptop:my-24 laptop:gap-12 mobile:mb-24">
       {/* Image Section */}
       <div className="laptop:w-1/2 p-5">
         <div className="image object-center text-center">

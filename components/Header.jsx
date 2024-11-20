@@ -52,7 +52,7 @@ const Header = () => {
         </li>
         <li>
           <a
-            href="#qualifications"
+            href="#classes"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Classes 
@@ -60,13 +60,13 @@ const Header = () => {
         </li>
         <li>
           <a
-            href="#awards"
+            href="#stats"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Stats
           </a>
         </li>
-        <li>
+        {/* <li>
           <button
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors flex items-center"
             onMouseOver={(e) => {
@@ -91,7 +91,7 @@ const Header = () => {
           >
             <span>NEET</span>
           </button>
-        </li>
+        </li> */}
         <li>
           <a
             href="#contact"
@@ -128,20 +128,20 @@ const Header = () => {
       {/* Dropdown Section */}
       <div
         id="navigationDropdown"
-        className={`absolute top-0 mt-6 transition-all duration-200 ease-out -translate-x-1/2 translate-y-11 ${
+        className={`absolute top-0 mt-6 transition ease-in-out duration-200  -translate-x-1/2 translate-y-11 ${
           navigationMenuOpen ? 'block' : 'hidden'
         }`}
         onMouseOver={() => clearTimeout(navigationMenuCloseTimeout)}
         onMouseLeave={navigationMenuLeave}
       >
-        <div className="flex justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
+        <div className="flex justify-center w-auto h-auto overflow-hidden bg-chemisphere rounded-md  ">
           {navigationMenu === 'getting-started' && (
             <div className="flex items-stretch justify-center w-full max-w-2xl p-6 gap-x-3">
               <div className="w-72">
-                <a href="#projects" className="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                <a href="#projects" className="block px-3.5 py-3 text-white text-sm rounded">
                   Projects
                 </a>
-                <a href="#patents" className="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                <a href="#patents" className="block px-3.5 py-3 text-white text-sm rounded">
                   Patents
                 </a>
               </div>
