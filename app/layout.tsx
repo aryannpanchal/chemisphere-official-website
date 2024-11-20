@@ -47,16 +47,9 @@ export default function RootLayout({
 />
 
 <title>Chemisphere. Chemistry made easy!</title>
-<script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
      <link rel="icon" href='/favicon.ico' sizes="any" />
-
      </head>
       <body className={myFont.className}>{children}<Analytics /><SpeedInsights/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       </body>
     </html>
     
