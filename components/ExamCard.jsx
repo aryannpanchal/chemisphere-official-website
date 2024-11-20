@@ -14,8 +14,8 @@ const Card = ({ title, description, imageUrl, link}) => (
         <h1 className="text-lg font-semibold text-left text-chemisphere">{title}</h1>
         <p className="text-sm mt-2 leading-relaxed">{description}</p>
         <p className="text-gray-900 font-bold py-4">Online Mode</p>
-        <Link href={link} className="max-h-fit justify-center text-center flex items-center bg-chemisphere py-2 px-2 rounded-lg text-white">
-            Inquiry
+        <Link href={link} className="max-h-fit justify-center text-center flex items-center bg-white border-2 border-chemisphere text-chemisphere py-2 px-2 rounded-lg ">
+        ⚡Quick inquiry
           </Link>
       </div>
 
@@ -31,21 +31,21 @@ const ExamCard = () => {
       description:
         "Located in Our JEE Main & Advanced batch offers full syllabus coverage, flexible monthly payment plans, regular doubt-solving sessions, and personalized assignments after each lecture. You'll be well-prepared for the upcoming JEE Main with our comprehensive program!",
       imageUrl: "/jee-banner.png",
-      link: "/ab",
+      link: "https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20JEE%20Mains%20and%20Advanced%20classes%20at%20Chemisphere",
     },
     {
       title: "NEET coaching",
       description:
         "Our NEET batch is designed to cover the entire NEET syllabus, focusing deeply on all the important concepts and tricks, frequent question patterns, and strategies to ace the medical entrance exam. Join us to boost your chances of getting into a top medical school! Join our NEET specialized course now.",
       imageUrl: "/neet-banner.png",
-      link: "",
+      link: "https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20NEET%20classes%20at%20Chemisphere",
     },
     {
       title: "XI-XII Boards coaching",
       description:
         "Our comprehensive board exam preparation batches are tailored to help students excel in their Class XII and XI exams. With a focus on concept clarity, application-based learning, and thorough syllabus coverage, we ensure students are well-prepared to score top marks. Join now.",
       imageUrl: "/board-banner.png",
-      link: "",
+      link: "https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20XI-XII%20classes%20at%20Chemisphere",
     },
   ];
 

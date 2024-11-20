@@ -1,85 +1,86 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+
 const Footer = () => {
-  return (
-    <div>
+    return (
+        <footer className="px-3 pt-4 laptop:px-9 border-t-2 bg-gray-50 border-t-chemisphere border-2">
+            <div className="grid gap-10 row-gap-6 laptop:mt-8 mb-8 laptop:mx-4 mobile:grid-cols-1 laptop:grid-cols-4">
+                {/* Company Info */}
+                <div>
+                    <a href="#" className="inline-flex items-center">
+                        <img
+                            src="/c.png"
+                            alt="logo"
+                            className="h-8 w-8"
+                        />
         
+                    </a>
+                    <div className="mt-6 laptop:max-w-xl">
+                        <p className="text-sm text-gray-800">
+                       
+Here is a shorter and more engaging version of your content:
 
-        <footer className="bg-gray-100 mt-12">
-    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-              <a href="https://chemisphere.in/" className="flex items-center">
-                  <img src="/chemisphere-black.svg" className="h-8 me-3" alt="Chemisphere Logo" />
-              </a>
-          </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                  {/* <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Pages</h2> */}
-                  <ul className="text-gray-500 font-medium">
-                      {/* <li className="mb-4">
-                          <a href="/about-us" className="hover:underline">About Us</a>
-                      </li> */}
-                      <li>
-                          <a href="#" className="hover:underline"></a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                      <li className="mb-4">
-                          <a href="https://www.instagram.com/chemisphere.in/" target="__blank" className="hover:underline ">Instagram</a>
-                      </li>
-                      <li className='mb-4'>
-                          <a href="https://www.youtube.com/@Chemisphere" target="__blank" className="hover:underline">Youtube</a>
-                      </li>
-                      <li className='mb-4'>
-                          <a href="https://www.linkedin.com/company/79804759/admin/feed/posts/" target='__blank' className="hover:underline">LinkedIn</a>
-                      </li>
-                      <li className='mb-4'>
-                          <a href="https://www.facebook.com/chemisphere.in?mibextid=ZbWKwL" target="__blank" className="hover:underline">Facebook</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
-                  <ul className="text-gray-500  font-medium">
-                      <li className="mb-4">
-                          <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
-                      </li>
-                      <li>
-                          {/* <a href="#" className="hover:underline">Terms &amp; Conditions</a> */}
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>  <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
-    
+Struggling with Chemistry?
+What if I told you it could be your biggest advantage in exams?
 
-      <div className="flex items-center justify-center ">
-          {/* <span className="text-sm text-gray-500">Website made by <a href="https://www.linkedin.com/in/aryan-panchal-3a22491a9/" target="_blank" className="underline text-blue-600">Aryan Panchal</a>
-          </span> */}
-          
-          
-      </div>
-      {/* <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " /> */}
+Hi, I im Chandan Biswas, Chemistry Professor and CEO of Chemisphere. With over a decade of experience mentoring 15,000+ students for JEE, NEET, MHCET, and Class 12 boards, I have helped over 1,000 students achieve IIT and medical success.
+                        </p>
+                    </div>
+                </div>
 
-      <div className="flex items-center justify-center ">
-          <span className="text-sm text-gray-500">© 2024 <a href="https://chemisphere.in/" className="hover:underline">Chemisphere™</a>. All Rights Reserved.
-          </span>
-          
-          
-      </div>
-      
-    </div>
-</footer>
+                {/* Popular Links */}
+                <div className="flex flex-col laptop:gap-8 mobile:gap-4 text-sm">
+                    <a href='#about' className="text-base font-bold tracking-wide text-gray-900">About</a>
+                    <a href='#classes' className="text-base font-bold tracking-wide text-gray-900">Classes</a>
+                    <a href='#stats' className="text-base font-bold tracking-wide text-gray-900">Stats</a>
+                    <a href='#contact' className="text-base font-bold tracking-wide text-gray-900">Contact</a>
 
+                </div>
 
-    </div>
-  )
-}
+                {/* Company Links */}
+                <div>
+                    <p className="text-base font-bold tracking-wide text-gray-900">
+                        COMPANY IS ALSO AVAILABLE ON
+                    </p>
+                    <div className="flex items-center gap-1 px-2">
+                        <a href="https://play.google.com/store/apps/details?id=com.chemisphereApp.app"  target="__blank" className="w-full min-w-xl">
+                            <img
+                                src="https://mcqmate.com/public/images/icons/playstore.svg"
+                                alt="Playstore Button"
+                                className="h-10"
+                               
+                            />
+                        </a>
+                        <a target="__blank"
+                            className="w-full min-w-xl"
+                            href="https://www.youtube.com/@Chemisphere"
+                        >
+                            <img
+                                src="https://mcqmate.com/public/images/icons/youtube.svg"
+                                alt="Youtube Button"
+                                className="h-28"
 
-export default Footer
+                            />
+                        </a>
+                    </div>
+                    <p className="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+                    <div className="flex">
+                        <p className="mr-1 text-gray-800">Email:</p>
+                        <a className='text-blue-600 underline' href="mailto:info@chemisphere.in" title="send email">
+                            info@chemisphere.in
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            {/* Footer Bottom */}
+            <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t laptop:flex-row laptop:mx-4">
+                <p className="text-sm text-gray-600 mobile:text-center">© Copyright 2024 Company. All rights reserved.</p>
+                <ul className="flex mobile:flex-col laptop:flex-row mb-3 laptop:mb-0 mobile:space-y-0 mobile:space-x-5 laptop:text-center">
+                  
+                </ul>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
