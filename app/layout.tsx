@@ -21,7 +21,7 @@ const myFont = localFont({
       siteName: "Chemisphere.in",
       images: [
         {
-          url: "/meta.png", // Path to your local image
+          url: "https://www.chemisphere.in/meta.png", // Path to your local image
           width: 1200,  // Adjust width as needed
           height: 630,  // Adjust height as needed
           type: "image/png", // Change to 'image/png'
