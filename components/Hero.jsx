@@ -73,7 +73,7 @@ const Hero = () => {
 
           {/* Booking section */}
           <div className="laptop:col-span-5 flex justify-center">
-            <div className="max-w-md mx-auto mobile:my-12 px-8  bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className=" mx-auto mobile:my-12 px-16 laptop:px-12 laptop:mx-0  bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="text-center py-4">
                 <img
                   src="/newChemisphereHeroPhoto.svg"
@@ -81,7 +81,7 @@ const Hero = () => {
                   alt="Chemisphere Hero"
                 />
               </div>
-              <form className="py-4 laptop:px-2" onSubmit={handleSubmit} method="POST">
+              <form className="py-4 laptop:px-0" onSubmit={handleSubmit} method="POST">
                 <div className="mb-4">
                   <label
                     className="block text-gray-700 font-bold mb-2"
