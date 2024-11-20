@@ -73,11 +73,11 @@ const Hero = () => {
 
           {/* Booking section */}
           <div className="laptop:col-span-5 flex justify-center">
-            <div className=" mx-auto mobile:my-12 px-16 laptop:px-12 laptop:mx-0  bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className=" mx-auto mobile:my-12 px-4 laptop:px-12 laptop:mx-0  bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="text-center py-4">
                 <img
                   src="/newChemisphereHeroPhoto.svg"
-                  className="w-[300px] mx-auto rounded-3xl"
+                  className="w-[400px] mx-auto rounded-3xl"
                   alt="Chemisphere Hero"
                 />
               </div>
@@ -146,6 +146,8 @@ const Hero = () => {
               </form>
             </div>
           </div>
+                  {/* Right Section */}
+        
         </div>
       </section>
     </div>
