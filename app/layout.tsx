@@ -29,6 +29,10 @@ const myFont = localFont({
       ],
       type: "website",
     },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
   
 
