@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <>
     <section className='laptop:mb-[150px] laptop:mx-24  mobile:mx-4'>
-      <h2 className='laptop:hidden text-center mobile:block font-thin text-4xl'>Testimonials</h2>
+      <h2 className='laptop:hidden text-center mobile:block font-semibold text-3xl'>Testimonials</h2>
       <div className='grid laptop:grid-cols-4 gap-6 mt-5 p-6'>
         <div className='relative bg-white text-black shadow-2xl p-6 rounded-lg laptop:col-span-2'>
           <Image src='/comma.svg' alt='' width={32} height={32} className='absolute top-0 right-6 z-0' />
