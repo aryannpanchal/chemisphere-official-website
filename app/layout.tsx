@@ -17,7 +17,7 @@ const myFont = localFont({
     openGraph: {
       title: "Chemisphere",
       description: "Looking to excel in JEE Main and Advanced, NEET, MHCET, or Class 12th boards? Look no further! Chandan Biswas, CEO of Chemisphere and a renowned Chemistry professor, offers personalized classes and mentorship to help you achieve your goals. ",
-      url: "https://www.chemisphere.in", // Replace with your actual URL
+      url: "https://www.chemisphere.in/", // Replace with your actual URL
       siteName: "Chemisphere.in",
       images: [
         {
