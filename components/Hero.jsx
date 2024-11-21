@@ -55,7 +55,7 @@ const Hero = () => {
 
                   <div className="relative px-6 pt-5 pb-5 bg-black rounded-3xl mt-4">
                     <p
-                      className="font-normal text-lg text-white hover:text-indigo-600 transition duration-500 ease-in-out"
+                      className="font-normal text-lg text-white  transition duration-500 ease-in-out"
                     >
                       Why choose Chemisphere?
                     </p>
@@ -65,7 +65,7 @@ const Hero = () => {
                       learn along with the most neat class notes which will
                       probably make you fall in love with Chemistry again! You
                       will be able to track your progress at every level with
-                      weekly and monthly tests.
+                      weekly and monthly tests.s
                     </p>
                   </div>
                 </div>
