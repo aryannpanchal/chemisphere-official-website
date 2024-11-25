@@ -1,56 +1,88 @@
 'use client';
-import React from 'react'
-import NavbarSection from '../components/NavbarSection';
-import Hero from '@/components/Hero';
-import OfferSection from '@/components/OfferSection';
-import Testimonials from '@/components/Testimonials';
-import Footer from '@/components/Footer';
-import Mockup from '@/components/Mockup';
-import FAQ from '@/components/FAQ';
-import MarqueeSection from '../components/MarqueeSection';
-import FacebookChatPlugin from '../components/Fbchat';
-import Stats from '../components/Stats';
-import Indicator from '../components/Indicator';
-import { AnimatedChild} from '../components/page-wrapper';
-import AnnouncementMarquee from './../components/AnnouncementMarquee';
+
+import React, { useState, useEffect } from 'react';
+
+// Components
 import Header from './../components/Header';
 import HeaderMobile from './../components/HeaderMobile';
+import Hero from '@/components/Hero';
 import Chandan from './../components/Chandan';
+import Testimonials from '@/components/Testimonials';
+import Stats from '../components/Stats';
 import ExamCard from './../components/ExamCard';
+import OfferSection from '@/components/OfferSection';
+import Mockup from '@/components/Mockup';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
+import FacebookChatPlugin from '../components/Fbchat';
+import Indicator from '../components/Indicator';
 
-const page = () =>  {
+const Page = () => {
+  const [showContent, setShowContent] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    // Check if the user has already visited
+    const hasVisited = localStorage.getItem('hasVisited');
+
+    if (!hasVisited) {
+      // Show the video if it's the first visit
+      setShowVideo(true);
+      localStorage.setItem('hasVisited', 'true'); // Mark the user as having visited
+    } else {
+      // Directly show the content
+      setShowContent(true);
+    }
+  }, []);
+
+  const handleVideoEnd = () => {
+    setShowVideo(false);
+    setShowContent(true);
+  };
 
   return (
-    
- <div>
-     <FacebookChatPlugin />
+    <div>
+      {showVideo && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
+          <video
+            src="/intro.mp4"
+            autoPlay
+            muted
+            onEnded={handleVideoEnd}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+      {showContent && (
+        <>
+          {/* Facebook Chat Plugin */}
+          <FacebookChatPlugin />
 
+          {/* Header for Desktop and Mobile */}
+          <HeaderMobile />
+          <Header />
 
-        <HeaderMobile />
-        {/* <AnnouncementMarquee /> */}
-        <Header />
-        <Indicator />
-        {/* <NavbarSection />   */}
-        
-        
-        <Hero />
-        <Chandan />
-      
-        <Testimonials />
-        <Stats />
+          {/* Indicator Section */}
+          <Indicator />
 
-        <ExamCard />
-        <OfferSection />
+          {/* Main Content */}
+          <Hero />
+          <Chandan />
+          <Testimonials />
+          <Stats />
+          <ExamCard />
+          <OfferSection />
 
-        <Mockup />
-        <FAQ />
-        <Footer />       
-      
+          {/* Additional Sections */}
+          <Mockup />
+          <FAQ />
 
-
-      
+          {/* Footer */}
+          <Footer />
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
