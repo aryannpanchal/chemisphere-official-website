@@ -88,3 +88,16 @@ button.slick-arrow.slick-next{
 .storeButton{
   --spread: 90deg; --shimmer-color: #ff0000; --radius: 10px; --speed: 1.5s; --cut: 0.1em; --bg: radial-gradient(ellipse 80% 50% at 50% 120%,rgba(62, 61, 117),rgba(18, 18, 38));
 }
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

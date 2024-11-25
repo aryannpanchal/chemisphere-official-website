@@ -18,30 +18,31 @@ import FacebookChatPlugin from '../components/Fbchat';
 import Indicator from '../components/Indicator';
 
 const Page = () => {
-  const [showContent, setShowContent] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(false); // Video visibility
+  const [fadeInContent, setFadeInContent] = useState(false); // Controls fade-in effect for content
 
   useEffect(() => {
     // Check if the user has already visited
     const hasVisited = localStorage.getItem('hasVisited');
 
     if (!hasVisited) {
-      // Show the video if it's the first visit
-      setShowVideo(true);
-      localStorage.setItem('hasVisited', 'true'); // Mark the user as having visited
+      setShowVideo(true); // Show the video on first visit
+      localStorage.setItem('hasVisited', 'true'); // Mark as visited
     } else {
-      // Directly show the content
-      setShowContent(true);
+      setFadeInContent(true); // Immediately show content for returning users
     }
   }, []);
 
   const handleVideoEnd = () => {
-    setShowVideo(false);
-    setShowContent(true);
+    setShowVideo(false); // Hide video
+    setTimeout(() => {
+      setFadeInContent(true); // Trigger fade-in for main content
+    }, 200); // Slight delay for smooth transition
   };
 
   return (
-    <div>
+    <div className="relative">
+      {/* Video Overlay */}
       {showVideo && (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
           <video
@@ -53,34 +54,38 @@ const Page = () => {
           />
         </div>
       )}
-      {showContent && (
-        <>
-          {/* Facebook Chat Plugin */}
-          <FacebookChatPlugin />
 
-          {/* Header for Desktop and Mobile */}
-          <HeaderMobile />
-          <Header />
+      {/* Main Content */}
+      <div
+        className={`transition-opacity duration-1000 ${
+          fadeInContent ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
+        {/* Facebook Chat Plugin */}
+        <FacebookChatPlugin />
 
-          {/* Indicator Section */}
-          <Indicator />
+        {/* Header for Desktop and Mobile */}
+        <HeaderMobile />
+        <Header />
 
-          {/* Main Content */}
-          <Hero />
-          <Chandan />
-          <Testimonials />
-          <Stats />
-          <ExamCard />
-          <OfferSection />
+        {/* Indicator Section */}
+        <Indicator />
 
-          {/* Additional Sections */}
-          <Mockup />
-          <FAQ />
+        {/* Main Content */}
+        <Hero />
+        <Chandan />
+        <Testimonials />
+        <Stats />
+        <ExamCard />
+        <OfferSection />
 
-          {/* Footer */}
-          <Footer />
-        </>
-      )}
+        {/* Additional Sections */}
+        <Mockup />
+        <FAQ />
+
+        {/* Footer */}
+        <Footer />
+      </div>
     </div>
   );
 };
