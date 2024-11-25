@@ -1,38 +1,46 @@
 "use client";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const FacebookChatPlugin = () => {
   useEffect(() => {
-    // Your Facebook SDK initialization
-    window.fbAsyncInit = function () {
-      window.FB.init({
-        xfbml: true,
-        version: 'v18.0',
-      });
+    // Function to initialize the Facebook SDK
+    const initializeFacebookSDK = () => {
+      window.fbAsyncInit = function () {
+        window.FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
+
+      // Load the Facebook SDK script
+      if (!document.getElementById("facebook-jssdk")) {
+        const script = document.createElement("script");
+        script.id = "facebook-jssdk";
+        script.src = "https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }
     };
 
-    // Load Facebook SDK asynchronously
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, 'script', 'facebook-jssdk');
-  }, []);
+    // Set up the Chat Plugin attributes after the script is loaded
+    const setupChatPlugin = () => {
+      const chatbox = document.getElementById("fb-customer-chat");
+      if (chatbox) {
+        chatbox.setAttribute("page_id", "110828641248126");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      }
+    };
 
-  useEffect(() => {
-    // Set up Facebook Chat Plugin attributes
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute('page_id', '110828641248126');
-    chatbox.setAttribute('attribution', 'biz_inbox');
-  }, []);
+    // Initialize and set up the SDK
+    initializeFacebookSDK();
+    setupChatPlugin();
+  }, []); // Empty dependency array ensures this runs once
 
   return (
     <div>
+      {/* Facebook root container */}
       <div id="fb-root"></div>
-      {/* Your Chat Plugin code */}
+      {/* Facebook Chat Plugin container */}
       <div id="fb-customer-chat" className="fb-customerchat"></div>
     </div>
   );
