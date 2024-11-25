@@ -6,7 +6,7 @@ const AboutUsHome = () => {
     <div>
       <section className=" mx-auto max-w-screen-xl mb-0 px-4 items-center laptop:flex-row laptop:px-8 flex flex-col-reverse mt-5 ">
         
-        <div className="space-y-8 mobile:mx-2 flex-1 my-10 mobile:text-center laptop:text-left">
+        <div className="space-y-8 mobile:mx-2 flex-1 laptop:my-20 mobile:my-16 mobile:text-center laptop:text-left">
             <h1 className="text-slate-800 font-bold text-4xl xl:text-5xl">
                 Privacy Policy of <span className='text-chemisphere'>Chemisphere!</span>
             </h1>
