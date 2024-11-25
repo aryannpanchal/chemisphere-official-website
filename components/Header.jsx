@@ -100,6 +100,14 @@ const Header = () => {
             Contact
           </a>
         </li>
+        <li>
+          <a
+            href="privacy-policy"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Privacy Policy
+          </a>
+        </li>
       </ul>
 
       {/* Social Media & Button Section */}
