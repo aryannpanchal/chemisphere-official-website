@@ -74,7 +74,7 @@ Hi, I im Chandan Biswas, Chemistry Professor and CEO of Chemisphere. With over a
 
             {/* Footer Bottom */}
             <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t laptop:flex-row laptop:mx-4">
-                <p className="text-sm text-gray-600 mobile:text-center">© Copyright 2024 Company. All rights reserved.</p>
+                <p className="text-sm text-gray-600 mobile:text-center">© Copyright 2024 Chemisphere. All rights reserved.</p>
                 <ul className="flex mobile:flex-col laptop:flex-row mb-3 laptop:mb-0 mobile:space-y-0 mobile:space-x-5 laptop:text-center">
                   
                 </ul>
