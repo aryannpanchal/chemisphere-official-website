@@ -132,6 +132,7 @@ const Hero = () => {
                     required
                   />
                 </div>
+              
                 <div className="flex justify-center mt-8">
                   <button
                     className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"

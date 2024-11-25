@@ -4,22 +4,22 @@ import Image from 'next/image'
 const AboutUsHome = () => {
   return (
     <div>
-      <section className="lg:mt-14 mx-auto max-w-screen-xl mb-0 px-4 items-center md:flex-row md:px-8 flex flex-col-reverse mt-5 ">
+      <section className=" mx-auto max-w-screen-xl mb-0 px-4 items-center laptop:flex-row laptop:px-8 flex flex-col-reverse mt-5 ">
         
-        <div className="space-y-4 flex-1 sm:text-center lg:text-left">
+        <div className="space-y-8 mobile:mx-2 flex-1 my-10 mobile:text-center laptop:text-left">
             <h1 className="text-slate-800 font-bold text-4xl xl:text-5xl">
                 Privacy Policy of <span className='text-chemisphere'>Chemisphere!</span>
             </h1>
-            <p className="text-gray-900   md:text-left">
+            <p className="text-gray-900 text-left">
             Welcome to Chemisphere.in. We respect your privacy and want to protect your personal information. This Privacy Policy explains how we collect, use, and disclose your information.  <br /></p>
-            <h3  className="text-slate-800 font-bold text-2xl xl:text-2xl">
+            <h3  className="text-slate-800 font-bold text-left text-2xl xl:text-2xl">
             Policies
             </h3>
-            <div className='ml-6 text-slate-900'>
-              <li className='font-bold'>
+            <div className='ml-6 text-slate-900  text-left'>
+              <li className='font-bold  text-left'>
               Information We Collect: 
               </li>
-              <p className='ml-6 mb-3'>We may collect personal identification information from users in a variety of ways, including, but not limited to, when users message us on WhatsApp after visiting our site.</p>
+              <p className='ml-6 mb-3  text-left'>We may collect personal identification information from users in a variety of ways, including, but not limited to, when users message us on WhatsApp after visiting our site.</p>
               <li className='font-bold'>
               How We Use Collected Information: 
               </li>
