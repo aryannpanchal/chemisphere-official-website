@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Stats = () => {
@@ -20,54 +19,31 @@ const Stats = () => {
 
   return (
     <div ref={ref}>
-      <motion.div
-       id='stats'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-        transition={{ duration: 1, ease: 'easeOut' }}
-        className="mobile:my-24 text-gray-100 body-font laptop:mb-44 laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl  "
+      <div
+        id='stats'
+        className="mobile:my-24 text-gray-100 body-font laptop:mb-44 laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl"
       >
         <section className="container px-5 mx-auto p-6 bg-black rounded-3xl">
           <div className="flex flex-wrap m-4 text-center text-white ">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-              transition={{ duration: 1, ease: 'easeOut' }}
-              className="p-4 sm:w-1/4 w-1/2"
-            >
+            <div className="p-4 sm:w-1/4 w-1/2">
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{activeStudents}+</p>
               <p className="leading-relaxed laptop:text-3xl font-thin">active students</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-              transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
-              className="p-4 sm:w-1/4 w-1/2"
-            >
+            </div>
+            <div className="p-4 sm:w-1/4 w-1/2">
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{rankHolders}+</p>
               <p className="leading-relaxed laptop:text-3xl font-thin">rank holders</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-              transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
-              className="p-4 sm:w-1/4 w-1/2"
-            >
+            </div>
+            <div className="p-4 sm:w-1/4 w-1/2">
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{communityMembers}K+</p>
               <p className="leading-relaxed laptop:text-3xl font-thin">thriving community of students</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-              transition={{ duration: 1, ease: 'easeOut', delay: 0.6 }}
-              className="p-4 sm:w-1/4 w-1/2"
-            >
+            </div>
+            <div className="p-4 sm:w-1/4 w-1/2">
               <p className="title-font font-bold laptop:text-6xl mobile:text-4xl text-chemisphere">{cities}+</p>
               <p className="leading-relaxed laptop:text-3xl font-thin">cities influenced</p>
-            </motion.div>
+            </div>
           </div>
         </section>
-      </motion.div>
+      </div>
     </div>
   );
 };

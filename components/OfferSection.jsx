@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 const OfferSection = () => {
   const features = [
@@ -37,75 +35,33 @@ const OfferSection = () => {
     },
   ];
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
-  const controls = useAnimation();
-
-  const variants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  React.useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
   return (
     <section className="bg-white laptop:mb-48 mobile:mb-24 laptop:mx-24  mobile:mx-4">
       <div className=" px-4 text-betterblack md:px-8 laptop:mt-28 mobile:mt-16">
         <div className="max-w-screen-xl space-y-3 pt-3 text-center ">
-          <motion.p
-            className="text-black font-semibold laptop:text-4xl mobile:text-3xl text-center mobile:text-left"
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={variants}
-            transition={{ duration: 1}}
-          >
+          <p className="text-black font-semibold laptop:text-4xl mobile:text-3xl text-center mobile:text-left">
             What makes Chemisphere better?
-          </motion.p>
+          </p>
         </div>
         <div className="mt-12 ">
           <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3 ">
             {features.map((item, idx) => (
-              <motion.li
+              <li
                 key={idx}
                 className="space-y-6 p-4 rounded-md neumorphic-card shadow-lg"
-                initial="hidden"
-                animate={controls}
-                variants={variants}
-                transition={{ duration: 1, delay: idx * 0.5 }}
               >
-                <motion.div
+                <div
                   className="w-12 h-12 bg-white border-chemisphere border-2 text-white rounded-full flex items-center justify-center grayscale"
-                  initial="hidden"
-                  animate={controls}
-                  variants={variants}
                 >
                   <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
-                </motion.div>
-                <motion.h4
-                  className="text-chemisphere mobile:text-xl laptop:text-2xl"
-                  initial="hidden"
-                  animate={controls}
-                  variants={variants}
-                >
+                </div>
+                <h4 className="text-chemisphere mobile:text-xl laptop:text-2xl">
                   {item.title}
-                </motion.h4>
-                <motion.p
-                  className="text-black laptop:text-xl mobile:text-lg"
-                  initial="hidden"
-                  animate={controls}
-                  variants={variants}
-                >
+                </h4>
+                <p className="text-black laptop:text-xl mobile:text-lg">
                   {item.desc}
-                </motion.p>
-              </motion.li>
+                </p>
+              </li>
             ))}
           </ul>
         </div>
