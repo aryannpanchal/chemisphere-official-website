@@ -33,11 +33,23 @@ const Hero = () => {
           {/* Heading and description */}
           <div className="laptop:col-span-7">
             <div className="bg-white p-4 rounded-b-3xl">
+            
               <h1 className="laptop:text-slate-900  mobile:text-black mobile:mt-24 text-center laptop:text-left font-bold text-3xl laptop:text-4xl tracking-tight laptop:mt-0">
                 Premium chemistry coaching <br />
                 for JEE (Main & Advanced), <br /> NEET & Boards.
               </h1>
             </div>
+            <div className="bg-white text-chemisphere rounded-xl text-left mobile:text-center transition font-semibold my-4 flex laptop:flex-row mobile:flex-col  justify-center laptop:px-24 items-center">
+  {/* Image Section */}
+  <div className=" mobile:mb-0">
+    <img src="/4.png" className="w-32 max-h-fit" alt="Chemisphere Merch" />
+  </div>
+  {/* Text Section */}
+  <div className="flex-1">
+   <p className='mobile:text-center pb-4'> Check our <a target="__blank" href="https://chemisphere.store" className="underline text-chemisphere">Chemisphere Store</a> for exclusive merch!</p> 
+  </div>
+</div>
+
 
             <div className="bg-white p-4 rounded-3xl laptop:mt-4 mobile:mt-12">
               <div className="mx-auto p-5">
