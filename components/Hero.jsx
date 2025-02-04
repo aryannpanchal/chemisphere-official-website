@@ -56,7 +56,7 @@ const Hero = () => {
                 <div className="rounded flex flex-col max-w-fit mx-auto w-full">
                 <iframe 
   className="rounded-3xl w-full aspect-video" 
-  src="https://www.youtube.com/embed/765qd0vmxmM?start=11&autoplay=1&si=b6L_jSC_XYJBi2RK" 
+  src="https://www.youtube.com/embed/765qd0vmxmM?start=11&autoplay=0&si=b6L_jSC_XYJBi2RK" 
   title="YouTube video player" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
