@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="bg-white text-chemisphere rounded-xl text-left mobile:text-center transition font-semibold my-4 flex laptop:flex-row mobile:flex-col  justify-center laptop:px-24 items-center">
   {/* Image Section */}
   <div className=" mobile:mb-0">
-    <img src="/4.png" className="w-32 max-h-fit" alt="Chemisphere Merch" />
+    <img src="/4.png" className="w-32 max-h-fit" alt="Chemisphere Merchandise" />
   </div>
   {/* Text Section */}
   <div className="flex-1">
