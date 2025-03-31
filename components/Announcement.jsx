@@ -27,7 +27,7 @@ const BannerOne = () => (
 );
 
 const BannerTwo = () => (
-  <div className='laptop:flex mobile:flex-col laptop:flex-row items-center gap-10 mobile:gap-6 laptop:gap-44 justify-center p-4 mobile:p-2 laptop:p-6 bg-[#00FF00] rounded mobile:w-fit  mobile:mx-4 mobile:my-12'>
+  <div className='laptop:flex mobile:flex-col laptop:flex-row items-center  mobile:gap-6 laptop:gap-36 justify-center p-4 mobile:p-2 laptop:p-6 bg-[#00FF00] rounded mobile:w-fit  mobile:mx-4 mobile:my-12'>
     <Link href="/">
       <img
         src='/maga.png'
