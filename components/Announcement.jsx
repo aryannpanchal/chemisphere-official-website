@@ -19,7 +19,7 @@ const BannerOne = () => (
       href="https://wa.me/918850436230?text=I%20wish%20to%20enroll%20for%20physics%20classes" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="text-white border-2 border-white mobile:px-3 py-2 rounded text-sm mobile:text-xs laptop:text-base"
+      className="text-white border-2 border-white mobile:px-3 py-2 rounded text-sm mobile:text-xs laptop:mr-12 laptop:text-base"
     >
       WhatsApp Us 
     </a>
@@ -43,7 +43,7 @@ const BannerTwo = () => (
       href="https://wa.me/918850436230?text=I%20wish%20to%20enroll%20for%20math%20classes" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="text-black border-2 border-black px-4 mobile:px-3 laptop:px-6 py-2 rounded text-sm mobile:text-xs laptop:text-base"
+      className="text-black border-2 border-black px-4 mobile:px-3 laptop:px-6 py-2 laptop:mr-12 rounded text-sm mobile:text-xs laptop:text-base"
     >
       WhatsApp Us
     </a>
