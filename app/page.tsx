@@ -16,6 +16,7 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FacebookChatPlugin from '../components/Fbchat';
 import Indicator from '../components/Indicator';
+import Announcement from './../components/Announcement';
 
 const Page = () => {
   const [showVideo, setShowVideo] = useState(false); // Video visibility
@@ -65,6 +66,7 @@ const Page = () => {
         <FacebookChatPlugin />
 
         {/* Header for Desktop and Mobile */}
+        <Announcement />
         <HeaderMobile />
         <Header />
 

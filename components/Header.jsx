@@ -65,6 +65,29 @@ const Header = () => {
           >
             Stats
           </a>
+        </li><li>
+          <a
+            href="#stats"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Physics
+          </a>
+        </li>
+        <li>
+          <a
+            href="#stats"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Chemistry
+          </a>
+        </li>
+        <li>
+          <a
+            href="#stats"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Math
+          </a>
         </li>
         {/* <li>
           <button
