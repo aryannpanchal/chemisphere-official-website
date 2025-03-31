@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-bgg bg-cover rounded-3xl mobile:pb-2 laptop:mt-32 laptop:mx-4">
+    <div className="bg-bgg bg-cover rounded-3xl mobile:pb-2 laptop:mt-14 laptop:mx-4">
       <section className="laptop:mx-24 mobile:mx-4 pt-0">
         <div className="grid gap-4 mx-auto laptop:pb-8 laptop:mb-0 laptop:grid-cols-12">
           {/* Heading and description */}
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="bg-white p-4 rounded-b-3xl">
             
               <h1 className="laptop:text-slate-900  mobile:text-black mobile:mt-24 text-center laptop:text-left font-bold text-3xl laptop:text-4xl tracking-tight laptop:mt-0">
-                Premium chemistry coaching <br />
+                Premium science coaching <br />
                 for JEE (Main & Advanced), <br /> NEET & Boards.
               </h1>
             </div>
@@ -75,7 +75,7 @@ const Hero = () => {
                       There are customized classes for you to suit your needs.
                       Also, you will get a lot of video and text resources to
                       learn along with the most neat class notes which will
-                      probably make you fall in love with Chemistry again! You
+                      probably make you fall in love with science again! You
                       will be able to track your progress at every level with
                       weekly and monthly tests.s
                     </p>

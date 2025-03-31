@@ -17,12 +17,12 @@ const Footer = () => {
                     <div className="mt-6 laptop:max-w-xl">
                         <p className="text-sm text-gray-800">
                        
-Here is a shorter and more engaging version of your content:
 
-Struggling with Chemistry?
-What if I told you it could be your biggest advantage in exams?
 
-Hi, I im Chandan Biswas, Chemistry Professor and CEO of Chemisphere. With over a decade of experience mentoring 15,000+ students for JEE, NEET, MHCET, and Class 12 boards, I have helped over 1,000 students achieve IIT and medical success.
+                        Struggling with Math and Science? What if we told you it could be your biggest advantage in exams?
+
+At Chemisphere, we dont just teach science — we make it your strongest subject! Led by Chandan Biswas, a seasoned professor and CEO of Chemisphere, we have mentored 15,000+ students for JEE, NEET, MHCET, and Class 12 boards, with 1,000+ IITians and medical professionals achieving success under our guidance.
+
                         </p>
                     </div>
                 </div>
