@@ -152,7 +152,7 @@ const Header = () => {
               <Link href="https://www.instagram.com/chemisphere.in/" target="__blank">
                 <FaInstagram size={24} className="hover:text-pink-500" />
               </Link>
-        <Link href="https://wa.me/918850436230?text=I%20wish%20to%20go%20ahead%20with%20the%20admissions%20at%20Chemisphere" target='__blank' className="px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-green hover:text-white transition-colors">
+        <Link href="https://wa.me/918850436230?text=I%20wish%20to%20go%20ahead%20with%20the%20admissions%20at%20Chemisphere" target='__blank' className="px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-green hover:text-black transition-colors">
 <button
   type="submit"
   class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-blue-700 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#25D366] hover:text-gray-900 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group  "
