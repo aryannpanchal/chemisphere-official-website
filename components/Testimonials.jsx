@@ -28,7 +28,7 @@ const Testimonials = () => {
                 <div
                   className={`${animation} flex flex-nowrap w-max min-w-full hover:[animation-play-state:paused] overflow-hidden relative gap-5 justify-around shrink-0`}
                 >
-                  {testimonialData.slice(index * 5, (index + 1) * 5).map((item, i) => (
+                  {testimonialData.slice(index * 7, (index + 1) * 7).map((item, i) => (
                     <div
                       key={i}
                       className="flex flex-col justify-between h-[320px] rounded-sm border-[1.2px] border-white/20 dark:border-black/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px]"
@@ -92,6 +92,12 @@ const testimonialData = [
     name: 'Swapna Khade',
     title: 'Mother of Anvit Khade (IIT Bombay)',
     link: ''
+  }, {
+    text: `"I was part of a big coaching institute, but Chemistry there felt rushed and impersonal. After joining Chemisphere, the difference was clear — Chandan Sir's classes were focused, conceptual, and interactive. He gave personal attention, cleared doubts patiently, and helped me master the subject deeply."`,
+    avatar: '/a6.jpg',
+    name: 'Aditya Sawant',
+    title: 'AIR 137 (JEE Advanced 2023)',
+    link: ''
   },
     {
     text: `"Chandan sirs mentorship allowed me to secure admission in one of the highly recognised univerisities in the United States of America. I will be forever grateful to him!"`,
@@ -108,13 +114,7 @@ const testimonialData = [
     title: 'AIR 2726, JEE Advanced 2025',
     link: ''
   },
-  {
-    text: `"Finding a great Laravel developer is tough, but Samuel exceeded all my expectations. His code is clean, efficient, and highly scalable."`,
-    avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Daniel S',
-    title: 'Business Owner',
-    link: ''
-  },
+ 
   {
     text: `"A rare talent who excels in Tailwind, Nuxt.js, and Laravel! He built a full-stack web app that is both powerful and beautiful."`,
     avatar: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&q=80&w=1080',
