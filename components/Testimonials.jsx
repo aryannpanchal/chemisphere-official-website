@@ -41,7 +41,7 @@ const Testimonials = () => {
                           <img className="w-10 h-10 rounded" src={item.avatar} alt="avatar" />
                           <div className="flex flex-col items-start justify-start flex-1 gap-0">
                             <h5 className="text-base font-medium md:text-md">{item.name}</h5>
-                            <p className="text-sm md:text-base mt-[-4px] text-black">
+                            <p className="text-sm md:text-base mt-[-4px] text-white">
                               {item.title}
                             </p>
                           </div>
