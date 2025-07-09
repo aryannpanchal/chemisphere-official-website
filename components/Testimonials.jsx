@@ -7,7 +7,7 @@ const Testimonials = () => {
     <div className="min-w-full min-h-screen flex items-center bg-black text-white dark:bg-gray-50 dark:text-black">
       <div className="min-w-full py-5 mt-10 mb-20 sm:mx-auto md:mx-0 overflow-hidden">
         <div className="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
-          <p className="text-sm sm:text-lg font-semibold text-rose-600">Words That Matter</p>
+          <p className="text-sm sm:text-lg font-semibold text-chemisphere">Words That Matter</p>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
             See Why Clients Keep Coming Back
           </h3>
@@ -93,7 +93,7 @@ const testimonialData = [
     title: 'Mother of Anvit Khade (IIT Bombay)',
     link: ''
   }, {
-    text: `"I was part of a big coaching institute, but Chemistry there felt rushed and impersonal. After joining Chemisphere, the difference was clear — Chandan Sir's classes were focused, conceptual, and interactive. He gave personal attention, cleared doubts patiently, and helped me master the subject deeply."`,
+    text: `"I was part of a big coaching institute, but Chemistry there felt rushed and impersonal. After joining Chemisphere, the difference was clear — Chandan Sirs classes were focused, conceptual, and interactive. He gave personal attention, cleared doubts patiently, and helped me master the subject deeply."`,
     avatar: '/a6.jpg',
     name: 'Aditya Sawant',
     title: 'AIR 137 (JEE Advanced 2023)',
@@ -114,63 +114,45 @@ const testimonialData = [
     title: 'AIR 2726, JEE Advanced 2025',
     link: ''
   },
- 
   {
-    text: `"A rare talent who excels in Tailwind, Nuxt.js, and Laravel! He built a full-stack web app that is both powerful and beautiful."`,
-    avatar: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'John M',
-    title: 'Startup CEO',
-    link: ''
-  },
-  {
-    text: `"Nuxt.js can be tricky, but Samuel made everything look effortless. From state management to routing, they nailed it."`,
-    avatar: 'https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Marry J.',
-    title: 'Startup Founder',
+    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
+    avatar: '/p1.jpg',
+    name: 'Mayura Patil',
+    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
     link: ''
   },
   {
-    text: `"A complete package! Samuel crafted a sleek UI with Tailwind, built a high-performance Nuxt.js frontend, and powered it with a rock-solid Laravel backend."`,
-    avatar: 'https://images.unsplash.com/photo-1559893088-c0787ebfc084?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Steve J.',
-    title: 'Project Manager',
+    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
+    avatar: '/p1.jpg',
+    name: 'Mayura Patil',
+    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    link: ''
+  },{
+    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
+    avatar: '/p1.jpg',
+    name: 'Mayura Patil',
+    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    link: ''
+  },{
+    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
+    avatar: '/p1.jpg',
+    name: 'Mayura Patil',
+    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    link: ''
+  },{
+    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
+    avatar: '/p1.jpg',
+    name: 'Mayura Patil',
+    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    link: ''
+  },{
+    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
+    avatar: '/p1.jpg',
+    name: 'Mayura Patil',
+    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
     link: ''
   },
-  {
-    text: `"From the frontend to the backend, Samuel handled everything flawlessly. Their attention to detail and problem-solving skills are unmatched."`,
-    avatar: 'https://images.unsplash.com/photo-1442328166075-47fe7153c128?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Ethan F.',
-    title: 'Lead Developer',
-    link: ''
-  },
-  {
-    text: `"Our team was new to Tailwind, but Samuel guided us through the transition effortlessly, making our development process faster and more efficient."`,
-    avatar: 'https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Melissa K.',
-    title: 'SaaS Founder',
-    link: ''
-  },
-    {
-    text: `"Working with Samuel was a game-changer! His Tailwind CSS skills brought our UI to life with a clean, modern, and fully responsive design."`,
-    avatar: 'https://images.unsplash.com/photo-1665686307516-1915b9616526?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Sarah M',
-    title: 'Startup Founder',
-    link: ''
-  },
-    {
-    text: `"Working with Samuel was a game-changer! His Tailwind CSS skills brought our UI to life with a clean, modern, and fully responsive design."`,
-    avatar: 'https://images.unsplash.com/photo-1665686307516-1915b9616526?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Sarah M',
-    title: 'Startup Founder',
-    link: ''
-  },
-    {
-    text: `"Working with Samuel was a game-changer! His Tailwind CSS skills brought our UI to life with a clean, modern, and fully responsive design."`,
-    avatar: 'https://images.unsplash.com/photo-1665686307516-1915b9616526?ixlib=rb-4.0.3&q=80&w=1080',
-    name: 'Sarah M',
-    title: 'Startup Founder',
-    link: ''
-  },
+   
 ];
 
 export default Testimonials;
