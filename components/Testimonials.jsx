@@ -4,7 +4,7 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <div className="min-w-full min-h-screen flex items-center bg-black text-white dark:bg-gray-50 dark:text-black">
+    <div className="min-w-full min-h-screen flex items-center bg-black text-white ">
       <div className="min-w-full py-5 mt-10 mb-20 sm:mx-auto md:mx-0 overflow-hidden">
         <div className="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
           <p className="text-sm sm:text-lg font-semibold text-chemisphere">Words That Matter</p>
