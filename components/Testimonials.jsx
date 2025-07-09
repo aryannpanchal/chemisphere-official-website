@@ -9,7 +9,7 @@ const Testimonials = () => {
         <div className="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
           <p className="text-sm sm:text-lg font-semibold text-chemisphere">Words That Matter</p>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
-            See Why Clients Keep Coming Back
+            Toppers said it...
           </h3>
         </div>
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
                   {testimonialData.slice(index * 7, (index + 1) * 7).map((item, i) => (
                     <div
                       key={i}
-                      className="flex flex-col justify-between h-[320px] rounded-sm border-[1.2px] border-white/20 dark:border-black/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px]"
+                      className="flex flex-col justify-between h-[320px] rounded-sm border-[1.2px] border-black/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px]"
                     >
                       <p className="px-5 py-5 tracking-tight text-md font-extralight md:text-lg">
                         {item.text}
@@ -41,12 +41,12 @@ const Testimonials = () => {
                           <img className="w-10 h-10 rounded" src={item.avatar} alt="avatar" />
                           <div className="flex flex-col items-start justify-start flex-1 gap-0">
                             <h5 className="text-base font-medium md:text-md">{item.name}</h5>
-                            <p className="text-sm md:text-base mt-[-4px] text-white dark:text-black">
+                            <p className="text-sm md:text-base mt-[-4px] text-black">
                               {item.title}
                             </p>
                           </div>
                         </div>
-                        <div className="w-[1px] bg-white/10 dark:bg-black/20" />
+                        <div className="w-[1px] bg-black/20" />
                         <div className="flex items-center justify-center max-w-full mx-auto">
                           <a target="_blank" rel="noopener noreferrer" href={item.link}>
                           <img className='w-12' src='/comma.svg'/>
@@ -78,7 +78,7 @@ const testimonialData = [
     text: `"Chandan Sirs classes at Chemisphere were a game-changer. His notes, test strategies, and tricks helped me score 152/180 in NEET 2025 Chemistry and 99/100 in Boards. Highly recommended!"`,
     avatar: '/a2.jpg',
     name: 'Tanisha Mondal',
-    title: ', AIR 4843 (NEET 2025)',
+    title: 'AIR 4843 (NEET 2025)',
     link: ''
   },{
     text: `"Chemistry was my weak point throughout JEE prep. After joining Chemisphere, my marks improved significantly — my JEE Mains percentile jumped from 87.3 to 99.75, and I scored better than expected in JEE Advanced."`,
@@ -122,16 +122,16 @@ const testimonialData = [
     link: ''
   },
   {
-    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
-    avatar: '/p1.jpg',
-    name: 'Mayura Patil',
-    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    text: `"I scored 99.3 percentile in Chemistry (JEE Mains 2023) and 99.32 in CET — all thanks to Chemisphere. Chandan Sir makes every class enjoyable and effective. I owe my chemistry marks to him and highly recommend joining"`,
+    avatar: '/p2.jpg',
+    name: 'Vivansh Gandhi',
+    title: 'NIT Trichy',
     link: ''
   },{
-    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
-    avatar: '/p1.jpg',
-    name: 'Mayura Patil',
-    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    text: `"I struggled in school Chemistry, barely scoring 50%, but with Chandan Sir’s clear explanations and sharp problem-solving, I scored 97% in JEE Advanced 2023 Chemistry. I highly recommend Chemisphere for JEE prep."`,
+    avatar: '/p3.jpg',
+    name: 'Anmol Dureja',
+    title: 'IIT Kharagpur 2027',
     link: ''
   },{
     text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
