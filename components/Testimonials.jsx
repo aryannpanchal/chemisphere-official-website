@@ -75,7 +75,7 @@ const testimonialData = [
     link: ''
   },
   {
-    text: `"Chandan Sirs classes at Chemisphere were a game-changer. His notes, test strategies, and tricks helped me score 152/180 in NEET 2025 Chemistry and 99/100 in Boards. Highly recommended!"`,
+    text: `"Chandan Sir's classes at Chemisphere were a game-changer. His notes, test strategies, and tricks helped me score 152/180 in NEET 2025 Chemistry and 99/100 in Boards. Highly recommended!"`,
     avatar: '/a2.jpg',
     name: 'Tanisha Mondal',
     title: 'AIR 4843 (NEET 2025)',
@@ -87,20 +87,20 @@ const testimonialData = [
     title: 'AIR 2,093 (JEE Advanced 2025)',
     link: ''
   },{
-    text: `"Joining Chemisphere was the best decision for my sons JEE prep. Though online, the classes felt just like physical ones — well-structured, conceptual, and exam-focused. Chandan Sirs guidance helped him crack JEE Main, Advanced, BITSAT, MHT-CET, and IISER. He supported Anvit like a mentor, not just a teacher"`,
+    text: `"Joining Chemisphere was the best decision for my sons JEE prep. Though online, the classes felt just like physical ones — well-structured, conceptual, and exam-focused. Chandan Sir's guidance helped him crack JEE Main, Advanced, BITSAT, MHT-CET, and IISER. He supported Anvit like a mentor, not just a teacher"`,
     avatar: '/a3.jpg',
     name: 'Swapna Khade',
     title: 'Mother of Anvit Khade (IIT Bombay)',
     link: ''
   }, {
-    text: `"I was part of a big coaching institute, but Chemistry there felt rushed and impersonal. After joining Chemisphere, the difference was clear — Chandan Sirs classes were focused, conceptual, and interactive. He gave personal attention, cleared doubts patiently, and helped me master the subject deeply."`,
+    text: `"I was part of a big coaching institute, but Chemistry there felt rushed and impersonal. After joining Chemisphere, the difference was clear — Chandan Sir's classes were focused, conceptual, and interactive. He gave personal attention, cleared doubts patiently, and helped me master the subject deeply."`,
     avatar: '/a6.jpg',
     name: 'Aditya Sawant',
     title: 'AIR 137 (JEE Advanced 2023)',
     link: ''
   },
     {
-    text: `"Chandan sirs mentorship allowed me to secure admission in one of the highly recognised univerisities in the United States of America. I will be forever grateful to him!"`,
+    text: `"Chandan sir's mentorship allowed me to secure admission in one of the highly recognised univerisities in the United States of America. I will be forever grateful to him!"`,
     avatar: '/Aryan (2).jpeg',
     name: 'Aryan Panchal',
     title: 'Clemson University, USA',
@@ -134,22 +134,22 @@ const testimonialData = [
     title: 'IIT Kharagpur 2027',
     link: ''
   },{
-    text: `"Im really glad I found Chandan Sir for Chemistry. His organized approach to Organic and Inorganic, and the way he simplified Physical Chemistry made a huge difference. His classes were interactive, lively, and helped me improve a lot."`,
+    text: `"I'm really glad I found Chandan Sir for Chemistry. His organized approach to Organic and Inorganic, and the way he simplified Physical Chemistry made a huge difference. His classes were interactive, lively, and helped me improve a lot."`,
     avatar: '/p4.jpg',
     name: 'Tvisha Mehta',
     title: '99.18 percentile (JEE Main 2024)',
     link: ''
   },{
-    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
-    avatar: '/p1.jpg',
-    name: 'Mayura Patil',
-    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    text: `I was an average student in Class 11, but with Chandan Sir’s guidance, my Chemistry scores shot up — from 80% to 95% in Boards. His regular PYQ practice and deep understanding of competitive exams helped me score 99.8 percentile in JEE Main Chemistry, 98.76 in CET, and Rank 5507 in ComedK. Truly grateful to have learned from him`,
+    avatar: '/p5.jpg',
+    name: 'Arnav Banerjee',
+    title: 'NIT Trichy',
     link: ''
   },{
-    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
-    avatar: '/p1.jpg',
-    name: 'Mayura Patil',
-    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    text: `"Chemistry was my weak point, but with Chandan Sir’s mentorship, it became one of my strengths. His guidance over two years helped me score 99.5 percentile in Mains and AIR 8163 in JEE Advanced. He taught till the very end and truly made a difference."`,
+    avatar: '/p6.jpg',
+    name: 'Purunjay Karwa',
+    title: 'IIT Kanpur',
     link: ''
   },
    
