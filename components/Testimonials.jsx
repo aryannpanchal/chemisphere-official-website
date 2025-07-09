@@ -9,7 +9,7 @@ const Testimonials = () => {
         <div className="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
           <p className="text-sm sm:text-lg font-semibold text-chemisphere">Words That Matter</p>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
-            Toppers said it...not us
+            Toppers said it... not us!
           </h3>
         </div>
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
                   {testimonialData.slice(index * 7, (index + 1) * 7).map((item, i) => (
                     <div
                       key={i}
-                      className="flex flex-col justify-between h-[320px] rounded-lg border-[1.2px] border-white/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px] "
+                      className="flex flex-col justify-between h-[380px] rounded-lg border-[1.2px] border-white/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px] "
                     >
                       <p className="px-5 py-5 tracking-tight text-md font-extralight md:text-lg">
                         {item.text}
@@ -40,8 +40,8 @@ const Testimonials = () => {
                         <div className="flex items-center w-3/4 gap-3 px-4 py-3">
                           <img className="w-10 h-10 rounded" src={item.avatar} alt="avatar" />
                           <div className="flex flex-col items-start justify-start flex-1 gap-0">
-                            <h5 className="text-base font-medium md:text-md">{item.name}</h5>
-                            <p className="text-sm md:text-base mt-[-4px] text-white">
+                            <h5 className="text-base font-extrabold md:text-md">{item.name}</h5>
+                            <p className="text-sm md:text-base mt-[-4px] text-white/80">
                               {item.title}
                             </p>
                           </div>
@@ -83,11 +83,11 @@ const testimonialData = [
   },{
     text: `"Chemistry was my weak point throughout JEE prep. After joining Chemisphere, my marks improved significantly — my JEE Mains percentile jumped from 87.3 to 99.75, and I scored better than expected in JEE Advanced."`,
     avatar: '/a4.jpg',
-    name: 'Ishan Rathi',
+    name: 'Eshan Rathi',
     title: 'AIR 2,093 (JEE Advanced 2025)',
     link: ''
   },{
-    text: `"Joining Chemisphere was the best decision for my sons JEE prep. Though online, the classes felt just like physical ones — well-structured, conceptual, and exam-focused. Chandan Sir's guidance helped him crack JEE Main, Advanced, BITSAT, MHT-CET, and IISER. He supported Anvit like a mentor, not just a teacher"`,
+    text: `"Joining Chemisphere was the best decision for my son's JEE prep. Though online, the classes felt just like physical ones — well-structured, conceptual, and exam-focused. Chandan Sir's guidance helped him crack JEE Main, Advanced, BITSAT, MHT-CET, and IISER. He supported Anvit like a mentor, not just a teacher"`,
     avatar: '/a3.jpg',
     name: 'Swapna Khade',
     title: 'Mother of Anvit Khade (IIT Bombay)',

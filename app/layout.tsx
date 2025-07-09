@@ -7,7 +7,7 @@ import { Metadata } from "next";
 const myFont = localFont({  
   src: [
   {
-    path: '../fonts/CircularStd-Book.ttf',
+    path: '../fonts/Montserrat-Regular.ttf',
   }
   ] })
 

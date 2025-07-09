@@ -39,7 +39,7 @@ const OfferSection = () => {
     <section className="bg-white laptop:mb-48 mobile:mb-24 laptop:mx-24  mobile:mx-4">
       <div className=" px-4 text-betterblack md:px-8 laptop:mt-28 mobile:mt-16">
         <div className="max-w-screen-xl space-y-3 pt-3 text-center ">
-          <p className="text-black font-semibold laptop:text-4xl mobile:text-3xl text-center mobile:text-left">
+          <p className="text-black font-extrabold laptop:text-4xl mobile:text-3xl text-center mobile:text-left">
             What makes Chemisphere better?
           </p>
         </div>
@@ -55,7 +55,7 @@ const OfferSection = () => {
                 >
                   <Image src={item.image} alt={`tick_${idx + 1}`} width={30} height={30} />
                 </div>
-                <h4 className="text-chemisphere mobile:text-xl laptop:text-2xl">
+                <h4 className="text-chemisphere font-extrabold mobile:text-xl laptop:text-2xl">
                   {item.title}
                 </h4>
                 <p className="text-black laptop:text-xl mobile:text-lg">
