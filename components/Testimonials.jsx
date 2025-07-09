@@ -30,7 +30,7 @@ const Testimonials = () => {
             <Image src='/anmol.jpg' alt='' width={32} height={32} className='h-12 w-12 rounded-full border-2 border-pruple-400'/>
             <div>
               <h2 className='font-bold text-xl'>Anmol Dureja</h2>
-              <h3 className='text-md opacity-50'>JEE Main 2023 AIR 14158</h3>
+              <h3 className='text-md opacity-50'>JEE Main 2024 AIR 14158</h3>
             </div>
           </div>
           <p className='realtive z-10 mt-4 font-bold text-xl leading-tight'>
