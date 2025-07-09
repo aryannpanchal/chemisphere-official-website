@@ -136,7 +136,7 @@ const testimonialData = [
   },{
     text: `"Im really glad I found Chandan Sir for Chemistry. His organized approach to Organic and Inorganic, and the way he simplified Physical Chemistry made a huge difference. His classes were interactive, lively, and helped me improve a lot."`,
     avatar: '/p4.jpg',
-    name: 'Trisha Mehta',
+    name: 'Tvisha Mehta',
     title: '99.18 percentile (JEE Main 2024)',
     link: ''
   },{
