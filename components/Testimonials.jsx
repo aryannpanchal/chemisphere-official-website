@@ -31,7 +31,7 @@ const Testimonials = () => {
                   {testimonialData.slice(index * 7, (index + 1) * 7).map((item, i) => (
                     <div
                       key={i}
-                      className="flex flex-col justify-between h-[320px] rounded-sm border-[1.2px] border-black/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px]"
+                      className="flex flex-col justify-between h-[320px] rounded-sm border-[1.2px] border-white shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px]"
                     >
                       <p className="px-5 py-5 tracking-tight text-md font-extralight md:text-lg">
                         {item.text}
