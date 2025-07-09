@@ -31,12 +31,12 @@ const Testimonials = () => {
                   {testimonialData.slice(index * 7, (index + 1) * 7).map((item, i) => (
                     <div
                       key={i}
-                      className="flex flex-col justify-between h-[320px] rounded-sm border-[1.2px] border-white shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px]"
+                      className="flex flex-col justify-between h-[320px] rounded-lg border-[1.2px] border-white shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px] "
                     >
                       <p className="px-5 py-5 tracking-tight text-md font-extralight md:text-lg">
                         {item.text}
                       </p>
-                      <div className="flex overflow-hidden h-[30%] md:h-[28%] gap-1 w-full border-t-[1.2px] border-white/10 dark:border-black/10">
+                      <div className="flex overflow-hidden h-[30%] md:h-[28%] gap-1 w-full border-t-[1.2px] border-white/10 rounded-2xl">
                         <div className="flex items-center w-3/4 gap-3 px-4 py-3">
                           <img className="w-10 h-10 rounded" src={item.avatar} alt="avatar" />
                           <div className="flex flex-col items-start justify-start flex-1 gap-0">
@@ -134,10 +134,10 @@ const testimonialData = [
     title: 'IIT Kharagpur 2027',
     link: ''
   },{
-    text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
-    avatar: '/p1.jpg',
-    name: 'Mayura Patil',
-    title: 'Mother of Manasvi Patil (NEET 2023 99.1%ile)',
+    text: `"Im really glad I found Chandan Sir for Chemistry. His organized approach to Organic and Inorganic, and the way he simplified Physical Chemistry made a huge difference. His classes were interactive, lively, and helped me improve a lot."`,
+    avatar: '/p4.jpg',
+    name: 'Trisha Mehta',
+    title: '99.18 percentile (JEE Main 2024)',
     link: ''
   },{
     text: `"Chandan Sir was a guiding star in my daughters NEET journey. He supported her with notes, doubts, and extra learning throughout. She scored 95% in CBSE Chemistry and 99.3 percentile in MHT-CET. Truly one of the best teachers she's had!"`,
