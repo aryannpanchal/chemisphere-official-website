@@ -9,7 +9,7 @@ const Testimonials = () => {
         <div className="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
           <p className="text-sm sm:text-lg font-semibold text-chemisphere">Words That Matter</p>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
-            Toppers said it...
+            Toppers said it...not us
           </h3>
         </div>
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
                   {testimonialData.slice(index * 7, (index + 1) * 7).map((item, i) => (
                     <div
                       key={i}
-                      className="flex flex-col justify-between h-[320px] rounded-lg border-[1.2px] border-white/40 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px] "
+                      className="flex flex-col justify-between h-[320px] rounded-lg border-[1.2px] border-white/20 shrink-0 grow-0 md:w-[1940px] sm:w-[320px] w-[380px] "
                     >
                       <p className="px-5 py-5 tracking-tight text-md font-extralight md:text-lg">
                         {item.text}
