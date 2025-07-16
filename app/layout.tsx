@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
       <html lang="en">
      <head>
-       <meta name="facebook-domain-verification" content="1tcOmeng Oifa67yzp1whrppkee1p44" />
+<meta name="facebook-domain-verification" content="1tc0meng0ifa67yzp1whrppkee1p44" />
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
      <link
   rel="stylesheet"
