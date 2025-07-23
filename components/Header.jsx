@@ -118,7 +118,7 @@ const Header = () => {
         </li> */}
         <li>
           <a
-            href="#contact"
+            href="/sign-up"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Contact

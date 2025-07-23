@@ -16,7 +16,7 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FacebookChatPlugin from '../components/Fbchat';
 import Indicator from '../components/Indicator';
-// import Announcement from './../components/Announcement';
+import Announcement from './../components/Announcement';
 
 const Page = () => {
   const [showVideo, setShowVideo] = useState(false); // Video visibility
@@ -43,7 +43,7 @@ const Page = () => {
 
   return (
     <div className="relative">
-      {/* Video Overlay
+      {/* Video Overlay */}
       {showVideo && (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
           <video
@@ -54,7 +54,7 @@ const Page = () => {
             className="w-full h-full object-cover"
           />
         </div>
-      )} */}
+      )}
 
       {/* Main Content */}
       <div
@@ -66,7 +66,7 @@ const Page = () => {
         <FacebookChatPlugin />
 
         {/* Header for Desktop and Mobile */}
-        {/* <Announcement /> */}
+        <Announcement />
         <HeaderMobile />
         <Header />
 

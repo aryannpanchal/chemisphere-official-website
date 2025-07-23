@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
 import { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs" 
 
 const myFont = localFont({  
   src: [
@@ -42,6 +43,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+<ClerkProvider>
       <html lang="en">
      <head>
 <meta name="facebook-domain-verification" content="1tc0meng0ifa67yzp1whrppkee1p44" />
@@ -56,6 +58,7 @@ export default function RootLayout({
       <body className={myFont.className}>{children}<Analytics /><SpeedInsights/>
       </body>
     </html>
+     </ClerkProvider>   
     
   )
 }

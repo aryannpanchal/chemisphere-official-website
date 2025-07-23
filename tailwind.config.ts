@@ -120,7 +120,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           "background1" : "url(/bg.svg)",
           "background-mobile" : "url(/chemisphere-bg-mobile.svg)",
-          "background-hero" : "url(/background-hero.svg)",
+          "background-hero" : "url(/chemisphere-logo.png)",
           "bg-wave": "url(/wave.svg)",
           "bg-banner-wave": "url(/banner-wave.svg)",
           "bg-bg-hero": "url(/bg-hero.svg)",
