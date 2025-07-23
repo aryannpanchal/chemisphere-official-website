@@ -4,6 +4,7 @@ import { useUser } from '@clerk/nextjs';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import AnnouncementMarquee from './AnnouncementMarquee';
 
 const questions = [
   { label: "Parent's Full Name", name: 'parentName', type: 'text', required: true },
@@ -79,7 +80,7 @@ export default function DashboardForm() {
 
   return (
     <>
-    
+    <AnnouncementMarquee />
    
     <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-start pb-12 px-4 mt-0">
       <div className="w-full h-fit max-w-7xl grid md:grid-cols-2 mt-12 gap-8">

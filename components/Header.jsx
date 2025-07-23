@@ -152,10 +152,6 @@ const Header = () => {
               <Link href="https://www.instagram.com/chemisphere.in/" target="__blank">
                 <FaInstagram size={24} className="hover:text-pink-500" />
               </Link>
-        <Link href="https://wa.me/918850436230?text=I%20wish%20to%20go%20ahead%20with%20the%20admissions%20at%20Chemisphere" target='__blank' className="px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-green hover:text-black transition-colors">
-
-
-        </Link>
         
       </div>
 
