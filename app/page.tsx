@@ -16,7 +16,6 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FacebookChatPlugin from '../components/Fbchat';
 import Indicator from '../components/Indicator';
-import Announcement from './../components/Announcement';
 
 const Page = () => {
   const [showVideo, setShowVideo] = useState(false); // Video visibility
@@ -34,27 +33,9 @@ const Page = () => {
     }
   }, []);
 
-  const handleVideoEnd = () => {
-    setShowVideo(false); // Hide video
-    setTimeout(() => {
-      setFadeInContent(true); // Trigger fade-in for main content
-    }, 200); // Slight delay for smooth transition
-  };
 
   return (
     <div className="relative">
-      {/* Video Overlay */}
-      {showVideo && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
-          <video
-            src="/intro.mp4"
-            autoPlay
-            muted
-            onEnded={handleVideoEnd}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      )}
 
       {/* Main Content */}
       <div
@@ -66,7 +47,6 @@ const Page = () => {
         <FacebookChatPlugin />
 
         {/* Header for Desktop and Mobile */}
-        <Announcement />
         <HeaderMobile />
         <Header />
 

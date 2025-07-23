@@ -12,7 +12,7 @@ const DashboardPage = () => {
      <HeaderDashboard />
      <HeaderMobile />
      
-    <div className='bg-red my-44 '>
+    <div className='bg-red my-[100px] '>
       <Form />
       </div>
      <Footer />  

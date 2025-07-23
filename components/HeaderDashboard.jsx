@@ -1,5 +1,5 @@
 'use client';
-
+import { useUser } from '@clerk/nextjs';
 import { useState } from 'react';
 import Link from 'next/link';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -27,9 +27,10 @@ const HeaderDashboard = () => {
     dropdown.style.left = `${navElement.offsetLeft}px`;
     dropdown.style.marginLeft = `${navElement.offsetWidth / 2}px`;
   };
+  const { user } = useUser();
 
   return (
-    <nav className="z-30 laptop:flex fixed pb-8  items-center top-0 justify-between w-full mobile:hidden px-6 pt-8 mt-0 bg-white">
+    <nav className="z-30 laptop:flex fixed pb-[20px] items-center top-0 justify-between w-full mobile:hidden px-6 pt-8 mt-0 bg-white">
       {/* Logo Section */}
       <div className="flex items-center">
         <Link href="/">
@@ -39,15 +40,23 @@ const HeaderDashboard = () => {
             className="h-10 cursor-pointer"
           />
         </Link>
+       
       </div>
+      
 
       {/* Navigation Links */}
       <ul className="flex items-center space-x-12">
+          <li>
+        <h1 className="text-md font-thin text-center">
+        Welcome to Chemisphere's Dashboard, {user?.firstName || 'Guest'}
+      </h1>
+        </li> 
         <li>
           <div className="flex w-full justify-end">
                      <UserButton afterSignOutUrl="/" />
             </div>
         </li>
+     
         {/* <li>
           <a
             href="privacy-policy"

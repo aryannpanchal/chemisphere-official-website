@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Sticky.tsx", "components/CrashCourse.jsx", "components/Testimonials.tsx", "components/ExamCard.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Sticky.tsx", "components/CrashCourse.jsx", "components/Testimonials.tsx", "components/ExamCard.jsx", "components/Form.jsx"],
   "exclude": ["node_modules"]
 }

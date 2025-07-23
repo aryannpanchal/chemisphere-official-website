@@ -1,171 +1,101 @@
 'use client';
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
-  const [formStatus, setFormStatus] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus(""); // Clear previous status
-    emailjs
-      .sendForm(
-        "service_584nbo7", // Replace with your EmailJS service ID
-        "template_ryhh51o", // Replace with your EmailJS template ID
-        e.target,
-        "BpLl6GlYWdp4RpFjQ" // Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          setFormStatus("Booking request sent successfully to Chemisphere!");
-          e.target.reset(); // Reset form fields
-        },
-        (error) => {
-          setFormStatus("Failed to send message. Please try again.");
-        }
-      );
-  };
-
   return (
-    <div className="bg-bgg bg-cover rounded-3xl mobile:pb-2 laptop:mt-44 laptop:mx-4">
-      <section className="laptop:mx-24 mobile:mx-4 pt-0">
-        <div className="grid gap-4 mx-auto laptop:pb-8 laptop:mb-0 laptop:grid-cols-12">
-          {/* Heading and description */}
-          <div className="laptop:col-span-7">
-            <div className="bg-white p-4 rounded-b-3xl">
-            
-              <h1 className="laptop:text-slate-900  mobile:text-black mobile:mt-24 text-center laptop:text-left font-bold text-3xl laptop:text-4xl tracking-tight laptop:mt-0">
-                Premium science coaching <br />
-                for JEE (Main & Advanced), <br /> NEET & Boards.
-              </h1>
-            </div>
-            <div className="bg-white text-chemisphere rounded-xl text-left mobile:text-center transition font-semibold my-4 flex laptop:flex-row mobile:flex-col  justify-center laptop:px-24 items-center">
-  {/* Image Section */}
-  <div className=" mobile:mb-0">
-    <img src="/4.png" className="w-32 max-h-fit" alt="Chemisphere Merchandise" />
-  </div>
-  {/* Text Section */}
-  <div className="flex-1">
-   <p className='mobile:text-center pb-4'> Check our <a target="__blank" href="https://chemisphere.store" className="underline text-chemisphere">Chemisphere Store</a> for exclusive merch!</p> 
-  </div>
-</div>
-
-
-            <div className="bg-white p-4 rounded-3xl laptop:mt-4 mobile:mt-12">
-              <div className="mx-auto p-5">
-                <div className="rounded flex flex-col max-w-fit mx-auto w-full">
-                <iframe 
-  className="rounded-3xl w-full aspect-video" 
-  src="https://www.youtube.com/embed/765qd0vmxmM?start=11&autoplay=0&si=b6L_jSC_XYJBi2RK" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowFullScreen>
-</iframe>
-
-
-                  <div className="relative px-6 pt-5 pb-5 bg-black rounded-3xl mt-4">
-                    <p
-                      className="font-normal text-lg text-white  transition duration-500 ease-in-out"
-                    >
-                      Why choose Chemisphere?
-                    </p>
-                    <p className="text-gray-400 text-sm">
-                      There are customized classes for you to suit your needs.
-                      Also, you will get a lot of video and text resources to
-                      learn along with the most neat class notes which will
-                      probably make you fall in love with science again! You
-                      will be able to track your progress at every level with
-                      weekly and monthly tests.s
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Booking section */}
-          <div className="laptop:col-span-5 flex justify-center">
-            <div className=" mx-auto mobile:my-12 px-4 laptop:px-12 laptop:mx-0  bg-white shadow-lg rounded-lg overflow-hidden">
-              <div className="text-center py-4">
-                <img
-                  src="/newChemisphereHeroPhoto.svg"
-                  className="w-[400px] mx-auto rounded-3xl"
-                  alt="Chemisphere Hero"
-                />
-              </div>
-              <form className="py-4 laptop:px-0" onSubmit={handleSubmit} method="POST">
-                <div className="mb-4">
-                  <label
-                    className="block text-gray-700 font-bold mb-2"
-                    htmlFor="name"
-                  >
-                    Name
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
-                    id="name"
-                    name="from_name"
-                    type="text"
-                    placeholder="Enter your name"
-                    required
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    className="block text-gray-700 font-bold mb-2"
-                    htmlFor="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
-                    id="email"
-                    name="from_email"
-                    type="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    className="block text-gray-700 font-bold mb-2"
-                    htmlFor="phone"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="Enter your phone number"
-                    required
-                  />
-                </div>
-              
-                <div className="flex justify-center mt-8">
-                  <button
-                    className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
-                    type="submit"
-                  >
-                    Book Appointment
-                  </button>
-                </div>
-                {formStatus && (
-                  <p className="text-center text-sm text-gray-500 mt-2">
-                    {formStatus}
-                  </p>
-                )}
-              </form>
-            </div>
-          </div>
-                  {/* Right Section */}
+    <section className="bg-gradient-to-br from-black via-gray-900 to-chemisphere text-white py-16 laptop:mt-32 px-4 md:px-12 shadow-xl mt-24">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
+        {/* Left - Textual Content */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="space-y-6"
+        >
+          <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+            Premium Coaching for<br />
+            <span className="text-chemisphere">JEE, NEET & Boards</span>
+          </h1>
+          <p className="text-gray-300 text-lg">
+            Join India’s most loved science platform! Tailored study plans, interactive classes, and resources designed to make you fall in love with Chemistry again.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/sign-up">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                className="bg-[#25D366] text-black font-semibold px-6 py-3 rounded-full shadow-lg transition hover:brightness-110"
+              >
+                ENROLL NOW
+              </motion.button>
+            </Link>
+            <Link href="https://chemisphere.store" target="_blank">
+              <button className="border border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-black transition">
+                Visit Store
+              </button>
+            </Link>
+          </div>
+        </motion.div>
+
+        {/* Right - Image + Video */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="space-y-6"
+        >
+          {/* <Image 
+            src="/newChemisphereHeroPhoto.svg"
+            alt="Chemisphere Hero"
+            width={500}
+            height={500}
+            className="rounded-3xl mx-auto"
+          /> */}
+
+          <div className="aspect-video rounded-3xl overflow-hidden shadow-lg">
+            <iframe 
+              src="https://www.youtube.com/embed/765qd0vmxmM?start=11"
+              title="Why Chemisphere?"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              className="w-full h-full"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Feature Section */}
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="mt-16 grid md:grid-cols-3 gap-6 text-center"
+      >
+        <div className="bg-white/10 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 className="text-xl font-bold mb-2">Customized Learning</h3>
+          <p className="text-gray-300 text-sm">
+            Study plans tailored just for you — target JEE, NEET or Boards with focus.
+          </p>
         </div>
-      </section>
-    </div>
+        <div className="bg-white/10 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 className="text-xl font-bold mb-2">Track Progress</h3>
+          <p className="text-gray-300 text-sm">
+            Weekly & monthly tests, progress tracking dashboard and parent updates.
+          </p>
+        </div>
+        <div className="bg-white/10 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 className="text-xl font-bold mb-2">Top-Class Resources</h3>
+          <p className="text-gray-300 text-sm">
+            Notes, recorded lectures, mock tests & previous year questions curated by experts.
+          </p>
+        </div>
+      </motion.div>
+    </section>
   );
 };
 
