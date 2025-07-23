@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-bgg bg-cover rounded-3xl mobile:pb-2 laptop:mt-14 laptop:mx-4">
+    <div className="bg-bgg bg-cover rounded-3xl mobile:pb-2 laptop:mt-44 laptop:mx-4">
       <section className="laptop:mx-24 mobile:mx-4 pt-0">
         <div className="grid gap-4 mx-auto laptop:pb-8 laptop:mb-0 laptop:grid-cols-12">
           {/* Heading and description */}
