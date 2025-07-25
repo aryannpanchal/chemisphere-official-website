@@ -54,11 +54,11 @@ const Page = () => {
         <Indicator />
 
         {/* Main Content */}
-        <Hero />
+        <Hero /> <ExamCard />
         <Chandan />
         <Testimonials />
         <Stats />
-        <ExamCard />
+       
         <OfferSection />
 
         {/* Additional Sections */}

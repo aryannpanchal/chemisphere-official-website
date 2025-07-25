@@ -21,7 +21,7 @@ const Stats = () => {
     <div ref={ref}>
       <div
         id='stats'
-        className="mobile:my-24 text-gray-100 body-font laptop:mb-44 laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl"
+        className="mobile:my-24 text-gray-100 body-font laptop:mb-32 laptop:mx-24 mobile:max-w-screen mobile:mx-6 rounded-2xl"
       >
         <section className="container px-5 mx-auto p-6 bg-black rounded-3xl">
           <div className="flex flex-wrap m-4 text-center text-white ">
