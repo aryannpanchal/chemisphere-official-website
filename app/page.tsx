@@ -16,6 +16,7 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FacebookChatPlugin from '../components/Fbchat';
 import Indicator from '../components/Indicator';
+import JEERankPredictor from '../components/JEERankPredictor';
 
 const Page = () => {
   const [showVideo, setShowVideo] = useState(false); // Video visibility
@@ -54,7 +55,7 @@ const Page = () => {
         <Indicator />
 
         {/* Main Content */}
-        <Hero /> <ExamCard />
+        <Hero /> <ExamCard /> <JEERankPredictor />
         <Chandan />
         <Testimonials />
         <Stats />

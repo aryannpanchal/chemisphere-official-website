@@ -121,7 +121,7 @@ const Header = () => {
             href="/"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
-            Contact
+            Results
           </a>
         </li>
         {/* <li>

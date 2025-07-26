@@ -22,8 +22,8 @@ const Hero = () => {
           </h1>
           <h2 className='mobile:text-3xl laptop:text-4xl font-semibold tracking-tighter'>Not for long.</h2>
           <p className="text-gray-900 text-lg">
-            Elite mentorship for <span className='font-semibold'>JEE & NEET</span> <br />
-            Results that speak
+            Elite mentorship for <span className='font-semibold'>JEE & NEET.</span> <br />
+            Results that speak.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
