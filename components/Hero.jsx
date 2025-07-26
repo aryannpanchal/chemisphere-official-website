@@ -53,7 +53,7 @@ const Hero = () => {
           <Image 
             src="/cb-new.svg"
             alt="Chemisphere Hero"
-            width={550}
+            width={600}
             height={500}
             className="rounded-3xl"
           />
