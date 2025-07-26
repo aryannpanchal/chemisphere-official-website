@@ -14,7 +14,7 @@ const Accordion = ({ title, answer }) => {
         <span>{title}</span>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
-          className="fill-slate-100 shrink-0 ml-8"
+          className="fill-slate-900 shrink-0 ml-8"
           width="16"
           height="16"
           xmlns="http://www.w3.org/2000/svg"
