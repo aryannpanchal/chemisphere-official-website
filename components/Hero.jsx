@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className=" text-black py-16 laptop:mt-32 px-4 md:px-12 mt-24">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className=" text-black py-16 laptop:mt-24 px-4 md:px-12 mt-12">
+      <div className="max-w-8xl mx-auto laptop:pl-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left - Textual Content */}
         <motion.div 
@@ -16,21 +16,23 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Premium Coaching for<br />
-            <span className="text-chemisphere">JEE, NEET & Boards</span>
+          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter">
+            Behind in
+            <span className="text-chemisphere font-bold tracking-tighter"> Chemistry?</span>
           </h1>
+          <h2 className='mobile:text-3xl laptop:text-4xl font-semibold tracking-tighter'>Not for long.</h2>
           <p className="text-gray-900 text-lg">
-            Join India’s most loved science platform! Tailored study plans, interactive classes, and resources designed to make you fall in love with Chemistry again.
+            Elite mentorship for <span className='font-semibold'>JEE & NEET</span> <br />
+            Results that speak
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/sign-up">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="bg-[#25D366] text-black font-semibold px-6 py-3 rounded-full shadow-lg transition hover:brightness-110"
+                className="bg-chemisphere text-white border border-black font-semibold px-6 py-3 rounded-full shadow-lg transition hover:brightness-110"
               >
-                ENROLL NOW
+                Get started
               </motion.button>
             </Link>
             <Link href="https://chemisphere.store" target="_blank">
@@ -48,15 +50,15 @@ const Hero = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="space-y-6"
         >
-          {/* <Image 
-            src="/newChemisphereHeroPhoto.svg"
+          <Image 
+            src="/cb-new.png"
             alt="Chemisphere Hero"
-            width={500}
+            width={700}
             height={500}
-            className="rounded-3xl mx-auto"
-          /> */}
+            className="rounded-3xl"
+          />
 
-          <div className="aspect-video rounded-3xl overflow-hidden ">
+          {/* <div className="aspect-video rounded-3xl overflow-hidden ">
             <iframe 
               src="https://www.youtube.com/embed/765qd0vmxmM?start=11"
               title="Why Chemisphere?"
@@ -64,7 +66,7 @@ const Hero = () => {
               className="w-full h-full"
               allowFullScreen
             ></iframe>
-          </div>
+          </div> */}
         </motion.div>
       </div>
 

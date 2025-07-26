@@ -81,7 +81,7 @@ const HeaderMobile: React.FC = () => {
           </li>
           <li>
           <a
-            href="#stats"
+            href="/Physics"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Physics
