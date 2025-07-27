@@ -17,14 +17,17 @@ const Chandan = () => {
       {/* Text Section */}
       <div className="laptop:w-1/2 p-5">
         <div className="text">
-          <p className="my-4 font-bold laptop:text-3xl mobile:text-2xl mobile:text-center laptop:text-left">
-            About <span className="text-chemisphere">Chandan Biswas</span>
+          <p className="my-4 font-bold tracking-tighter laptop:text-4xl mobile:text-2xl mobile:text-center laptop:text-left text-chemisphere">
+           Founder's Note
           </p>
           <p className="text-gray-700 laptop:text-left mobile:text-justify">
-            Chemistry learning is boring.
-            But what if I said it also has the potential to dramatically increase your marks and help you get a great rank in your desired exams? Luckily, there is a way!
-            Hi. I am Chandan Biswas. I am a professor of Chemistry and CEO of Chemisphere, and I have mentored over 15,000 students in the last decade for JEE Main and Advanced, NEET, MHCET, and Class 12th boards. I know the ins and outs of all these exams. I have had the honor to mentor over 1,000 IITians and medical professionals.
-            I am going to help you out through each step of your journey on your chemistry curriculum.
+          Hi, I’m Chandan, the founder of Chemisphere. <br /><br />
+
+With 16+ years of experience teaching Chemistry for JEE Main, Advanced, and NEET, I’ve mentored students across India — from toppers to total turnarounds. <br /> <br />
+
+Over the years, I’ve helped produce ranks like AIR 12, 176, 523, and guided hundreds into IITs, NITs, and top medical colleges — not by dumping content, but by mentoring with strategy, clarity, and care.<br /><br />
+
+After years at top coaching institutes, I realised: mass coaching doesn’t work for everyone. That’s why I built Chemisphere — to give serious students personalised guidance, not generic lectures.
           </p>
         </div>
       </div>

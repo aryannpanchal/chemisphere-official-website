@@ -42,14 +42,14 @@ const Header = () => {
 
       {/* Navigation Links */}
       <ul className="flex items-center space-x-12">
-        <li>
+        {/* <li>
           <a
             href="#about"
             className="text-sm font-medium text-gray-900 hover:text-chemisphere transition-colors"
           >
             About
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             href="#classes"

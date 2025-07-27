@@ -19,7 +19,7 @@ const HeaderMobile: React.FC = () => {
     <header className="w-screen bg-white z-20 laptop:hidden rounded-b-3xl top-0 fixed mt-0 pt-0  border-b-darkGold">
       <div className="flex justify-between items-center p-4 ">
         {/* Logo */}
-        <img src="/chemisphere-logo.png" className=" w-28 h-auto font-bold text-lg text-neutral-700"></img>
+        <img src="/chemisphere-logo-white.svg" className=" w-28 h-auto font-bold text-lg text-neutral-700"></img>
 
         {/* Mobile Menu Button */}
         <button

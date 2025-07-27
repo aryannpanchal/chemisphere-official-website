@@ -10,19 +10,16 @@ const Footer = () => {
                         <img
                             src="/c.png"
                             alt="logo"
-                            className="h-8 w-8"
+                            className="h-32 w-32"
                         />
         
                     </a>
                     <div className="mt-6 laptop:max-w-xl">
-                        <p className="text-sm text-gray-800">
+                        <p className="text-xl font-bold text-gray-800">
                        
 
 
-                        Struggling with Math and Science? What if we told you it could be your biggest advantage in exams?
-
-At Chemisphere, we dont just teach science — we make it your strongest subject! Led by Chandan Biswas, a seasoned professor and CEO of Chemisphere, we have mentored 15,000+ students for JEE, NEET, MHCET, and Class 12 boards, with 1,000+ IITians and medical professionals achieving success under our guidance.
-
+                        Chemistry Made Easy!
                         </p>
                     </div>
                 </div>
@@ -38,9 +35,9 @@ At Chemisphere, we dont just teach science — we make it your strongest subject
 
                 {/* Company Links */}
                 <div>
-                    <p className="text-base font-bold tracking-wide text-gray-900">
+                    {/* <p className="text-base font-bold tracking-wide text-gray-900">
                         COMPANY IS ALSO AVAILABLE ON
-                    </p>
+                    </p> */}
                     <div className="flex items-center gap-1 px-2">
                         <a href="https://play.google.com/store/apps/details?id=com.chemisphereApp.app"  target="__blank" className="w-full min-w-xl">
                             <img
@@ -62,9 +59,8 @@ At Chemisphere, we dont just teach science — we make it your strongest subject
                             />
                         </a>
                     </div>
-                    <p className="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+                    <p className="text-base font-bold tracking-wide text-gray-900">Reach out to us at</p>
                     <div className="flex">
-                        <p className="mr-1 text-gray-800">Email:</p>
                         <a className='text-blue-600 underline' href="mailto:info@chemisphere.in" title="send email">
                             info@chemisphere.in
                         </a>

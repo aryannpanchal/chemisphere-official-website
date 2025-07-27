@@ -7,20 +7,21 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section className=" text-black py-16 laptop:mt-24 px-4 md:px-12 mt-12">
-      <div className="max-w-8xl mx-auto laptop:pl-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-8xl mx-auto laptop:pl-12 laptop:mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left - Textual Content */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="space-y-6"
+          className="space-y-6 laptop:mb-56"
         >
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter">
-            Behind in
-            <span className="text-chemisphere font-bold tracking-tighter"> Chemistry?</span>
-          </h1>
-          <h2 className='mobile:text-3xl laptop:text-4xl font-semibold tracking-tighter'>Not for long.</h2>
+         <h1 className="mobile:text-6xl laptop:text-[7vw] font-bold tracking-tighter leading-none">
+  Behind in
+  <span className="text-chemisphere font-bold tracking-tighter"> Chemistry?</span>
+</h1>
+
+          <h2 className='mobile:text-5xl laptop:text-6xl font-semibold tracking-tighter'>Not for long.</h2>
           <p className="text-gray-900 text-lg">
             Elite mentorship for <span className='font-semibold'>JEE & NEET.</span> <br />
             Results that speak.
@@ -32,7 +33,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-chemisphere text-white border border-black font-semibold px-6 py-3 rounded-full shadow-lg transition hover:brightness-110"
               >
-                Get started
+                Get Me Started
               </motion.button>
             </Link>
             <Link href="https://chemisphere.store" target="_blank">
@@ -53,7 +54,7 @@ const Hero = () => {
           <Image 
             src="/cb-new.svg"
             alt="Chemisphere Hero"
-            width={600}
+            width={800}
             height={500}
             className="rounded-3xl"
           />
@@ -78,7 +79,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className="mt-16 grid md:grid-cols-3 gap-6 text-center"
       >
-        <div className="bg-white/10 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <div className="bg-chemisphere/10 p-6 rounded-2xl laptop:h-[40vw] shadow-lg hover:scale-105 transition">
           <h3 className="text-xl font-bold mb-2">Customized Learning</h3>
           <p className="text-gray-900 text-sm">
             Study plans tailored just for you — target JEE, NEET or Boards with focus.

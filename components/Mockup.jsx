@@ -19,7 +19,7 @@ const Mockup = () => {
             <div>
               <h2 className="mb-2 mobile:text-2xl font-extrabold text-black laptop:text-4xl mobile:pt-5 laptop:text-left">Entire student dashboard, now on your mobile.</h2>
 
-              <p className="mb-5 laptop:text-xl text-black mobile:pt-5 mobile:text-lg font-thin laptop:text-left">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
+              <p className="mb-5 laptop:text-xl text-black mobile:pt-5 mobile:text-lg font-normal laptop:text-left">Our app is the go-to solution for students across the country with a simple user interface, design and exciting features.</p>
               <div>
                 <ul role="list" className="space-y-4 text-black mobile:pt-5 pb-6 px-2 md:hidden block text-base">
                   <li className="flex space-x-2 rtl:space-x-reverse items-center">

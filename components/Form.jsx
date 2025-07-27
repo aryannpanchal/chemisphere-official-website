@@ -192,7 +192,7 @@ export default function DashboardForm() {
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
                 >
-                  Submit
+                  Schedule My Consultation Now!
                 </button>
               )}
             </div>

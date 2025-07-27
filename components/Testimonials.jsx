@@ -8,8 +8,8 @@ const Testimonials = () => {
       <div className="min-w-full py-5 mt-10 mb-20 sm:mx-auto md:mx-0 overflow-hidden">
         <div className="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
           <p className="text-sm sm:text-lg font-semibold text-chemisphere">Words That Matter</p>
-          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
-            Toppers said it... not us!
+          <h3 className="mobile:text-4xl laptop:text-4xl text-center tracking-tighter font-semibold">
+            Toppers Said It... Not Us!
           </h3>
         </div>
 
