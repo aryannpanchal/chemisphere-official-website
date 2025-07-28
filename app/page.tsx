@@ -18,6 +18,7 @@ import FacebookChatPlugin from '../components/Fbchat';
 import Indicator from '../components/Indicator';
 import JEERankPredictor from '../components/JEERankPredictor';
 import FAQLast from '../components/FAQLast';
+import HomeImage from '../components/HomeImage';
 
 const Page = () => {
   const [showVideo, setShowVideo] = useState(false); // Video visibility
@@ -56,12 +57,13 @@ const Page = () => {
         <Indicator />
 
         {/* Main Content */}
-        <Hero /> <ExamCard /> <JEERankPredictor />
+        <Hero />         <OfferSection />
+<ExamCard /> <JEERankPredictor />
         <Chandan />
+        <HomeImage />
         <Testimonials />
         <Stats />
        
-        {/* <OfferSection /> */}
 
         {/* Additional Sections */}
         <Mockup />

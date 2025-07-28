@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className=" text-black py-16 laptop:mt-24 px-4 md:px-12 mt-12">
+    <section className=" text-black pt-16 laptop:mt-24 px-4 md:px-12 mt-12">
       <div className="max-w-8xl mx-auto laptop:pl-12 laptop:mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left - Textual Content */}
@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
 
       {/* Feature Section */}
-      <motion.div 
+      {/* <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -97,7 +97,7 @@ const Hero = () => {
             Notes, recorded lectures, mock tests & previous year questions curated by experts.
           </p>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };
