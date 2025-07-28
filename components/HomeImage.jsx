@@ -31,6 +31,7 @@ const HomeImage = () => {
         <p className="text-gray-100 text-lg">
           Explore our expertly crafted content and witness your academic journey transform. Interactive lectures, real-world problem solving, and an intuitive design that makes learning easier than ever.
         </p>
+        <a href='/Results' className='bg-chemisphere text-white py-4 px-2'>View Gallery</a>
       </div>
 
       {/* Carousel */}
