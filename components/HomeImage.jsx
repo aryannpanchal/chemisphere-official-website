@@ -27,10 +27,9 @@ const HomeImage = () => {
     <section className=" bg-black flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-20 py-10">
       {/* Text */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-bold text-chemisphere mb-4 tracking-tighter">Experience the Future of Learning</h2>
-        <p className="text-gray-100 text-lg">
-          Explore our expertly crafted content and witness your academic journey transform. Interactive lectures, real-world problem solving, and an intuitive design that makes learning easier than ever.
-        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-chemisphere mb-4 tracking-tighter">Beyond Classroom..</h2>
+        <p className="text-gray-100 text-lg mb-12">
+Chemisphere offers an unparalled learning experience both, within and beyond the classroom and syllabus. We also focus on the mental wellbeing and overall growth of the student which leads to better performance.        </p>
         <a href='/Results' className='bg-chemisphere text-white py-4 px-2'>View Gallery</a>
       </div>
 
