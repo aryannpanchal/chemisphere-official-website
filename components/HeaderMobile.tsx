@@ -61,7 +61,7 @@ const HeaderMobile: React.FC = () => {
               About
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="#classes"
               className="text-neutral-700 font-medium py-2 w-full text-center hover:bg-neutral-100 rounded-md"
@@ -69,7 +69,7 @@ const HeaderMobile: React.FC = () => {
             >
               Classes
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="#stats"
@@ -89,7 +89,7 @@ const HeaderMobile: React.FC = () => {
         </li>
         <li>
           <a
-            href="#stats"
+            href="/"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Chemistry
@@ -97,7 +97,7 @@ const HeaderMobile: React.FC = () => {
         </li>
         <li>
           <a
-            href="#stats"
+            href="/Math"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Math
@@ -114,7 +114,7 @@ const HeaderMobile: React.FC = () => {
           </li>
           <li>
             <a
-              href="privacy-policy"
+              href="/privacy-policy"
               className="text-neutral-700 font-medium py-2 w-full text-center hover:bg-neutral-100 rounded-md"
               onClick={handleCloseMenu}
             >

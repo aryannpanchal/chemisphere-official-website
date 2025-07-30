@@ -76,7 +76,7 @@ const Header = () => {
         </li>
         <li>
           <a
-            href="#stats"
+            href="/"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Chemistry
@@ -84,7 +84,7 @@ const Header = () => {
         </li>
         <li>
           <a
-            href="#stats"
+            href="Math"
             className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Math

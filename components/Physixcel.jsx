@@ -24,7 +24,7 @@ const Physixcel = () => {
 
           {/* CTA Button */}
           <a
-            href="/sign-up"
+            href="/dashboard"
             className="inline-block bg-black text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-gray-800 transition"
           >
             Enroll Now
