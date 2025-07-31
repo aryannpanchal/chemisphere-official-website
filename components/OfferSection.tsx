@@ -114,7 +114,7 @@ export default function ImageCarousel() {
       </div>
 
       {/* Scroll Buttons */}
-      <div className="flex justify-between mt-6 px-4">
+      <div className="flex justify-center gap-6 mt-6 px-4">
         <button
           onClick={() => scroll('left')}
           className="bg-gray-200 hover:bg-gray-300 rounded px-3 py-1"
