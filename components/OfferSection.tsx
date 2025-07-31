@@ -80,9 +80,9 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="w-full relative px-4 pb-8">
+    <div className="w-full relative px-4 pb-2 ">
       {/* Scrollable Cards */}
-     <div className='text-center text-4xl font-bold text-chemisphere tracking-tighter' id="faq-section">
+     <div className='text-center text-4xl font-bold mobile:mt-24 text-chemisphere tracking-tighter' id="faq-section">
           <h4>What Makes Chemisphere Unique?</h4>
         </div> <div
         ref={scrollRef}
