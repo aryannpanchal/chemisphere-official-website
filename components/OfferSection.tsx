@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  { src: '/demo1.png' }, // Image 0
-  { src: '/demo.png' }, // Image 1
+  { src: '/demo2.png' }, // Image 0
+  { src: '/demo1.png' }, // Image 1
   { src: '/demo.png' }, // Image 2
   { src: '/demo.png' }, // Image 3
   { src: '/demo.png' }, // Image 4
