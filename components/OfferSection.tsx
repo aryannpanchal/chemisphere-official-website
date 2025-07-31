@@ -5,21 +5,25 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  { src: '/demo2.png' }, // Image 0
-  { src: '/demo1.png' }, // Image 1
-  { src: '/demo.png' }, // Image 2
-  { src: '/demo.png' }, // Image 3
-  { src: '/demo.png' }, // Image 4
-  { src: '/demo.png' }, // Image 5
-  { src: '/demo.png' }, // Image 6
-  { src: '/demo.png' }, // Image 7
+  { src: '/demo2.png' },
+  { src: '/demo1.png' },
+  { src: '/demo.png' },
+  { src: '/demo.png' },
+  { src: '/demo.png' },
+  { src: '/demo.png' },
+  { src: '/demo.png' },
+  { src: '/demo.png' },
 ];
 
-// Separate JSX content for each modal
 const modals: JSX.Element[] = [
   <div>
-    <h2 className="text-xl font-bold mb-2">Card 1: Basic Overview</h2>
-    <p>This is a simple modal with basic text for Card 1.</p>
+    <h2 className="text-6xl font-bold mb-2 p-12">In the Exam, Only Clarity Wins.</h2>
+    <div className="flex flex-col justify-between items-center bg-gray-100 rounded-xl">
+      <div className="min-w-1/2 text-2xl px-12 py-10 w-fit">The student won’t get time to think twice in a JEE or NEET paper. Either they know the concept exactly, or they lose precious marks. That’s why at Chemisphere, we don’t chase question banks—we build strong foundations. Because the real toppers don’t memorize, they understand. And that’s what helps them stay calm, fast, and accurate in the real exam.</div>
+      <div className="min-w-1/2">
+        <img className="w-[600px]" src="/chandan.svg" />
+      </div>
+    </div>
   </div>,
   <div>
     <h2 className="text-xl font-bold mb-2">Card 2: Details</h2>
@@ -80,16 +84,16 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="w-full relative px-4 pb-2 ">
+    <div className="w-full relative px-4 pb-2">
+      <div className="text-center text-4xl font-bold mobile:mt-24 text-chemisphere tracking-tighter" id="faq-section">
+        <h4>What Makes Chemisphere Unique?</h4>
+      </div>
+
       {/* Scrollable Cards */}
-     <div className='text-center text-4xl font-bold mobile:mt-24 text-chemisphere tracking-tighter' id="faq-section">
-          <h4>What Makes Chemisphere Unique?</h4>
-        </div> <div
+      <div
         ref={scrollRef}
         className="flex overflow-x-auto space-x-4 p-16 scrollbar-hide snap-x snap-mandatory scroll-smooth"
       >
-         
-
         {images.map((img, i) => (
           <motion.div
             key={i}
@@ -133,6 +137,7 @@ export default function ImageCarousel() {
       <AnimatePresence>
         {activeIndex !== null && (
           <>
+            {/* Backdrop with Blur */}
             <motion.div
               className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
               onClick={() => setActiveIndex(null)}
@@ -141,19 +146,23 @@ export default function ImageCarousel() {
               exit={{ opacity: 0 }}
             />
 
+            {/* Modal Box */}
             <motion.div
-              className="fixed top-1/2 left-1/2 w-[80%] max-w-xl bg-white rounded-xl shadow-lg z-50 p-6"
+              className="fixed top-1/2 left-1/2 w-[90vw] h-[90vh] bg-white rounded-xl shadow-lg z-50 p-6 overflow-y-auto"
               initial={{ opacity: 0, scale: 0.8, x: '-50%', y: '-50%' }}
               animate={{ opacity: 1, scale: 1, x: '-50%', y: '-50%' }}
               exit={{ opacity: 0, scale: 0.8 }}
             >
-              {modals[activeIndex]}
+              {/* Close Button (Top-Right) */}
               <button
-                className="mt-6 px-4 py-2 bg-red-500 text-white rounded"
                 onClick={() => setActiveIndex(null)}
+                className="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-3xl font-bold focus:outline-none"
               >
-                Close
+                &times;
               </button>
+
+              {/* Modal Content */}
+              <div className="min-h-full">{modals[activeIndex]}</div>
             </motion.div>
           </>
         )}
