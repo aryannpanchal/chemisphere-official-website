@@ -15,59 +15,36 @@ const images = [
   { src: '/demo8.png' },
 ];
 
-const modals: JSX.Element[] = [
-  <div>
-    <h2 className="laptop:text-6xl mobile:text-5xl font-bold mb-2 p-12">Strong Basics. Stronger Ranks.</h2>
-    <div className="flex flex-col justify-between items-center bg-gray-100 rounded-xl">
-      <div className="min-w-1/2 laptop:text-2xl px-12 mobile:text-md py-10 w-fit">The Online Edge: Learn More, Waste Less. Time is an asset. A 2-hour commute to a crowded offline class every day? That’s 300+ hours wasted in a year—time that could’ve built confidence, speed, and understanding. At Chemisphere, learning happens right at your desk, at full throttle. Every minute is focused. Every concept is built with care. This isn’t some generic YouTube “live” — it’s an elite, premium classroom experience designed for serious aspirants. No distractions. No commuting. Just pure, guided learning with experts who know how to win.</div>
-      <div className="min-w-1/2">
-        <img className="w-[600px] rounded-lg" src="/subdemo2.jpg" />
+// Modal Layout
+const ModalLayout = ({
+  title,
+  imageSrc,
+  children,
+}: {
+  title: string;
+  imageSrc?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <div>
+      <h2 className="laptop:text-6xl mobile:text-5xl font-bold mb-2 p-12">{title}</h2>
+      <div className="flex mobile:flex-col laptop:flex-row bg-gray-100 rounded-xl overflow-hidden">
+        <div className="w-full laptop:w-1/2 laptop:text-xl text-left px-8 py-10">
+          {children}
+        </div>
+        {imageSrc && (
+          <div className="w-full laptop:w-1/2 flex justify-center p-4">
+            <img
+              src={imageSrc}
+              alt="Modal"
+              className="w-full h-auto max-w-[100%] rounded-lg object-cover"
+            />
+          </div>
+        )}
       </div>
     </div>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 2: Details</h2>
-    <ul className="list-disc pl-4">
-      <li>Point A</li>
-      <li>Point B</li>
-      <li>Point C</li>
-    </ul>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 3: Image with Caption</h2>
-    <Image src="/demo.png" alt="Sample" width={200} height={200} className="rounded-lg mb-2" />
-    <p className="text-sm text-gray-600">A sample image with description.</p>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 4: Call to Action</h2>
-    <p>Click below to proceed with something amazing.</p>
-    <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded">Proceed</button>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 5: Code Snippet</h2>
-    <pre className="bg-gray-100 p-3 rounded text-sm">
-      {`const hello = () => console.log("Hello World!");`}
-    </pre>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 6: Info Block</h2>
-    <p><strong>Status:</strong> Active</p>
-    <p><strong>Date:</strong> July 2025</p>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 7: Stats</h2>
-    <div className="grid grid-cols-2 gap-2">
-      <div className="p-2 bg-green-100 rounded">Users: 1200</div>
-      <div className="p-2 bg-blue-100 rounded">Views: 54k</div>
-    </div>
-  </div>,
-  <div>
-    <h2 className="text-xl font-bold mb-2">Card 8: Quote</h2>
-    <blockquote className="italic border-l-4 border-gray-400 pl-4">
-      "The best way to predict the future is to create it."
-    </blockquote>
-  </div>,
-];
+  );
+};
 
 export default function ImageCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -82,6 +59,63 @@ export default function ImageCarousel() {
       });
     }
   };
+
+  const modals = [
+    <ModalLayout title="Strong Basics. Stronger Ranks." imageSrc="/subdemo2.jpg" key={0}>
+      <p className="text-black tracking-tighter text-xl font-bold">
+        The Online Edge: Learn More, Waste Less.
+      </p>
+      <p className="text-gray-500 text-xl font-bold tracking-tighter">
+        Time is an asset. A 2-hour commute to a crowded offline class every day? That’s 300+ hours
+        wasted in a year—time that could’ve built confidence, speed, and understanding. At
+        Chemisphere, learning happens right at your desk, at full throttle. Every minute is focused.
+        Every concept is built with care. This isn’t some generic YouTube “live” — it’s an elite,
+        premium classroom experience designed for serious aspirants. No distractions. No commuting.
+        Just pure, guided learning with experts who know how to win.
+      </p>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 2: Details" imageSrc="/subdemo2.jpg" key={1}>
+      <ul className="list-disc pl-4 text-lg text-gray-700">
+        <li>Point A</li>
+        <li>Point B</li>
+        <li>Point C</li>
+      </ul>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 3: Image with Caption" imageSrc="/demo.png" key={2}>
+      <p className="text-sm text-gray-600 mt-4">A sample image with description.</p>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 4: Call to Action" key={3}>
+      <p>Click below to proceed with something amazing.</p>
+      <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded">Proceed</button>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 5: Code Snippet" key={4}>
+      <pre className="bg-gray-200 p-3 rounded text-sm overflow-auto">
+        {`const hello = () => console.log("Hello World!");`}
+      </pre>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 6: Info Block" key={5}>
+      <p><strong>Status:</strong> Active</p>
+      <p><strong>Date:</strong> July 2025</p>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 7: Stats" key={6}>
+      <div className="grid grid-cols-2 gap-2">
+        <div className="p-2 bg-green-100 rounded">Users: 1200</div>
+        <div className="p-2 bg-blue-100 rounded">Views: 54k</div>
+      </div>
+    </ModalLayout>,
+
+    <ModalLayout title="Card 8: Quote" key={7}>
+      <blockquote className="italic border-l-4 border-gray-400 pl-4">
+        "The best way to predict the future is to create it."
+      </blockquote>
+    </ModalLayout>,
+  ];
 
   return (
     <div className="w-full relative px-4 pb-2">
@@ -137,7 +171,7 @@ export default function ImageCarousel() {
       <AnimatePresence>
         {activeIndex !== null && (
           <>
-            {/* Backdrop with Blur */}
+            {/* Backdrop */}
             <motion.div
               className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
               onClick={() => setActiveIndex(null)}
@@ -146,14 +180,14 @@ export default function ImageCarousel() {
               exit={{ opacity: 0 }}
             />
 
-            {/* Modal Box */}
+            {/* Modal */}
             <motion.div
               className="fixed top-1/2 left-1/2 w-[90vw] h-[90vh] bg-white rounded-xl shadow-lg z-50 p-6 overflow-y-auto"
               initial={{ opacity: 0, scale: 0.8, x: '-50%', y: '-50%' }}
               animate={{ opacity: 1, scale: 1, x: '-50%', y: '-50%' }}
               exit={{ opacity: 0, scale: 0.8 }}
             >
-              {/* Close Button (Top-Right) */}
+              {/* Close Button */}
               <button
                 onClick={() => setActiveIndex(null)}
                 className="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-3xl font-bold focus:outline-none"
