@@ -13,7 +13,7 @@ const questions = [
   { label: 'Email Address (Optional)', name: 'email', type: 'email', required: false },
   { label: "Student's Class", name: 'studentClass', type: 'select', options: ['11', '12', 'Dropper'], required: true },
   { label: 'Exam Target', name: 'examTarget', type: 'select', options: ['JEE Main', 'JEE Advanced', 'NEET', 'Boards'], required: true },
-  { label: 'Subjects Interested In', name: 'subjects', type: 'multiselect', options: ['Physics', 'Chemistry', 'Maths'], required: true },
+  { label: 'Subjects Interested In', name: 'subjects', type: 'checkbox', options: ['Physics', 'Chemistry', 'Maths'], required: true },
   { label: 'Current Coaching (Optional)', name: 'currentCoaching', type: 'text', required: false },
   { label: 'Concerns / Expectations (Optional)', name: 'concerns', type: 'textarea', required: false },
 ];
@@ -44,8 +44,8 @@ export default function DashboardForm() {
   const onSubmit = async (data) => {
     if (!isValid) return;
 
-    // Convert multiselect array to comma-separated string
-    if (data.subjects && Array.isArray(data.subjects)) {
+    // Convert subjects array to comma-separated string
+    if (Array.isArray(data.subjects)) {
       data.subjects = data.subjects.join(', ');
     }
 
@@ -89,7 +89,6 @@ export default function DashboardForm() {
       <AnnouncementMarquee />
       <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-start pb-12 px-4 mt-0">
         <div className="w-full h-fit max-w-7xl grid md:grid-cols-2 mt-12 gap-8">
-          {/* Left: Form Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -137,18 +136,23 @@ export default function DashboardForm() {
                           </option>
                         ))}
                       </select>
-                    ) : current.type === 'multiselect' ? (
-                      <select
-                        multiple
-                        {...register(current.name, { required: current.required })}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2"
-                      >
+                    ) : current.type === 'checkbox' ? (
+                      <div className="space-y-2">
                         {current.options?.map((opt) => (
-                          <option key={opt} value={opt}>
-                            {opt}
-                          </option>
+                          <label key={opt} className="flex items-center space-x-2">
+                            <input
+                              type="checkbox"
+                              value={opt}
+                              {...register(current.name, { required: current.required })}
+                              className="accent-purple-600"
+                            />
+                            <span>{opt}</span>
+                          </label>
                         ))}
-                      </select>
+                        {errors[current.name] && (
+                          <p className="text-red-500 text-sm">Please select at least one subject</p>
+                        )}
+                      </div>
                     ) : current.type === 'textarea' ? (
                       <textarea
                         {...register(current.name)}
@@ -170,17 +174,10 @@ export default function DashboardForm() {
                         className="w-full px-4 py-2 border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2"
                       />
                     )}
-
-                    {errors[current.name] && (
-                      <p className="text-red-500 text-sm">
-                        {errors[current.name].message || 'This field is required'}
-                      </p>
-                    )}
                   </motion.div>
                 )}
               </AnimatePresence>
 
-              {/* Navigation Buttons */}
               <div className="mt-8 flex justify-between items-center">
                 <button
                   type="button"
@@ -215,7 +212,7 @@ export default function DashboardForm() {
               </div>
             </form>
 
-            {/* Extra Assurance Info */}
+            {/* Form assurances */}
             <div className="mt-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
@@ -253,7 +250,7 @@ export default function DashboardForm() {
             </div>
           </motion.div>
 
-          {/* Right: Image */}
+          {/* Right Image */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
