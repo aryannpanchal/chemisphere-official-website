@@ -19,6 +19,7 @@ import Indicator from '../components/Indicator';
 import JEERankPredictor from '../components/JEERankPredictor';
 import FAQLast from '../components/FAQLast';
 import HomeImage from '../components/HomeImage';
+import Plan from '@/components/Plan';
 
 const Page = () => {
   const [showVideo, setShowVideo] = useState(false); // Video visibility
@@ -63,6 +64,7 @@ const Page = () => {
         <HomeImage />
         <Testimonials />
         <Stats />
+        <Plan />
        
 
         {/* Additional Sections */}
