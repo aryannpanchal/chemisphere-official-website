@@ -13,7 +13,7 @@ export default function Plan() {
           <div className="p-6">
             <h2 className="text-xl leading-6 font-bold text-slate-900">JEE / CET / BITSAT / NEET</h2>
             <p className="mt-2 text-base text-slate-700 leading-tight">Advanced preparation with deep problem-solving focus.</p>
-            <a href="/sign-up"
+            <a href="/dashboard"
               className="mt-8 block w-full bg-black rounded-md py-2 text-sm font-semibold text-white text-center">
               Proceed to Inquiry
             </a>
@@ -36,7 +36,7 @@ export default function Plan() {
           <div className="p-6">
             <h2 className="text-xl leading-6 font-bold text-slate-900">Combo Plan (Boards + JEE / NEET)</h2>
             <p className="mt-2 text-base text-slate-700 leading-tight">Integrated learning for Boards + Competitive prep.</p>
-            <a href="/sign-up"
+            <a href="/dashboard"
               className="mt-8 block w-full bg-black rounded-md py-2 text-sm font-semibold text-white text-center">
               Proceed to Inquiry
             </a>
@@ -59,7 +59,7 @@ export default function Plan() {
           <div className="p-6">
             <h2 className="text-xl leading-6 font-bold text-slate-900">Board Focused - HSC / CBSE / ISC</h2>
             <p className="mt-2 text-base text-slate-700 leading-tight">Score high in Boards with clarity & precision.</p>
-            <a href="/sign-up"
+            <a href="/dashboard"
               className="mt-8 block w-full bg-black rounded-md py-2 text-sm font-semibold text-white text-center">
               Proceed to Inquiry
             </a>
