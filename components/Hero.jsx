@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/sign-up">
+            <Link href="/dashboard">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="bg-chemisphere text-white font-semibold px-6 py-3 rounded-full shadow-lg transition hover:brightness-110"
