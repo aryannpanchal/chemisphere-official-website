@@ -7,21 +7,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 const images = [
   { src: '/demo2.png' },
   { src: '/demo1.png' },
-  { src: '/demo.png' },
-  { src: '/demo.png' },
-  { src: '/demo.png' },
-  { src: '/demo.png' },
-  { src: '/demo.png' },
-  { src: '/demo.png' },
+  { src: '/demo3.png' },
+  { src: '/demo4.png' },
+  { src: '/demo5.png' },
+  { src: '/demo6.png' },
+  { src: '/demo7.png' },
+  { src: '/demo8.png' },
 ];
 
 const modals: JSX.Element[] = [
   <div>
-    <h2 className="text-6xl font-bold mb-2 p-12">In the Exam, Only Clarity Wins.</h2>
+    <h2 className="laptop:text-6xl mobile:text-5xl font-bold mb-2 p-12">Strong Basics. Stronger Ranks.</h2>
     <div className="flex flex-col justify-between items-center bg-gray-100 rounded-xl">
-      <div className="min-w-1/2 text-2xl px-12 py-10 w-fit">The student won’t get time to think twice in a JEE or NEET paper. Either they know the concept exactly, or they lose precious marks. That’s why at Chemisphere, we don’t chase question banks—we build strong foundations. Because the real toppers don’t memorize, they understand. And that’s what helps them stay calm, fast, and accurate in the real exam.</div>
+      <div className="min-w-1/2 laptop:text-2xl px-12 mobile:text-md py-10 w-fit">The Online Edge: Learn More, Waste Less. Time is an asset. A 2-hour commute to a crowded offline class every day? That’s 300+ hours wasted in a year—time that could’ve built confidence, speed, and understanding. At Chemisphere, learning happens right at your desk, at full throttle. Every minute is focused. Every concept is built with care. This isn’t some generic YouTube “live” — it’s an elite, premium classroom experience designed for serious aspirants. No distractions. No commuting. Just pure, guided learning with experts who know how to win.</div>
       <div className="min-w-1/2">
-        <img className="w-[600px]" src="/chandan.svg" />
+        <img className="w-[600px] rounded-lg" src="/subdemo2.jpg" />
       </div>
     </div>
   </div>,
