@@ -75,30 +75,40 @@ export default function ImageCarousel() {
       </p>
     </ModalLayout>,
 
-    <ModalLayout title="Card 2: Details" imageSrc="/subdemo2.jpg" key={1}>
-      <ul className="list-disc pl-4 text-lg text-gray-700">
-        <li>Point A</li>
-        <li>Point B</li>
-        <li>Point C</li>
-      </ul>
+    <ModalLayout title="Handwritten by a Master. Trusted by Rankers." imageSrc="/subdemo1.jpg" key={1}>
+      <p className="text-black tracking-tighter text-xl font-bold">
+      We Simplify. So Students Soar
+      </p>
+      <p className="text-gray-500 text-xl font-bold tracking-tighter">
+      Most coaching classes drown students in material. 1000-page modules, 6-hour marathons, pointless PDFs. And what do you get? Burnout and confusion. At Chemisphere, everything is handcrafted: focused notes, razor-sharp lectures, and intelligent test planning. No fluff. No filler. Every second counts—and every second teaches. This is where smart, minimalistic teaching beats traditional chaos.
+      </p>
     </ModalLayout>,
 
-    <ModalLayout title="Card 3: Image with Caption" imageSrc="/demo.png" key={2}>
-      <p className="text-sm text-gray-600 mt-4">A sample image with description.</p>
+    <ModalLayout title="Your JEE & NEET Arsenal. Locked. Loaded. Secure." imageSrc="/subdemo3.png" key={2}>
+      <p className="text-black tracking-tighter text-xl font-bold">
+      Ranks Aren’t a Gamble. They're Engineered
+      </p>
+      <p className="text-gray-500 text-xl font-bold tracking-tighter">
+      At Chemisphere, we don’t “hope” for ranks. We reverse-engineer them. From building core understanding to developing fast-solving reflexes, we train like champions. Mistakes aren’t hidden—they’re fixed. Panic isn’t ignored—it’s addressed. Confidence isn’t assumed—it’s built, layer by layer. In every live class, every discussion, and every test, we’re not just teaching—we’re crafting results. Because we know one thing: clarity creates toppers.
+      </p>
     </ModalLayout>,
 
-    <ModalLayout title="Card 4: Call to Action" key={3}>
-      <p>Click below to proceed with something amazing.</p>
-      <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded">Proceed</button>
+    <ModalLayout title="Card 4: Call to Action" imageSrc="/subdemo4.jpg" key={3}>
+    <p className="text-black tracking-tighter text-xl font-bold">
+      Ranks Aren’t a Gamble. They're Engineered
+      </p>
+      <p className="text-gray-500 text-xl font-bold tracking-tighter">
+      At Chemisphere, we don’t “hope” for ranks. We reverse-engineer them. From building core understanding to developing fast-solving reflexes, we train like champions. Mistakes aren’t hidden—they’re fixed. Panic isn’t ignored—it’s addressed. Confidence isn’t assumed—it’s built, layer by layer. In every live class, every discussion, and every test, we’re not just teaching—we’re crafting results. Because we know one thing: clarity creates toppers.
+      </p>
     </ModalLayout>,
 
-    <ModalLayout title="Card 5: Code Snippet" key={4}>
+    <ModalLayout title="Card 5: Code Snippet" imageSrc="/subdemo3.png" key={4}>
       <pre className="bg-gray-200 p-3 rounded text-sm overflow-auto">
         {`const hello = () => console.log("Hello World!");`}
       </pre>
     </ModalLayout>,
 
-    <ModalLayout title="Card 6: Info Block" key={5}>
+    <ModalLayout title="Card 6: Info Block" imageSrc="/subdemo3.png" key={5}>
       <p><strong>Status:</strong> Active</p>
       <p><strong>Date:</strong> July 2025</p>
     </ModalLayout>,
