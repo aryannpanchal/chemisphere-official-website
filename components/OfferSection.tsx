@@ -6,13 +6,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
   { src: '/demo2.png' },
-  { src: '/demo1.png' },
-  { src: '/demo3.png' },
-  { src: '/demo4.png' },
-  { src: '/demo5.png' },
+  { src: '/demo1.png' },  { src: '/demo5.png' },
   { src: '/demo6.png' },
   { src: '/demo7.png' },
   { src: '/demo8.png' },
+  { src: '/demo3.png' },
+  { src: '/demo4.png' },
+
 ];
 
 // Modal Layout
