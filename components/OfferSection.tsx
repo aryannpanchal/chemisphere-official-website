@@ -17,22 +17,24 @@ const images = [
 
 type ModalSection = {
   title: string;
+  subtitle: string,
   imageSrc?: string;
   content: React.ReactNode;
 };
 
 const ModalLayout = ({ sections }: { sections: ModalSection[] }) => {
   return (
-    <div className="space-y-12">
+    <div className="my-2">
       {sections.map((section, index) => (
         <div key={index}>
-          <h2 className="laptop:text-6xl mobile:text-4xl font-bold mb-2 p-12">{section.title}</h2>
+          <h3 className="laptop:text-3xl mobile:text-2xl mb-2 pl-12 pt-12 font-normal">{section.subtitle}</h3>
+          <h2 className="laptop:text-6xl mobile:text-4xl font-bold px-12 pb-12">{section.title}</h2>
           <div
             className={`flex mobile:flex-col laptop:flex-row ${
               index % 2 !== 0 ? 'laptop:flex-row-reverse' : ''
             } bg-gray-100 rounded-xl overflow-hidden`}
           >
-            <div className="w-full laptop:w-1/2 laptop:text-xl text-left px-8 py-10">
+            <div className="w-full laptop:w-1/2 laptop:text-xl text-left px-8 py-6">
               {section.content}
             </div>
             {section.imageSrc && (
@@ -69,7 +71,7 @@ export default function ImageCarousel() {
     <ModalLayout
       key={0}
       sections={[
-        {
+        {subtitle: 'Built to Crack JEE & NEET',
           title: 'Strong Basics. Stronger Ranks.',
           imageSrc: '/Picture1.jpg',
           content: (
@@ -84,7 +86,7 @@ export default function ImageCarousel() {
           ),
         },
         {
-          title: '',
+          subtitle: '', title: '',
           imageSrc: '/Picture2.jpg',
           content: (
             <>
@@ -95,6 +97,7 @@ export default function ImageCarousel() {
           ),
         },
         {
+          subtitle: '', 
           title: '',
           imageSrc: '/Picture3.png',
           content: (
@@ -107,7 +110,7 @@ export default function ImageCarousel() {
           ),
         },
         {
-          title: '',
+          subtitle: '',title: '',
           imageSrc: '/Picture4.jpg',
           content: (
             <>
@@ -123,8 +126,9 @@ export default function ImageCarousel() {
     <ModalLayout
       key={1}
       sections={[
-        {
+        {subtitle: 'Signature Study Notes',
           title: 'Handwritten by a Master. Trusted by Rankers.',
+          
           imageSrc: '/Picture5.jpg',
           content: (
             <>
@@ -134,7 +138,7 @@ export default function ImageCarousel() {
             </>
           ),
         },
-        {
+        {subtitle: '',
           title: '',
           imageSrc: '/Picture6.png',
           content: (
@@ -146,7 +150,7 @@ export default function ImageCarousel() {
             </>
           ),
         },
-        {
+        {subtitle: '',
           title: '',
           imageSrc: '/Picture7.png',
           content: (
@@ -158,7 +162,7 @@ export default function ImageCarousel() {
             </>
           ),
         },
-        {
+        {subtitle: '',
           title: '',
           imageSrc: '/Picture8.png',
           content: (
@@ -175,7 +179,7 @@ export default function ImageCarousel() {
     <ModalLayout
     key={1}
     sections={[
-      {
+      {subtitle: 'Micro Batches',
         title: 'Mentorship that is Personal.',
         imageSrc: '/Picture9.jpg',
         content: (
@@ -186,7 +190,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture10.jpg',
         content: (
@@ -198,7 +202,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture11.png',
         content: (
@@ -210,7 +214,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture12.jpg',
         content: (
@@ -227,7 +231,7 @@ export default function ImageCarousel() {
   <ModalLayout
     key={1}
     sections={[
-      {
+      {subtitle: '24x7 Doubt-Solving Portal',
         title: 'Learning Never Pauses. Neither Do We.',
         imageSrc: '/Picture13.jpg',
         content: (
@@ -238,7 +242,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture14.jpg',
         content: (
@@ -250,7 +254,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture15.jpg',
         content: (
@@ -262,7 +266,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture16.jpg',
         content: (
@@ -279,7 +283,7 @@ export default function ImageCarousel() {
   <ModalLayout
       key={0}
       sections={[
-        {
+        {subtitle: 'LIVE and Recorded Classes',
           title: 'Learn in the Moment. Revisit Anytime.',
           imageSrc: '/Picture17.jpg',
           content: (
@@ -293,7 +297,7 @@ export default function ImageCarousel() {
             </>
           ),
         },
-        {
+        {subtitle: '',
           title: '',
           imageSrc: '/Picture18.jpg',
           content: (
@@ -304,7 +308,7 @@ export default function ImageCarousel() {
             </>
           ),
         },
-        {
+        {subtitle: '',
           title: '',
           imageSrc: '/Picture19.jpg',
           content: (
@@ -316,7 +320,7 @@ export default function ImageCarousel() {
             </>
           ),
         },
-        {
+        {subtitle: '',
           title: '',
           imageSrc: '/Picture20.jpg',
           content: (
@@ -333,7 +337,7 @@ export default function ImageCarousel() {
     <ModalLayout
     key={0}
     sections={[
-      {
+      {subtitle: 'IITian Discipline',
         title: 'Engineered to Outpace, Outperform, Outrank.',
         imageSrc: '/Picture21.png',
         content: (
@@ -346,7 +350,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture22.jpg',
         content: (
@@ -357,7 +361,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture23.jpg',
         content: (
@@ -369,7 +373,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture24.jpg',
         content: (
@@ -385,7 +389,7 @@ export default function ImageCarousel() {
   <ModalLayout
     key={0}
     sections={[
-      {
+      {subtitle: 'Weekly and monthly Tests',
         title: 'Tests That Mold You Into a Ranker.',
         imageSrc: '/Picture25.png',
         content: (
@@ -398,7 +402,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture26.jpg',
         content: (
@@ -409,7 +413,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture27.jpg',
         content: (
@@ -421,7 +425,7 @@ export default function ImageCarousel() {
           </>
         ),
       },
-      {
+      {subtitle: '',
         title: '',
         imageSrc: '/Picture28.jpg',
         content: (
@@ -436,7 +440,7 @@ export default function ImageCarousel() {
   />,<ModalLayout
   key={0}
   sections={[
-    {
+    {subtitle: 'The Chemisphere App',
       title: 'Your JEE Arsenal. Locked. Loaded. Secure.',
       imageSrc: '/Picture29.png',
       content: (
@@ -449,7 +453,7 @@ export default function ImageCarousel() {
         </>
       ),
     },
-    {
+    {subtitle: '',
       title: '',
       imageSrc: '/Picture30.png',
       content: (
@@ -460,7 +464,7 @@ export default function ImageCarousel() {
         </>
       ),
     },
-    {
+    {subtitle: '',
       title: '',
       imageSrc: '/Picture31.png',
       content: (
@@ -472,7 +476,7 @@ export default function ImageCarousel() {
         </>
       ),
     },
-    {
+    {subtitle: '',
       title: '',
       imageSrc: '/Picture32.png',
       content: (
