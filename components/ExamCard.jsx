@@ -1,62 +1,92 @@
-import Link from "next/link";
-import React from "react";
+'use client';
 
-const Card = ({ title, description, imageUrl, link}) => (
-  <>  
-  <article className="flex flex-wrap md:flex-nowrap  group cursor-pointer transform duration-500 hover:-translate-y-1 max-w-md md:max-w-none laptop:mx-4">
+import Link from 'next/link';
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const Card = ({ title, description, imageUrl, link }) => (
+  <motion.article
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, ease: 'easeOut' }}
+    viewport={{ once: true }}
+    className="snap-start flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] bg-white rounded-xl shadow-lg p-4 flex flex-col hover:-translate-y-1 transition-transform duration-300"
+  >
     <img
-      className="w-full max-h-[300px] object-cover md:w-52 rounded-lg"
       src={imageUrl}
       alt={title}
+      className="w-full h-48 object-cover rounded-lg"
     />
-    <div className="flex-1">
-      <div className="py-5 pb-10 text-left">
-        <h1 className="text-lg font-semibold text-left text-chemisphere">{title}</h1>
+    <div className="flex-1 mt-4 flex flex-col justify-between">
+      <div>
+        <h1 className="text-lg font-semibold text-chemisphere">{title}</h1>
         <p className="text-sm mt-2 leading-relaxed">{description}</p>
         <p className="text-gray-900 font-bold py-4">Online Mode</p>
-        <Link href={link} className="max-h-fit justify-center text-center flex items-center bg-white border-2 border-chemisphere text-chemisphere py-2 px-2 rounded-lg ">
-        ⚡Quick inquiry
-          </Link>
       </div>
-
+      <Link
+        href={link}
+        className="w-full text-center bg-white border-2 border-chemisphere text-chemisphere py-2 px-2 rounded-lg block"
+      >
+        ⚡Quick Inquiry
+      </Link>
     </div>
-  </article></>
-
+  </motion.article>
 );
 
 const ExamCard = () => {
   const cardsData = [
     {
-      title: "JEE Main/Advanced coaching",
+      title: 'IB Board Coaching',
       description:
-        "Located in Our JEE Main & Advanced batch offers full syllabus coverage, flexible monthly payment plans, regular doubt-solving sessions, and personalized assignments after each lecture. You'll be well-prepared for the upcoming JEE Main with our comprehensive program!",
-      imageUrl: "/jee-banner.png",
-      link: "https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20JEE%20Mains%20and%20Advanced%20classes%20at%20Chemisphere",
+        'Our expert-led IB coaching offers structured guidance for both HL and SL subjects, ensuring conceptual clarity and excellent internal assessments.',
+      imageUrl: '/plan1.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20IB%20Board%20coaching%20at%20Chemisphere',
     },
     {
-      title: "NEET coaching",
+      title: 'IGCSE Board Coaching',
       description:
-        "Our NEET batch is designed to cover the entire NEET syllabus, focusing deeply on all the important concepts and tricks, frequent question patterns, and strategies to ace the medical entrance exam. Join us to boost your chances of getting into a top medical school! Join our NEET specialized course now.",
-      imageUrl: "/neet-banner.png",
-      link: "https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20NEET%20classes%20at%20Chemisphere",
+        'Specialized coaching for IGCSE students with complete Cambridge curriculum coverage, past paper practice, and performance tracking.',
+      imageUrl: '/plan2.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20IGCSE%20Board%20coaching%20at%20Chemisphere',
     },
     {
-      title: "XI-XII Boards coaching",
+      title: 'JEE Main + Advanced + BITSAT',
       description:
-        "Our comprehensive board exam preparation batches are tailored to help students excel in their Class XII and XI exams. With a focus on concept clarity, application-based learning, and thorough syllabus coverage, we ensure students are well-prepared to score top marks. Join now.",
-      imageUrl: "/board-banner.png",
-      link: "https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20XI-XII%20classes%20at%20Chemisphere",
+        'Advanced-level coaching for JEE Main, Advanced, and BITSAT with structured syllabus coverage, DPPs, and mock exams.',
+      imageUrl: '/plan3.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20JEE%20Main%2C%20Advanced%20or%20BITSAT%20coaching%20at%20Chemisphere',
+    },
+    {
+      title: 'NEET Coaching Program',
+      description:
+        'Complete NEET syllabus taught from basics to advanced with doubt sessions, concept-based MCQs, and strategic test planning.',
+      imageUrl: '/plan4.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20NEET%20coaching%20at%20Chemisphere',
+    },
+    {
+      title: 'CBSE Class XI & XII Coaching',
+      description:
+        'CBSE-focused coaching for XI-XII with NCERT-aligned lectures, concept applications, assignments, and exam-focused sessions.',
+      imageUrl: '/plan5.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20CBSE%20Class%20XI%20or%20XII%20coaching%20at%20Chemisphere',
     },
   ];
 
   return (
-    <section id="classes" className="container mx-auto mt-12 laptop:px-10 md:p-20 antialiased ">
-      <p className='font-semibold tracking-tighter text-center mb-12 laptop:text-4xl text-chemisphere mobile:text-3xl'>Our programs</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 rounded-lg">
+    <section id="classes" className="container mx-auto mt-16 px-4">
+      <p className="font-semibold tracking-tighter text-center mb-12 text-3xl laptop:text-4xl text-chemisphere">
+        You’ve Got 90 Days? We’ve Got the Plan.
+      </p>
+
+      <motion.div
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide"
+        initial="hidden"
+        animate="visible"
+      >
         {cardsData.map((card, index) => (
           <Card key={index} {...card} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

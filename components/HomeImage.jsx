@@ -30,7 +30,7 @@ const HomeImage = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-chemisphere mb-4 tracking-tighter">Beyond Classroom..</h2>
         <p className="text-gray-100 text-lg mb-12">
 Chemisphere offers an unparalled learning experience both, within and beyond the classroom and syllabus. We also focus on the mental wellbeing and overall growth of the student which leads to better performance.        </p>
-        <a href='/Results' className='bg-chemisphere text-white py-4 px-2'>View Gallery</a>
+        <a href='/Results' className='bg-chemisphere text-white py-4 px-2 rounded-lg'>View Gallery</a>
       </div>
 
       {/* Carousel */}
