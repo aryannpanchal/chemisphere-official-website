@@ -36,20 +36,6 @@ const Card = ({ title, description, imageUrl, link }) => (
 const ExamCard = () => {
   const cardsData = [
     {
-      title: 'IB Board Coaching',
-      description:
-        'Our expert-led IB coaching offers structured guidance for both HL and SL subjects, ensuring conceptual clarity and excellent internal assessments.',
-      imageUrl: '/plan1.png',
-      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20IB%20Board%20coaching%20at%20Chemisphere',
-    },
-    {
-      title: 'IGCSE Board Coaching',
-      description:
-        'Specialized coaching for IGCSE students with complete Cambridge curriculum coverage, past paper practice, and performance tracking.',
-      imageUrl: '/plan2.png',
-      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20IGCSE%20Board%20coaching%20at%20Chemisphere',
-    },
-    {
       title: 'JEE Main + Advanced + BITSAT',
       description:
         'Advanced-level coaching for JEE Main, Advanced, and BITSAT with structured syllabus coverage, DPPs, and mock exams.',
@@ -64,6 +50,20 @@ const ExamCard = () => {
       link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20NEET%20coaching%20at%20Chemisphere',
     },
     {
+      title: 'IB Board Coaching',
+      description:
+        'Our expert-led IB coaching offers structured guidance for both HL and SL subjects, ensuring conceptual clarity and excellent internal assessments.',
+      imageUrl: '/plan1.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20IB%20Board%20coaching%20at%20Chemisphere',
+    },
+    {
+      title: 'IGCSE Board Coaching',
+      description:
+        'Specialized coaching for IGCSE students with complete Cambridge curriculum coverage, past paper practice, and performance tracking.',
+      imageUrl: '/plan2.png',
+      link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20inquiring%20about%20IGCSE%20Board%20coaching%20at%20Chemisphere',
+    },
+    {
       title: 'CBSE Class XI & XII Coaching',
       description:
         'CBSE-focused coaching for XI-XII with NCERT-aligned lectures, concept applications, assignments, and exam-focused sessions.',
@@ -71,11 +71,12 @@ const ExamCard = () => {
       link: 'https://wa.me/918850436230?text=I%20am%20interested%20in%20CBSE%20Class%20XI%20or%20XII%20coaching%20at%20Chemisphere',
     },
   ];
+  
 
   return (
     <section id="classes" className="container mx-auto mt-16 px-4">
       <p className="font-semibold tracking-tighter text-center mb-12 text-3xl laptop:text-4xl text-chemisphere">
-        You’ve Got 90 Days? We’ve Got the Plan.
+      Get started with our premium learning programmes
       </p>
 
       <motion.div
