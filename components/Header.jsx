@@ -124,6 +124,14 @@ const Header = () => {
             Results
           </a>
         </li>
+        <li>
+          <a
+            href="#masterclass"
+            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+          >
+            Masterclass
+          </a>
+        </li>
         {/* <li>
           <a
             href="privacy-policy"

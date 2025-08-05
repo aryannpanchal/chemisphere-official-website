@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Plan() {
   return (
-    <div className="laptop:flex mobile:flex-col sm:align-center p-10 pt-0">
+    <div id='masterclass' className="laptop:flex mobile:flex-col sm:align-center p-10 pt-0">
       <h1 className='text-center text-5xl font-semibold pb-4 tracking-tighter text-chemisphere'>
       You’ve Got 90 Days? We’ve Got the Plan.
       </h1>
@@ -28,7 +28,7 @@ export default function Plan() {
               Physical Chemistry Masterclass
             </h2>
             <p className="mt-2 text-base text-slate-700 leading-tight">
-              Crack numericals, grasp theory, and master calculations in core physical chemistry topics.
+              Complete class 11 & 12 Physical Chemistry, brutally optimized for JEE & NEET.
             </p>
             <a href="/dashboard"
               className="mt-8 block w-full bg-black rounded-md py-2 text-sm font-semibold text-white text-center">
@@ -38,7 +38,7 @@ export default function Plan() {
           <div className="pt-6 pb-8 px-6">
             <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">What's included</h3>
             <ul role="list" className="mt-4 space-y-3">
-              <li className="flex space-x-3">✅ Thermodynamics & Equilibrium Explained</li>
+              <li className="flex space-x-3">✅ Full Syllabus Coverage</li>
               <li className="flex space-x-3">✅ Numericals with Step-by-Step Methods</li>
               <li className="flex space-x-3">✅ Logics Behind Formulae Derivations</li>
               <li className="flex space-x-3">✅ Quiz + Practice Modules after Each Topic</li>
