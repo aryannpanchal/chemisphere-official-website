@@ -14,7 +14,7 @@ const Mockup = () => {
         <div className="text-gray-600 body-font mb-24 laptop:mx-24  mobile:mx-4">
           <div className="p-4 py-16 mt-6 text-center rounded-lg sm:p-8  sm:flex-col md:flex gap-5 justify-center align-center items-center">
             <div className='flex justify-center'>
-              <Image src='/mob2.png' alt='mobile-image' width={700} height={700} className='flex items-center justify-center' />
+              <Image src='/Scene 10.png' alt='mobile-image' width={700} height={700} className='flex items-center justify-center' />
             </div>
             <div>
               <h2 className="mb-2 mobile:text-2xl font-extrabold text-black laptop:text-4xl mobile:pt-5 laptop:text-left">Entire student dashboard, now on your mobile.</h2>
@@ -90,3 +90,4 @@ const Mockup = () => {
 }
 
 export default Mockup;
+
