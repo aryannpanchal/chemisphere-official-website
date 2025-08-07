@@ -7,7 +7,7 @@ const Chandan = () => {
       <div className="laptop:w-1/2 p-5">
         <div className="image object-center text-center">
           <img 
-            src="/cb2.png" 
+            src="/ChandanBiswas.jpg" 
             alt="Company Image" 
             className="rounded-3xl mobile:w-full laptop:w-auto" 
           />
