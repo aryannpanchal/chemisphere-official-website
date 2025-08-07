@@ -1,9 +1,13 @@
+'use client';
+
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from 'next/font/google';
 import { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
+import Script from 'next/script';
+import { useEffect } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -34,6 +38,71 @@ export const metadata: Metadata = {
   },
 };
 
+// Type declarations
+declare global {
+  interface Window {
+    fbq: any;
+    _fbq?: any;
+  }
+}
+
+// Facebook Pixel Init
+function FacebookPixel() {
+  useEffect(() => {
+    if (!window.fbq) {
+      window.fbq = function () {
+        window.fbq.callMethod
+          ? window.fbq.callMethod.apply(window.fbq, arguments)
+          : window.fbq.queue.push(arguments);
+      };
+      window._fbq = window.fbq;
+      window.fbq.push = window.fbq;
+      window.fbq.loaded = true;
+      window.fbq.version = '2.0';
+      window.fbq.queue = [];
+
+      window.fbq('init', '1440575971141238');
+      window.fbq('track', 'PageView');
+    }
+  }, []);
+
+  return (
+    <>
+      <Script
+        id="facebook-pixel"
+        strategy="afterInteractive"
+        src="https://connect.facebook.net/en_US/fbevents.js"
+      />
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: 'none' }}
+          src="https://www.facebook.com/tr?id=1440575971141238&ev=PageView&noscript=1"
+          alt=""
+        />
+      </noscript>
+    </>
+  );
+}
+
+// Google Tag Manager Script
+function GoogleTagManager() {
+  return (
+    <Script
+      id="gtm-script"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NC6HMZLP');`,
+      }}
+    />
+  );
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -43,27 +112,26 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <head>
-        <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1440575971141238');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1440575971141238&ev=PageView&noscript=1"
-/></noscript>
           <meta name="facebook-domain-verification" content="1tc0meng0ifa67yzp1whrppkee1p44" />
           <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
           <link rel="icon" href="/favicon.ico" sizes="any" />
+          <GoogleTagManager />
         </head>
         <body className={inter.className}>
+          {/* GTM Noscript */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-NC6HMZLP"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            ></iframe>
+          </noscript>
+
+          {/* Facebook Pixel */}
+          <FacebookPixel />
+
           {children}
           <Analytics />
           <SpeedInsights />
