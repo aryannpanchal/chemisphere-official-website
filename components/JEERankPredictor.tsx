@@ -78,7 +78,7 @@ export default function RankPredictor() {
         <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
           <h1 className="text-4xl font-bold text-chemisphere mb-4 tracking-tighter">JEE Main Rank Predictor</h1>
           <p className="text-gray-100 mb-6">
-            Curious about where you stand in the JEE Main 2025? Enter your marks or percentile to get an instant estimate of your score range or percentile.
+            Curious about where you stand in the JEE Main? Enter your marks or percentile to get an instant estimate of your score range or percentile.
           </p>
           <ul className="list-disc list-inside text-sm text-gray-100">
             <li>Based on official NTA percentile data</li>
