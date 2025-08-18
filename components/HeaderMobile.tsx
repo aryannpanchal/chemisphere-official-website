@@ -82,7 +82,7 @@ const HeaderMobile: React.FC = () => {
           <li>
           <a
             href="/Physics"
-            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+            className=" font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Physics
           </a>
@@ -90,7 +90,7 @@ const HeaderMobile: React.FC = () => {
         <li>
           <a
             href="/"
-            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+            className="font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Chemistry
           </a>
@@ -98,7 +98,7 @@ const HeaderMobile: React.FC = () => {
         <li>
           <a
             href="/Math"
-            className="text-sm font-medium text-gray-700 hover:text-chemisphere transition-colors"
+            className="font-medium text-gray-700 hover:text-chemisphere transition-colors"
           >
             Math
           </a>
